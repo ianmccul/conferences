@@ -1,6 +1,8 @@
 /* Progressive enhancement. The built HTML contains the complete public list. */
 "use strict";
 
+const shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
 function normalize(value) {
   return String(value).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
@@ -17,12 +19,18 @@ function matchesEvent(event, filters, today) {
   return normalize(filters.q || "").trim().split(/\s+/).every(word => haystack.includes(word));
 }
 
-function summaryFor(event, today) {
-  const future = event.deadlines.filter(item => item.date >= today).sort((a, b) => a.date.localeCompare(b.date));
-  if (!future.length) return event.deadlines.length ? "Recorded deadline dates have passed" : "Deadlines not recorded";
-  const date = new Intl.DateTimeFormat("en-GB", {day: "numeric", month: "short", year: "numeric", timeZone: "UTC"})
-    .format(new Date(future[0].date + "T12:00:00Z"));
-  return future[0].kind + " · " + date;
+function summaryFor(event, now = new Date()) {
+  const instant = new Date(now);
+  const today = instant.toISOString().slice(0, 10);
+  const future = event.deadlines.filter(item => item.cutoff_utc
+    ? Date.parse(item.cutoff_utc) >= instant.getTime()
+    : item.date >= today).sort((a, b) =>
+      Date.parse(a.cutoff_utc || a.date + "T00:00:00Z") - Date.parse(b.cutoff_utc || b.date + "T00:00:00Z"));
+  if (!future.length) return event.deadlines.length ? "Recorded deadlines have passed" : "Deadlines not recorded";
+  const item = future[0];
+  const [year, month, day] = item.date.split("-").map(Number);
+  const date = `${day} ${shortMonths[month - 1]} ${year}`;
+  return item.kind + " · " + date + (item.time ? " · " + item.time + " " + item.timezone : "");
 }
 
 if (typeof module !== "undefined" && module.exports) module.exports = {normalize, matchesEvent, summaryFor};
@@ -62,7 +70,6 @@ if (typeof document !== "undefined") {
 
 if (typeof document !== "undefined" && document.getElementById("event-data")) {
   const events = JSON.parse(document.getElementById("event-data").textContent);
-  const today = () => new Date().toISOString().slice(0, 10);
   const cards = new Map([...document.querySelectorAll("[data-event-id]")].map(card => [card.dataset.eventId, card]));
   const fields = Object.fromEntries(["search", "region", "topic", "format"].map(key => [key, document.getElementById(key)]));
   const defaults = {q: "", region: "", topic: "", format: "", view: "upcoming"};
@@ -91,20 +98,25 @@ if (typeof document !== "undefined" && document.getElementById("event-data")) {
   }
 
   function apply(writeURL = true) {
-    const currentDate = today();
+    const now = new Date();
+    const currentDate = now.toISOString().slice(0, 10);
     let visible = 0;
     for (const event of events) {
       const card = cards.get(event.id);
       card.hidden = !matchesEvent(event, filters, currentDate);
       if (!card.hidden) visible += 1;
-      card.querySelector(".deadline-summary").textContent = summaryFor(event, currentDate);
+      const summary = card.querySelector(".deadline-summary");
+      const summaryText = summaryFor(event, now);
+      if (summary.textContent !== summaryText) summary.textContent = summaryText;
     }
     for (const group of document.querySelectorAll(".month-group")) {
       const count = [...group.querySelectorAll(".event")].filter(card => !card.hidden).length;
       group.hidden = count === 0;
       group.querySelector(".month-count").textContent = String(count).padStart(2, "0");
     }
-    document.querySelector(".result-count").textContent = visible + " of " + events.length + " meetings";
+    const count = document.querySelector(".result-count");
+    const countText = visible + " of " + events.length + " meetings";
+    if (count.textContent !== countText) count.textContent = countText;
     document.getElementById("directory-title").textContent = {
       upcoming: "Upcoming & ongoing", past: "Past meetings", all: "All listed meetings"
     }[filters.view];
@@ -143,4 +155,5 @@ if (typeof document !== "undefined" && document.getElementById("event-data")) {
   window.addEventListener("hashchange", revealHash);
   window.addEventListener("pageshow", () => apply(false));
   document.addEventListener("visibilitychange", () => { if (!document.hidden) apply(false); });
+  window.setInterval(() => { if (!document.hidden) apply(false); }, 60_000);
 }

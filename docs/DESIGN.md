@@ -4,7 +4,7 @@
 
 Make a useful, easily maintained public calendar for tensor-network researchers, starting with the existing conference scan. Direct tensor-network events are tagged explicitly; selected related meetings in entanglement, quantum information, quantum matter, dynamics and numerical methods provide context. Programmes, schools and short meetings have separate type labels.
 
-The first version contains 27 meetings, including three additions checked on 23 October 2026. Dates and deadlines link to organizer or institutional pages. An indexed official listing sometimes supplies dates when the page cannot be opened; those limitations are recorded explicitly. Discovery lists are leads, not authority for a participation deadline.
+The first version contains 29 meetings, including separate records for the NQS2027 programme, school and conference, checked on 23 October 2026. Dates and deadlines link to organizer or institutional pages. An indexed official listing sometimes supplies dates when the page cannot be opened; those limitations are recorded explicitly. Discovery lists are leads, not authority for a participation deadline.
 
 This repository is a standalone GitHub Pages project. It needs neither a root `ianmccul.github.io` site nor changes to the existing teaching site. A future homepage can link to `/conferences/`.
 
@@ -14,7 +14,9 @@ This repository is a standalone GitHub Pages project. It needs neither a root `i
 
 The complete public list is rendered at build time. JavaScript adds combined search, region, topic and meeting-type filters; upcoming/ongoing, past and all-date views; counts; URL state; and permalink handling. It reads embedded JSON rather than making network requests. Every event remains readable when JavaScript is unavailable, and the downloaded site can be opened locally.
 
-Dates use ISO `YYYY-MM-DD` strings. Meeting date ranges are inclusive and local to their venue. The browser uses the current UTC calendar date when deciding which date view contains an entry, so classification can differ from venue time near midnight. No current availability, precise cutoff or registration-open status is inferred. Deadline times are displayed only when a source supplies both the time and its timezone. `AoE` means Anywhere on Earth.
+Dates use ISO `YYYY-MM-DD` strings. Meeting date ranges are inclusive and local to their venue. The browser uses the current UTC calendar date when deciding which date view contains an entry, so classification can differ from venue time near midnight. No current availability or registration-open status is inferred. Deadline times are displayed only when a source supplies both the time and its timezone. `AoE` means Anywhere on Earth, a fixed UTC−12 offset.
+
+Explicitly timed deadlines remain pending through their recorded cutoff instant. Python converts the source time using the IANA timezone database (including daylight-saving rules), or the fixed AoE offset. The embedded browser JSON adds a derived `cutoff_utc` field to each deadline; it is `null` for date-only entries. The source and downloadable JSON retain the schema below. Python and JavaScript compare the same UTC instants; the browser refreshes summaries on return and once a minute while visible. Date-only deadlines retain UTC calendar-date comparison without inventing a precise cutoff. Summaries order timed deadlines by their cutoff and date-only entries by date at UTC midnight. Ambiguous or nonexistent local times around daylight-saving changes fail validation until the source cutoff is clarified.
 
 The page uses system fonts, native form controls and native `<details>` disclosures, with keyboard focus styles, a skip link, live result counts and a narrow-screen layout. It has no analytics or external asset dependencies. Light and dark colour palettes follow the system by default; the header selector can override that preference and stores the choice locally in the browser. A small script applies saved choices before the stylesheet loads to avoid a flash of the wrong theme. Without JavaScript, CSS still follows the system preference. Print output always uses the light palette.
 
@@ -24,7 +26,7 @@ The top-level object has exactly `schema_version: 1`, `updated` (ISO date) and `
 
 | Field | Meaning |
 | --- | --- |
-| `id` | Stable lowercase hyphenated slug, including edition/year |
+| `id` | Stable lowercase hyphenated slug, including edition/year; template IDs, `event-data`, and the `month-` and `title-` prefixes are reserved |
 | `title` | Public event title |
 | `start_date`, `end_date` | Inclusive ISO date range |
 | `location` | Object with `city`, `country`, `region`, `venue` |

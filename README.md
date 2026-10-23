@@ -21,7 +21,7 @@ python3 -m unittest discover -s tests -v
 node --test tests/*.test.cjs
 ```
 
-`python3 scripts/build.py --today 2026-10-23` fixes the build date for reproducible deadline summaries. The browser updates those summaries using its current UTC calendar date. This is a date comparison, not a live registration-status check.
+The build uses the current instant for deadline summaries. `python3 scripts/build.py --now 2026-12-05T11:58:00Z` fixes that instant for reproducible output; `--today 2026-10-23` is shorthand for midnight UTC on that date. Explicitly timed deadlines use their recorded timezone, including AoE. Date-only deadlines remain pending through their UTC calendar date without assuming a precise cutoff. The browser refreshes summaries on return to the page and once a minute while visible. These summaries do not infer registration availability.
 
 ## Edit the calendar
 
@@ -41,7 +41,7 @@ node --test tests/*.test.cjs
 
 Keep past meetings: the default view shows upcoming and ongoing events, while the date controls expose the archive. Filters can be shared through URL query parameters, and each entry has a permalink.
 
-The JSON schema is enforced by the build script. Unknown fields, invalid dates, unsafe URL schemes, duplicate IDs and unresolved related-event links fail the build. `published: false` excludes an event and its references from both the HTML and the downloadable JSON. It does **not** hide it from repository readers or Git history. Store only public-facing information in this repository.
+The JSON schema is enforced by the build script. Unknown fields, invalid dates, unsafe URL schemes, malformed ports, duplicate or reserved IDs and unresolved related-event links fail the build. `published: false` excludes an event and its references from both the HTML and the downloadable JSON. It does **not** hide it from repository readers or Git history. Store only public-facing information in this repository.
 
 ## Review without publishing
 

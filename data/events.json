@@ -150,11 +150,11 @@
         },
         {
           "kind": "Abstract",
-          "date": "2026-09-01",
-          "time": null,
-          "timezone": null,
-          "note": "",
-          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/"
+          "date": "2026-09-14",
+          "time": "23:42",
+          "timezone": "Asia/Tokyo",
+          "note": "The Indico submission window closed on 14 September; the descriptive text still lists the earlier 1 September deadline.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/abstracts/"
         },
         {
           "kind": "Visa and accommodation support",
@@ -163,47 +163,6 @@
           "timezone": null,
           "note": "",
           "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/"
-        }
-      ],
-      "notes": "",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
-      "published": true,
-      "related_event_ids": []
-    },
-    {
-      "id": "hkust-rqm-2026",
-      "title": "Reticular Quantum Matter",
-      "start_date": "2026-11-30",
-      "end_date": "2026-12-04",
-      "location": {
-        "city": "Hong Kong",
-        "country": "Hong Kong",
-        "region": "Asia",
-        "venue": "Hong Kong University of Science and Technology"
-      },
-      "format": "Workshop",
-      "topics": [
-        "Quantum matter"
-      ],
-      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
-      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
-      "deadlines": [
-        {
-          "kind": "General registration",
-          "date": "2026-11-20",
-          "time": null,
-          "timezone": null,
-          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
-        },
-        {
-          "kind": "Poster and contributed talk",
-          "date": "2026-09-30",
-          "time": null,
-          "timezone": null,
-          "note": "Submission is closed.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
         }
       ],
       "notes": "",
@@ -257,6 +216,47 @@
         }
       ],
       "notes": "Registration is free. The organizer permits on-site registration; the banquet deadline is not yet specified.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "hkust-rqm-2026",
+      "title": "Reticular Quantum Matter",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-04",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "Hong Kong University of Science and Technology"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
+      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
+      "deadlines": [
+        {
+          "kind": "General registration",
+          "date": "2026-11-20",
+          "time": null,
+          "timezone": null,
+          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
+        },
+        {
+          "kind": "Poster and contributed talk",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Submission is closed.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
+        }
+      ],
+      "notes": "",
       "last_checked": "2026-10-23",
       "verification_note": "",
       "published": true,
@@ -331,7 +331,7 @@
         "region": "Asia",
         "venue": "RIKEN Center for Computational Science"
       },
-      "format": "Conference",
+      "format": "Workshop",
       "topics": [
         "Tensor networks",
         "Numerical methods",
@@ -423,10 +423,19 @@
       ],
       "summary": "Sign-problem mitigation, sign-free formulations and computational complexity in quantum many-body simulation.",
       "official_url": "https://www.ipam.ucla.edu/programs/workshops/the-quantum-monte-carlo-sign-problem-structure-complexity-and-new-directions/",
-      "deadlines": [],
+      "deadlines": [
+        {
+          "kind": "Financial support (priority)",
+          "date": "2026-11-16",
+          "time": null,
+          "timezone": null,
+          "note": "Applications received by this date receive fullest consideration for financial support.",
+          "source_url": "https://www.ipam.ucla.edu/programs/workshops/the-quantum-monte-carlo-sign-problem-structure-complexity-and-new-directions/?tab=application-registration"
+        }
+      ],
       "notes": "A poster session is planned; registered participants will receive the poster call.",
       "last_checked": "2026-10-23",
-      "verification_note": "No application or registration deadline was verified from the inspected overview.",
+      "verification_note": "No separate general registration or poster deadline was verified.",
       "published": true,
       "related_event_ids": []
     },
@@ -439,7 +448,7 @@
         "city": "Kyoto",
         "country": "Japan",
         "region": "Asia",
-        "venue": "Yukawa Institute for Theoretical Physics"
+        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
       },
       "format": "Programme",
       "topics": [
@@ -447,13 +456,69 @@
         "Dynamics & open systems"
       ],
       "summary": "Strong correlations, topological phases, open and non-Hermitian systems, quantum geometry and nonperturbative approaches.",
-      "official_url": "https://www.yukawa.kyoto-u.ac.jp/seminar/s53509?lang=en-GB",
-      "deadlines": [],
-      "notes": "Long-term programme. A shorter conference is planned, but its dates are not given in the inspected announcement.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "Shared NQS2027 registration deadline.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
+        },
+        {
+          "kind": "Abstract",
+          "date": "2026-11-15",
+          "time": "23:59",
+          "timezone": "Asia/Tokyo",
+          "note": "Shared NQS2027 call for abstracts.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/abstracts/"
+        }
+      ],
+      "notes": "The full programme runs from 8 February to 12 March, with a school on 8–13 February and a conference on 1–5 March.",
       "last_checked": "2026-10-23",
-      "verification_note": "No application deadline was verified from the inspected announcement.",
+      "verification_note": "",
       "published": true,
-      "related_event_ids": []
+      "related_event_ids": [
+        "yitp-novel-school-2027",
+        "yitp-novel-conference-2027"
+      ]
+    },
+    {
+      "id": "yitp-novel-school-2027",
+      "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): School",
+      "start_date": "2027-02-08",
+      "end_date": "2027-02-13",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
+      },
+      "format": "School",
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "The first-week school of NQS2027, introducing topics in novel quantum states and condensed-matter theory for young researchers.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "Shared NQS2027 registration deadline.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
+        }
+      ],
+      "notes": "School week of the longer NQS2027 programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": [
+        "yitp-novel-2027"
+      ]
     },
     {
       "id": "benasque-etqm-2027",
@@ -484,7 +549,7 @@
           "source_url": "https://www.benasque.org/2027etqm/"
         },
         {
-          "kind": "Registration",
+          "kind": "Application",
           "date": "2027-01-30",
           "time": null,
           "timezone": null,
@@ -622,6 +687,50 @@
       "related_event_ids": []
     },
     {
+      "id": "yitp-novel-conference-2027",
+      "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): Conference",
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-05",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
+      },
+      "format": "Conference",
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "The conference week of NQS2027, covering novel quantum states, strong correlations, topological phases and related developments.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "Shared NQS2027 registration deadline.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
+        },
+        {
+          "kind": "Abstract",
+          "date": "2026-11-15",
+          "time": "23:59",
+          "timezone": "Asia/Tokyo",
+          "note": "Shared NQS2027 call for abstracts.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/abstracts/"
+        }
+      ],
+      "notes": "Conference week of the longer NQS2027 programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": [
+        "yitp-novel-2027"
+      ]
+    },
+    {
       "id": "int-chiral-2027",
       "title": "Chiral Gauge Theories on the Lattice and Beyond",
       "start_date": "2027-03-08",
@@ -673,10 +782,19 @@
       ],
       "summary": "Algebraic geometry and numerical methods for correlated electronic structure, excited states and response functions.",
       "official_url": "https://www.ipam.ucla.edu/programs/long-programs/numerical-algebraic-geometry-and-correlated-electrons-generalized-grassmannians-response-functions-and-excited-states/",
-      "deadlines": [],
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-10-03",
+          "time": null,
+          "timezone": null,
+          "note": "For financial support to attend the long programme. Later applications are considered if space remains; individual workshops use separate forms.",
+          "source_url": "https://www.ipam.ucla.edu/programs/long-programs/numerical-algebraic-geometry-and-correlated-electrons-generalized-grassmannians-response-functions-and-excited-states/?tab=application"
+        }
+      ],
       "notes": "Long research programme with individual workshops; the full date range is the programme window.",
       "last_checked": "2026-10-23",
-      "verification_note": "No application deadline was verified from the inspected overview.",
+      "verification_note": "",
       "published": true,
       "related_event_ids": [
         "ipam-response-2027"

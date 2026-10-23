@@ -1,6 +1,7 @@
 """Validate publication boundaries and the generated, usable-without-JS page."""
 
 from copy import deepcopy
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -72,6 +73,12 @@ class BuildTests(unittest.TestCase):
         self.data["events"].append(deepcopy(self.event))
         self.assert_invalid("duplicate event id")
 
+    def test_event_ids_cannot_collide_with_page_ids(self):
+        for key in ["directory", "theme", "event-data", "about-title", "month-2027-02", "title-another-event"]:
+            with self.subTest(key=key):
+                self.event["id"] = key
+                self.assert_invalid("reserved page ID or namespace")
+
     def test_unknown_fields_rejected(self):
         self.event["personal_notes"] = "Do not publish this field"
         self.assert_invalid("unexpected.*personal_notes")
@@ -81,6 +88,19 @@ class BuildTests(unittest.TestCase):
             with self.subTest(url=url):
                 self.event["official_url"] = url
                 self.assert_invalid("URL")
+
+    def test_url_ports_validated_for_event_and_deadline_sources(self):
+        self.event["deadlines"] = [{"kind": "Registration", "date": "2026-12-01",
+            "time": None, "timezone": None, "note": "", "source_url": "https://example.org/event"}]
+        for record, field in [(self.event, "official_url"), (self.event["deadlines"][0], "source_url")]:
+            original = record[field]
+            for port in ["notaport", "99999", "-1"]:
+                with self.subTest(field=field, port=port):
+                    record[field] = f"https://example.org:{port}/event"
+                    self.assert_invalid("invalid URL")
+            record[field] = "https://example.org:8443/event"
+            build.validate(self.data)
+            record[field] = original
 
     def test_unknown_format_and_topics_rejected(self):
         self.event["format"] = []
@@ -102,6 +122,39 @@ class BuildTests(unittest.TestCase):
         self.event["related_event_ids"] = ["missing-edition"]
         self.assert_invalid("unresolved")
 
+    def test_timed_deadlines_use_aoe_and_iana_cutoffs(self):
+        for day, clock, zone, expected in [
+            ("2026-12-04", "23:59", "AoE", "2026-12-05T11:59:00+00:00"),
+            ("2026-11-15", "23:59", "Asia/Tokyo", "2026-11-15T14:59:00+00:00"),
+            ("2027-07-01", "15:00", "America/New_York", "2027-07-01T19:00:00+00:00"),
+            ("2027-01-01", "15:00", "America/New_York", "2027-01-01T20:00:00+00:00"),
+        ]:
+            with self.subTest(zone=zone, day=day):
+                deadline = {"date": day, "time": clock, "timezone": zone}
+                self.assertEqual(build.deadline_cutoff(deadline).isoformat(), expected)
+        self.assertIsNone(build.deadline_cutoff({"date": "2026-12-04", "time": None, "timezone": None}))
+
+    def test_ambiguous_and_nonexistent_local_deadline_times_rejected(self):
+        for day, clock in [("2027-03-14", "02:30"), ("2027-11-07", "01:30")]:
+            with self.subTest(day=day):
+                self.event["deadlines"] = [{"kind": "Registration", "date": day,
+                    "time": clock, "timezone": "America/New_York", "note": "", "source_url": "https://example.org/event"}]
+                self.assert_invalid("ambiguous or nonexistent")
+
+    def test_aoe_deadline_stays_pending_until_cutoff_next_utc_day(self):
+        self.event["deadlines"] = [{"date": "2026-12-04", "time": "23:59", "timezone": "AoE", "kind": "Poster"}]
+        for now in ["2026-12-05T00:00:00Z", "2026-12-05T11:58:59Z", "2026-12-05T11:59:00Z"]:
+            with self.subTest(now=now):
+                self.assertEqual(build.deadline_summary(self.event, now), "Poster · 4 Dec 2026 · 23:59 AoE")
+        self.assertEqual(build.deadline_summary(self.event, "2026-12-05T11:59:01Z"), "Recorded deadlines have passed")
+
+    def test_reference_time_requires_timezone_and_accepts_reproducible_date(self):
+        expected = datetime(2026, 12, 5, tzinfo=timezone.utc)
+        self.assertEqual(build.utc_instant("2026-12-05"), expected)
+        self.assertEqual(build.utc_instant("2026-12-05T08:00:00+08:00"), expected)
+        with self.assertRaisesRegex(build.ValidationError, "timestamp with timezone"):
+            build.utc_instant("2026-12-05T12:00:00")
+
     def test_generated_page_is_complete_and_subpath_portable(self):
         with TemporaryDirectory() as temp:
             output = Path(temp) / "conferences"
@@ -111,7 +164,15 @@ class BuildTests(unittest.TestCase):
             self.assertEqual(count, len(page.articles))
             self.assertEqual(len(page.ids), len(set(page.ids)), "DOM IDs must be unique")
             self.assertTrue(all("hidden" not in attrs for attrs in page.articles))
-            self.assertEqual(json.loads(page.script_data), exported["events"])
+            embedded = json.loads(page.script_data)
+            qip = next(e for e in embedded if e["id"] == "qip-2027")
+            poster = next(d for d in qip["deadlines"] if d["kind"] == "Poster")
+            self.assertEqual(poster["cutoff_utc"], "2026-12-05T11:59:00Z")
+            for event in embedded:
+                for deadline in event["deadlines"]:
+                    cutoff = deadline.pop("cutoff_utc")
+                    self.assertEqual(cutoff is None, deadline["time"] is None)
+            self.assertEqual(embedded, exported["events"], "UTC cutoffs are derived only for browser use")
             self.assertEqual({a["id"] for a in page.articles}, {e["id"] for e in exported["events"]})
             pages = {name: Page((output / name).read_text()) for name in ("index.html", "about.html")}
             self.assertNotIn("about", page.ids)
@@ -166,7 +227,12 @@ class BuildTests(unittest.TestCase):
     def test_deadline_summary_never_infers_registration_status(self):
         self.assertEqual(build.deadline_summary(self.event, "2026-10-23"), "Deadlines not recorded")
         self.event["deadlines"] = [{"date": "2026-09-01", "kind": "Registration"}]
-        self.assertEqual(build.deadline_summary(self.event, "2026-10-23"), "Recorded deadline dates have passed")
+        self.assertEqual(build.deadline_summary(self.event, "2026-10-23"), "Recorded deadlines have passed")
+
+    def test_date_only_deadline_remains_pending_through_utc_date(self):
+        self.event["deadlines"] = [{"date": "2026-12-04", "time": None, "timezone": None, "kind": "Registration"}]
+        self.assertEqual(build.deadline_summary(self.event, "2026-12-04T23:59:59Z"), "Registration · 4 Dec 2026")
+        self.assertEqual(build.deadline_summary(self.event, "2026-12-05T00:00:00Z"), "Recorded deadlines have passed")
 
 
 if __name__ == "__main__":

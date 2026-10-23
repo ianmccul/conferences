@@ -3,7 +3,7 @@
 
 import argparse
 from collections import defaultdict
-from datetime import date, datetime, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from html import escape
 import json
 from pathlib import Path
@@ -53,6 +53,8 @@ def web_url(value, context):
     text(value, context)
     try:
         parsed = urlsplit(value)
+        # urlsplit defers malformed and out-of-range port errors to this property.
+        _ = parsed.port
     except ValueError as exc:
         raise ValidationError(f"{context}: invalid URL") from exc
     require(parsed.scheme in {"http", "https"} and bool(parsed.hostname)
@@ -66,12 +68,53 @@ def exact_keys(value, allowed, context):
             f"{context}: missing {sorted(allowed - set(value))}; unexpected {sorted(set(value) - allowed)}")
 
 
+def utc_instant(value):
+    """Accept an aware timestamp, or a reproducible UTC date at midnight."""
+    if isinstance(value, str):
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
+            return datetime.combine(iso_date(value, "reference date"), time.min, timezone.utc)
+        try:
+            value = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        except ValueError as exc:
+            raise ValidationError("reference time: expected an ISO timestamp with timezone") from exc
+    require(isinstance(value, datetime) and value.utcoffset() is not None,
+            "reference time: expected an ISO timestamp with timezone")
+    return value.astimezone(timezone.utc)
+
+
+def deadline_cutoff(deadline):
+    """Convert an explicitly timed deadline to UTC; leave date-only records untimed."""
+    if deadline.get("time") is None:
+        return None
+    zone = timezone(timedelta(hours=-12)) if deadline["timezone"] == "AoE" else ZoneInfo(deadline["timezone"])
+    wall_time = datetime.fromisoformat(f"{deadline['date']}T{deadline['time']}")
+    candidates = set()
+    for fold in (0, 1):
+        instant = wall_time.replace(tzinfo=zone, fold=fold).astimezone(timezone.utc)
+        if instant.astimezone(zone).replace(tzinfo=None) == wall_time:
+            candidates.add(instant)
+    require(len(candidates) == 1,
+            "deadline time is ambiguous or nonexistent in its timezone; clarify the source cutoff")
+    return candidates.pop()
+
+
+def browser_event(event):
+    deadlines = []
+    for item in event["deadlines"]:
+        cutoff = deadline_cutoff(item)
+        deadlines.append({**item, "cutoff_utc": cutoff.isoformat().replace("+00:00", "Z") if cutoff else None})
+    return {**event, "deadlines": deadlines}
+
+
 def validate(data):
     exact_keys(data, {"schema_version", "updated", "events"}, "dataset")
     require(type(data["schema_version"]) is int and data["schema_version"] == 1,
             "schema_version must be 1")
     updated = iso_date(data["updated"], "updated")
     require(isinstance(data["events"], list) and data["events"], "events must be a nonempty list")
+    reserved_ids = {"event-data"}
+    for template in (ROOT / "site").glob("*.template.html"):
+        reserved_ids.update(re.findall(r'\sid="([a-z0-9-]+)"', template.read_text(encoding="utf-8")))
     ids = set()
     editions = set()
     for number, event in enumerate(data["events"]):
@@ -80,6 +123,8 @@ def validate(data):
         key = event["id"]
         require(isinstance(key, str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", key),
                 f"{context}: id must be a lowercase slug")
+        require(key not in reserved_ids and not key.startswith(("month-", "title-")),
+                f"{context}: id uses a reserved page ID or namespace: {key}")
         require(key not in ids, f"duplicate event id: {key}")
         ids.add(key)
         context = key
@@ -130,6 +175,7 @@ def validate(data):
                         ZoneInfo(zone)
                     except (ValueError, ZoneInfoNotFoundError) as exc:
                         raise ValidationError(f"{context}: use an IANA timezone or AoE") from exc
+                deadline_cutoff(deadline)
     for event in data["events"]:
         require(all(key in ids and key != event["id"] for key in event["related_event_ids"]),
                 f"{event['id']}: unresolved or self-referential related event")
@@ -152,15 +198,23 @@ def date_range(start, end):
     return f"{human_date(start)} – {human_date(end)}"
 
 
-def deadline_summary(event, today):
-    remaining = sorted((d for d in event["deadlines"] if d["date"] >= today), key=lambda d: d["date"])
+def deadline_summary(event, now):
+    now = utc_instant(now)
+    remaining = []
+    for item in event["deadlines"]:
+        cutoff = deadline_cutoff(item)
+        pending = cutoff >= now if cutoff is not None else item["date"] >= now.date().isoformat()
+        if pending:
+            remaining.append((cutoff or utc_instant(item["date"]), item))
+    remaining.sort(key=lambda pair: pair[0])
     if remaining:
-        item = remaining[0]
-        return f"{item['kind']} · {human_date(item['date'])}"
-    return "Recorded deadline dates have passed" if event["deadlines"] else "Deadlines not recorded"
+        item = remaining[0][1]
+        clock = f" · {item['time']} {item['timezone']}" if item.get("time") else ""
+        return f"{item['kind']} · {human_date(item['date'])}{clock}"
+    return "Recorded deadlines have passed" if event["deadlines"] else "Deadlines not recorded"
 
 
-def render_event(event, today, by_id):
+def render_event(event, now, by_id):
     esc = escape
     start = date.fromisoformat(event["start_date"])
     end = date.fromisoformat(event["end_date"])
@@ -193,7 +247,7 @@ def render_event(event, today, by_id):
     <h3 id="title-{event['id']}"><a href="{esc(event['official_url'], quote=True)}">{esc(event['title'])}<span class="external-arrow" aria-hidden="true">↗</span></a></h3>
     <p class="event-summary">{esc(event['summary'])}</p>
     <div class="tags">{labels}</div>
-    <details><summary><span class="deadline-summary">{esc(deadline_summary(event, today))}</span><span class="details-label">Details <span aria-hidden="true">+</span></span></summary>
+    <details><summary><span class="deadline-summary">{esc(deadline_summary(event, now))}</span><span class="details-label">Details <span aria-hidden="true">+</span></span></summary>
       <div class="event-details"><dl class="event-facts"><div><dt>Dates</dt><dd>{range_text}</dd></div><div><dt>Venue</dt><dd>{esc(location['venue'])}</dd></div></dl>
       {notes}<h4>Participation deadlines</h4>{deadlines}
       <p class="date-note">A recorded deadline does not confirm that places are available. Date-only deadlines have no assumed cutoff time.</p>
@@ -226,8 +280,9 @@ def render_page(content, *, about=False, event_json=None):
     )
 
 
-def build(data, output, today):
+def build(data, output, now):
     validate(data)
+    now = utc_instant(now)
     output.mkdir(parents=True, exist_ok=True)
     by_id = {event["id"]: event for event in data["events"]}
     public = sorted(({
@@ -241,8 +296,8 @@ def build(data, output, today):
     cards = []
     for month, events in groups.items():
         label = date.fromisoformat(month + "-01").strftime("%B %Y")
-        cards.append(f'<section class="month-group" aria-labelledby="month-{month}"><h2 class="month-heading" id="month-{month}">{label}<span class="month-count">{len(events):02}</span></h2>' + "".join(render_event(e, today, by_id) for e in events) + '</section>')
-    serialized = json.dumps(public, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+        cards.append(f'<section class="month-group" aria-labelledby="month-{month}"><h2 class="month-heading" id="month-{month}">{label}<span class="month-count">{len(events):02}</span></h2>' + "".join(render_event(e, now, by_id) for e in events) + '</section>')
+    serialized = json.dumps([browser_event(event) for event in public], ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     template = Template((ROOT / "site/index.template.html").read_text())
     html = template.substitute(
         cards="\n".join(cards), updated=human_date(data["updated"]),
@@ -250,7 +305,6 @@ def build(data, output, today):
         years=f"{public[0]['start_date'][:4]}—{max(e['end_date'] for e in public)[:4]}",
         regions=options({e["location"]["region"] for e in public}),
         formats=options({e["format"] for e in public}), topics=options({tag for e in public for tag in e["topics"]}),
-        build_date=today,
     )
     (output / "index.html").write_text(render_page(html, event_json=serialized), encoding="utf-8")
     about = (ROOT / "site/about.template.html").read_text(encoding="utf-8")
@@ -266,16 +320,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", type=Path, default=ROOT / "data/events.json")
     parser.add_argument("--output", type=Path, default=ROOT / "dist")
-    parser.add_argument("--today", default=datetime.now(timezone.utc).date().isoformat(), help="UTC calendar date for reproducible builds")
+    clock = parser.add_mutually_exclusive_group()
+    clock.add_argument("--today", help="UTC calendar date at midnight for reproducible builds")
+    clock.add_argument("--now", help="Timezone-aware ISO timestamp for reproducible deadline summaries")
     parser.add_argument("--check", action="store_true", help="Validate data without writing output")
     args = parser.parse_args()
     try:
-        iso_date(args.today, "--today")
+        if args.today:
+            iso_date(args.today, "--today")
+        now = utc_instant(args.now or args.today or datetime.now(timezone.utc))
         data = validate(json.loads(args.data.read_text(encoding="utf-8")))
         if args.check:
             print(f"Validated {len(data['events'])} event records.")
         else:
-            count = build(data, args.output, args.today)
+            count = build(data, args.output, now)
             print(f"Built {count} events in {args.output}")
     except (ValidationError, OSError, json.JSONDecodeError) as exc:
         parser.exit(1, f"Error: {exc}\n")
