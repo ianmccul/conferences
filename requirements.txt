@@ -1,0 +1,3 @@
+# IANA timezone data fallback for Windows or hosts without a system database.
+# Not needed when Python's zoneinfo can use the host's timezone database.
+tzdata

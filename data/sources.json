@@ -1,0 +1,155 @@
+{
+  "description": "Discovery sources. Verify every event and deadline against its organizer or institutional page before editing the directory.",
+  "sources": [
+    {
+      "name": "YITP upcoming seminars and workshops",
+      "url": "https://www.yukawa.kyoto-u.ac.jp/en-GB/contents/seminar",
+      "region": "Japan"
+    },
+    {
+      "name": "YITP Indico",
+      "url": "https://indico.yukawa.kyoto-u.ac.jp/",
+      "region": "Japan"
+    },
+    {
+      "name": "RIMS workshop calendar",
+      "url": "https://www.kurims.kyoto-u.ac.jp/kyoten/en/workshop.html",
+      "region": "Japan"
+    },
+    {
+      "name": "NCTS Physics activities",
+      "url": "https://phys.ncts.ntu.edu.tw/en/act/actnews",
+      "region": "Taiwan"
+    },
+    {
+      "name": "OIST workshop calendar",
+      "url": "https://groups.oist.jp/cws/workshops",
+      "region": "Japan"
+    },
+    {
+      "name": "RIKEN iTHEMS events",
+      "url": "https://ithems.riken.jp/en/events",
+      "region": "Japan"
+    },
+    {
+      "name": "APCTP scientific activities",
+      "url": "https://www.apctp.org/theme/d/html/activities/01.php",
+      "region": "Korea"
+    },
+    {
+      "name": "KIAS conference calendar",
+      "url": "https://www.kias.re.kr/kias/activities/conferences/list.do?menuNo=404002",
+      "region": "Korea"
+    },
+    {
+      "name": "CQT workshops and conferences",
+      "url": "https://www.cqt.sg/event_type/workshops-conferences/",
+      "region": "Singapore"
+    },
+    {
+      "name": "HKUST IAS upcoming events",
+      "url": "https://ias.hkust.edu.hk/events/upcoming-events",
+      "region": "Hong Kong"
+    },
+    {
+      "name": "Benasque annual programmes",
+      "url": "https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027",
+      "region": "Europe"
+    },
+    {
+      "name": "Isaac Newton Institute programmes/workshops",
+      "url": "https://www.newton.ac.uk/events/programmes-workshops/",
+      "region": "Europe"
+    },
+    {
+      "name": "MPI-PKS workshops and seminars",
+      "url": "https://www.pks.mpg.de/events/workshops-seminars",
+      "region": "Europe"
+    },
+    {
+      "name": "SwissMAP Research Station events",
+      "url": "https://swissmaprs.ch/events/",
+      "region": "Europe"
+    },
+    {
+      "name": "IPAM programmes",
+      "url": "https://www.ipam.ucla.edu/",
+      "region": "North America"
+    },
+    {
+      "name": "INT programmes and workshops",
+      "url": "https://www.int.washington.edu/programs-and-workshops",
+      "region": "North America"
+    },
+    {
+      "name": "KITP future programmes",
+      "url": "https://www.kitp.ucsb.edu/scientific-activities/visit/future-programs",
+      "region": "North America"
+    },
+    {
+      "name": "KITP future conferences",
+      "url": "https://www.kitp.ucsb.edu/scientific-activities/visit/conferences",
+      "region": "North America"
+    },
+    {
+      "name": "ICTS current and upcoming events",
+      "url": "https://www.icts.res.in/current-and-upcoming-events",
+      "region": "South Asia"
+    },
+    {
+      "name": "ICTP Indico",
+      "url": "https://indico.ictp.it/",
+      "region": "Global / Italy"
+    },
+    {
+      "name": "ECT* activities",
+      "url": "https://www.ectstar.eu/activities/",
+      "region": "Europe"
+    },
+    {
+      "name": "CECAM programme",
+      "url": "https://www.cecam.org/program?location=all&month=all&type=all",
+      "region": "Europe / distributed"
+    },
+    {
+      "name": "Quantiki event calendar",
+      "url": "https://www.quantiki.org/calendar-node-field-dates",
+      "region": "Global"
+    },
+    {
+      "name": "Quantiki tensor-network tag",
+      "url": "https://www.quantiki.org/tags/tensor-networks",
+      "region": "Global"
+    },
+    {
+      "name": "Quantum.info conference list",
+      "url": "https://www.quantum.info/conf/index.html",
+      "region": "Global"
+    },
+    {
+      "name": "Tensor4all workshop thread",
+      "url": "https://tensor4all.discourse.group/t/upcoming-workshops-on-tensor-networks-related-areas/43",
+      "region": "Global"
+    },
+    {
+      "name": "TNSAA official current edition",
+      "url": "https://www.tnsaa2026.qiqb.osaka-u.ac.jp/",
+      "region": "East Asia"
+    },
+    {
+      "name": "KITS workshop listings",
+      "url": "https://kits.ucas.ac.cn/index.php/events/workshop",
+      "region": "China"
+    },
+    {
+      "name": "IBS PCS",
+      "url": "https://pcs.ibs.re.kr/",
+      "region": "Korea"
+    },
+    {
+      "name": "BIRS",
+      "url": "https://www.birs.ca/",
+      "region": "Global"
+    }
+  ]
+}

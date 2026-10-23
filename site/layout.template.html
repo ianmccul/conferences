@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="$description">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121c19" media="(prefers-color-scheme: dark)">
+  <script>
+    // Apply a saved theme before the stylesheet paints the page.
+    try {
+      const savedTheme = localStorage.getItem("conferences-color-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (_) { /* System colours also work when storage is unavailable. */ }
+  </script>
+  <title>$title</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="$skip_href">$skip_label</a>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="wordmark" href="./index.html" aria-label="Tensor-network calendar home"><img src="./favicon.svg" alt="" width="30" height="30"><span>TN <span class="wordmark-light">/ CALENDAR</span></span></a>
+      <nav aria-label="Main navigation"><a class="directory-link" href="$directory_href"$directory_current>Directory</a><a href="./about.html"$about_current>About</a><a class="github-link" href="https://github.com/ianmccul/conferences">GitHub <span aria-hidden="true">↗</span></a><div class="theme-control" id="theme-control" hidden><label class="sr-only" for="theme">Color theme</label><select id="theme" title="Color theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></div></nav>
+    </header>
+    <main>
+$content    </main>
+    <footer><span>Tensor-network conferences &amp; workshops</span><span>Curated by <a href="https://github.com/ianmccul">Ian McCulloch</a></span></footer>
+  </div>
+  $page_data
+</body>
+</html>
+

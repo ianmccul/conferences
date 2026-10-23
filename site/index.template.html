@@ -1,0 +1,27 @@
+      <section class="hero" aria-labelledby="page-title">
+        <div><p class="eyebrow"><span class="green-dot" aria-hidden="true"></span> A curated research calendar</p>
+          <h1 id="page-title">Tensor-network<br><em>conferences &amp; workshops.</em></h1>
+          <p class="hero-description">Meetings on tensor networks, entanglement and quantum many-body physics. Dates, locations and participation deadlines, together in one place.</p>
+        </div>
+        <aside class="edition" aria-label="Directory coverage">
+          <span class="edition-label">THE DIRECTORY</span><strong class="edition-years">$years</strong>
+          <p><strong>$count</strong> meetings <span aria-hidden="true">/</span> <strong>$countries</strong> countries &amp; territories</p>
+          <span class="edition-update">Updated $updated</span>
+        </aside>
+      </section>
+      <section class="directory" id="directory" aria-labelledby="directory-title">
+        <div class="directory-heading"><div><p class="eyebrow">Explore the calendar</p><h2 id="directory-title">All listed meetings</h2></div><p class="result-count" role="status" aria-live="polite" aria-atomic="true">$count meetings</p></div>
+        <div class="js-controls" id="filter-controls">
+          <form class="filters" role="search" id="filters">
+            <div class="filter-field search-field"><label for="search">Search meetings</label><div class="search-input"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" name="q" placeholder="Topic, city, institute…" autocomplete="off"></div></div>
+            <div class="filter-field"><label for="region">Region</label><select id="region" name="region"><option value="">All regions</option>$regions</select></div>
+            <div class="filter-field"><label for="topic">Topic</label><select id="topic" name="topic"><option value="">All topics</option>$topics</select></div>
+            <div class="filter-field"><label for="format">Meeting type</label><select id="format" name="format"><option value="">All types</option>$formats</select></div>
+          </form>
+          <div class="filter-bottom"><div class="view-switch" role="group" aria-label="Event dates"><button type="button" data-view="upcoming" aria-pressed="true">Upcoming &amp; ongoing</button><button type="button" data-view="past" aria-pressed="false">Past meetings</button><button type="button" data-view="all" aria-pressed="false">All dates</button></div><button id="clear-filters" class="text-button" type="button">Reset filters <span aria-hidden="true">↺</span></button></div>
+        </div>
+        <noscript><p class="noscript-note">All meetings are shown below in date order. Enable JavaScript to search and filter the directory.</p></noscript>
+        <div class="calendar-note"><span>Conference dates are local to the venue.</span></div>
+        <div id="event-list">$cards</div>
+        <div class="empty-state" id="empty-state" hidden><span class="empty-symbol" aria-hidden="true">∅</span><h3>No meetings match this view</h3><p>Try another topic or region, or browse all dates.</p><button type="button" id="empty-reset">Show all meetings</button></div>
+      </section>
