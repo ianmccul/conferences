@@ -105,7 +105,7 @@ from html import escape
 from pathlib import Path
 sys.path.insert(0, 'scripts')
 import build
-data = build.validate(json.loads(Path('data/events.json').read_text()))
+data = build.validate(json.loads(Path('data/events.json').read_text(encoding="utf-8")))
 by_id = {e['id']: e for e in data['events']}
 cases = []
 for event in data['events']:

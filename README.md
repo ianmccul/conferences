@@ -6,7 +6,13 @@ The intended address is **https://ianmccul.github.io/conferences/**. Publishing 
 
 ## Develop and preview
 
-Python 3.10+ builds the site using only its standard library. Node 18+ is needed only for the JavaScript tests. No npm packages, framework or database are required.
+Python 3.10+ builds the site with its standard library plus IANA timezone data. Linux and macOS usually supply this data through the operating system. On Windows, or a minimal host without that database, install the first-party Python `tzdata` fallback:
+
+```sh
+python -m pip install -r requirements.txt
+```
+
+No Python packages are needed when the system timezone database is available. The build does not download data automatically. Node 18+ is needed only for the JavaScript tests. No npm packages, framework or database server are required. The commands below use `python3`; on Windows use `python` (or `py -3`) instead.
 
 ```sh
 python3 scripts/build.py
@@ -47,7 +53,7 @@ The JSON schema is enforced by the build script. Unknown fields, invalid dates, 
 
 ## Review without publishing
 
-GitHub Actions runs the checks and builds on pull requests and pushes to `main`. A successful run provides a `conference-site` artifact: download it, extract the ZIP and open `index.html`. Access to this artifact follows repository access; it is not a deployed website.
+GitHub Actions runs the checks and builds on pull requests and pushes to `main`. Separate Linux and Windows jobs install the timezone fallback, disable the system timezone lookup and exercise locale-based text encoding. A successful run provides a `conference-site` artifact: download it, extract the ZIP and open `index.html`. Access to this artifact follows repository access; it is not a deployed website.
 
 ## Publish when ready
 

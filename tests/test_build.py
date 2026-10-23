@@ -4,7 +4,9 @@ from copy import deepcopy
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
+import subprocess
 import sys
 from tempfile import TemporaryDirectory
 import unittest
@@ -53,7 +55,7 @@ class Page(HTMLParser):
 
 class BuildTests(unittest.TestCase):
     def setUp(self):
-        self.data = json.loads((build.ROOT / "data/events.json").read_text())
+        self.data = json.loads((build.ROOT / "data/events.json").read_text(encoding="utf-8"))
         self.event = self.data["events"][0]
 
     def assert_invalid(self, phrase):
@@ -118,13 +120,13 @@ class BuildTests(unittest.TestCase):
         with TemporaryDirectory() as temp:
             output = Path(temp)
             self.assertEqual(build.build(self.data, output, "2026-10-23"), 1)
-            html = (output / "index.html").read_text()
+            html = (output / "index.html").read_text(encoding="utf-8")
             self.assertEqual(len(Page(html).articles), 1)
             self.assertIn('<span>School / Conference</span>', html)
             self.assertEqual(html.count('<option value="School">School</option>'), 1)
             self.assertEqual(html.count('<option value="Conference">Conference</option>'), 1)
             self.assertNotIn('School &amp; conference', html)
-            exported = json.loads((output / "events.json").read_text())
+            exported = json.loads((output / "events.json").read_text(encoding="utf-8"))
             self.assertEqual(exported["schema_version"], 2)
             self.assertEqual(exported["events"][0]["formats"], ["School", "Conference"])
 
@@ -135,7 +137,31 @@ class BuildTests(unittest.TestCase):
         self.event["deadlines"][0]["timezone"] = "AoE"
         build.validate(self.data)
         self.event["deadlines"][0]["timezone"] = "Unspecified"
-        self.assert_invalid("IANA timezone or AoE")
+        self.assert_invalid("IANA timezone")
+
+    def test_missing_timezone_data_reports_install_step(self):
+        result = subprocess.run(
+            [sys.executable, "-S", str(build.ROOT / "scripts/build.py"), "--check"],
+            env={**os.environ, "PYTHONTZPATH": "", "PYTHONIOENCODING": "utf-8"},
+            capture_output=True, encoding="utf-8",
+        )
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("cannot load IANA timezone 'Asia/Tokyo'", result.stderr)
+        self.assertIn("python -m pip install -r requirements.txt", result.stderr)
+        self.assertNotIn("Traceback", result.stderr)
+
+    def test_build_preserves_utf8_with_locale_encoding(self):
+        with TemporaryDirectory() as temp:
+            result = subprocess.run(
+                [sys.executable, "-X", "utf8=0", str(build.ROOT / "scripts/build.py"),
+                 "--output", temp, "--today", "2026-10-23"],
+                env={**os.environ, "LC_ALL": "C", "PYTHONCOERCECLOCALE": "0", "PYTHONIOENCODING": "utf-8"},
+                capture_output=True, encoding="utf-8",
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            html = (Path(temp) / "index.html").read_text(encoding="utf-8")
+            for value in ["Topic, city, institute…", "∅", "↺"]:
+                self.assertIn(value, html)
 
     def test_unresolved_related_event_rejected(self):
         self.event["related_event_ids"] = ["missing-edition"]
@@ -178,8 +204,8 @@ class BuildTests(unittest.TestCase):
         with TemporaryDirectory() as temp:
             output = Path(temp) / "conferences"
             count = build.build(self.data, output, "2026-10-23")
-            page = Page((output / "index.html").read_text())
-            exported = json.loads((output / "events.json").read_text())
+            page = Page((output / "index.html").read_text(encoding="utf-8"))
+            exported = json.loads((output / "events.json").read_text(encoding="utf-8"))
             self.assertEqual(count, len(page.articles))
             self.assertEqual(len(page.ids), len(set(page.ids)), "DOM IDs must be unique")
             self.assertTrue(all("hidden" not in attrs for attrs in page.articles))
@@ -193,7 +219,7 @@ class BuildTests(unittest.TestCase):
                     self.assertEqual(cutoff is None, deadline["time"] is None)
             self.assertEqual(embedded, exported["events"], "UTC cutoffs are derived only for browser use")
             self.assertEqual({a["id"] for a in page.articles}, {e["id"] for e in exported["events"]})
-            pages = {name: Page((output / name).read_text()) for name in ("index.html", "about.html")}
+            pages = {name: Page((output / name).read_text(encoding="utf-8")) for name in ("index.html", "about.html")}
             self.assertNotIn("about", page.ids)
             self.assertIn("./about.html", page.links)
             self.assertIn("about", pages["about.html"].ids)
@@ -222,7 +248,7 @@ class BuildTests(unittest.TestCase):
         with TemporaryDirectory() as temp:
             build.build(self.data, Path(temp), "2026-10-23")
             for name in ["index.html", "events.json"]:
-                result = (Path(temp) / name).read_text()
+                result = (Path(temp) / name).read_text(encoding="utf-8")
                 self.assertNotIn("Unpublished title sentinel", result)
                 self.assertNotIn("unpublished-example", result)
 
@@ -230,7 +256,7 @@ class BuildTests(unittest.TestCase):
         self.event["title"] = '</script><script>alert("example")</script> & a title'
         with TemporaryDirectory() as temp:
             build.build(self.data, Path(temp), "2026-10-23")
-            html = (Path(temp) / "index.html").read_text()
+            html = (Path(temp) / "index.html").read_text(encoding="utf-8")
             page = Page(html)
             self.assertEqual(len(page.scripts), 3)
             self.assertNotIn(self.event["title"], html)

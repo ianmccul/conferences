@@ -41,7 +41,7 @@
         "venue": "National Sun Yat-sen University"
       },
       "formats": [
-        "Conference"
+        "Workshop"
       ],
       "topics": [
         "Numerical methods",
@@ -101,7 +101,7 @@
         "city": "Taipei",
         "country": "Taiwan",
         "region": "Asia",
-        "venue": "Room 307, Cosmology Hall, National Taiwan University"
+        "venue": "NCTS Physics Lecture Hall, 4th Floor, Cosmology Hall, National Taiwan University"
       },
       "formats": [
         "Workshop"
@@ -115,14 +115,14 @@
       "deadlines": [
         {
           "kind": "Registration",
-          "date": "2026-10-19",
+          "date": "2026-10-26",
           "time": null,
           "timezone": null,
           "note": "",
           "source_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/NCTS-Physics-One-day-Workshop-on-Ab-Initio-Approaches-to-High-Temperature-Superconductors-12437209/home/introduction"
         }
       ],
-      "notes": "Venue: Room 307, Cosmology Hall, National Taiwan University.",
+      "notes": "",
       "last_checked": "2026-10-23",
       "verification_note": "",
       "published": true,

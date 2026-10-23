@@ -176,7 +176,12 @@ def validate(data):
                 if zone != "AoE":
                     try:
                         ZoneInfo(zone)
-                    except (ValueError, ZoneInfoNotFoundError) as exc:
+                    except ZoneInfoNotFoundError as exc:
+                        raise ValidationError(
+                            f"{context}: cannot load IANA timezone {zone!r}; check the identifier or install "
+                            "timezone data with: python -m pip install -r requirements.txt"
+                        ) from exc
+                    except ValueError as exc:
                         raise ValidationError(f"{context}: use an IANA timezone or AoE") from exc
                 deadline_cutoff(deadline)
     for event in data["events"]:
@@ -301,7 +306,7 @@ def build(data, output, now):
         label = date.fromisoformat(month + "-01").strftime("%B %Y")
         cards.append(f'<section class="month-group" aria-labelledby="month-{month}"><h2 class="month-heading" id="month-{month}">{label}<span class="month-count">{len(events):02}</span></h2>' + "".join(render_event(e, now, by_id) for e in events) + '</section>')
     serialized = json.dumps([browser_event(event) for event in public], ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
-    template = Template((ROOT / "site/index.template.html").read_text())
+    template = Template((ROOT / "site/index.template.html").read_text(encoding="utf-8"))
     html = template.substitute(
         cards="\n".join(cards), updated=human_date(data["updated"]),
         count=len(public), countries=len({e["location"]["country"] for e in public}),
@@ -314,7 +319,7 @@ def build(data, output, now):
     (output / "about.html").write_text(render_page(about, about=True), encoding="utf-8")
     for name in ("styles.css", "app.js", "favicon.svg"):
         shutil.copyfile(ROOT / "site" / name, output / name)
-    (output / ".nojekyll").write_text("")
+    (output / ".nojekyll").write_text("", encoding="utf-8")
     (output / "events.json").write_text(json.dumps({**data, "events": public}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return len(public)
 
