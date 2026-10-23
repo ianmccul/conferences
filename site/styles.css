@@ -855,10 +855,6 @@ footer a {
   text-decoration:none;
 }
 
-footer span span {
-  padding:0 7px;
-}
-
 .noscript-note {
   font-size:12px;
   background:var(--soft);
