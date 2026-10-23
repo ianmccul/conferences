@@ -272,6 +272,17 @@ h1 em {
   margin:0;
 }
 
+.suggest-meeting {
+  margin:17px 0 0;
+  font-size:14px;
+}
+
+.suggest-meeting a {
+  display:inline-block;
+  color:var(--green);
+  font-weight:600;
+}
+
 .edition {
   border-left:1px solid var(--line);
   padding:8px 0 8px 31px;
@@ -1156,7 +1167,7 @@ footer a {
     min-height:0;
     display:block;
   }
-  .masthead nav,.js-controls,.edition,.calendar-note,footer,.event summary,.skip-link {
+  .masthead nav,.js-controls,.edition,.calendar-note,.suggest-meeting,footer,.event summary,.skip-link {
     display:none!important;
   }
   .hero {
