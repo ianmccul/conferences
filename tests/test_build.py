@@ -1,0 +1,160 @@
+"""Validate publication boundaries and the generated, usable-without-JS page."""
+
+from copy import deepcopy
+from html.parser import HTMLParser
+import json
+from pathlib import Path
+import sys
+from tempfile import TemporaryDirectory
+import unittest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import build
+
+
+class Page(HTMLParser):
+    def __init__(self, html):
+        super().__init__()
+        self.ids = []
+        self.articles = []
+        self.scripts = []
+        self.assets = []
+        self.links = []
+        self.script_data = ""
+        self.in_data = False
+        self.feed(html)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if "id" in attrs:
+            self.ids.append(attrs["id"])
+        if tag == "article":
+            self.articles.append(attrs)
+        if tag == "script":
+            self.scripts.append(attrs)
+            self.in_data = attrs.get("id") == "event-data"
+        if tag in {"script", "img"} and "src" in attrs:
+            self.assets.append(attrs["src"])
+        if tag == "link":
+            self.assets.append(attrs["href"])
+        if tag == "a":
+            self.links.append(attrs["href"])
+
+    def handle_endtag(self, tag):
+        if tag == "script":
+            self.in_data = False
+
+    def handle_data(self, text):
+        if self.in_data:
+            self.script_data += text
+
+
+class BuildTests(unittest.TestCase):
+    def setUp(self):
+        self.data = json.loads((build.ROOT / "data/events.json").read_text())
+        self.event = self.data["events"][0]
+
+    def assert_invalid(self, phrase):
+        with self.assertRaisesRegex(build.ValidationError, phrase):
+            build.validate(self.data)
+
+    def test_checked_in_data_validates(self):
+        build.validate(self.data)
+
+    def test_calendar_date_and_reversed_range_rejected(self):
+        self.event["start_date"] = "2027-02-30"
+        self.assert_invalid("invalid calendar date")
+        self.event["start_date"] = "2027-02-01"
+        self.assert_invalid("end_date precedes")
+
+    def test_duplicate_ids_rejected(self):
+        self.data["events"].append(deepcopy(self.event))
+        self.assert_invalid("duplicate event id")
+
+    def test_unknown_fields_rejected(self):
+        self.event["personal_notes"] = "Do not publish this field"
+        self.assert_invalid("unexpected.*personal_notes")
+
+    def test_unsafe_or_malformed_links_rejected(self):
+        for url in ["javascript:alert(1)", "file:///tmp/example", "https://name:password@example.org", "https://[bad"]:
+            with self.subTest(url=url):
+                self.event["official_url"] = url
+                self.assert_invalid("URL")
+
+    def test_unknown_format_and_topics_rejected(self):
+        self.event["format"] = []
+        self.assert_invalid("unknown format")
+        self.event["format"] = "School"
+        self.event["topics"] = ["unrecognized subject"]
+        self.assert_invalid("invalid or duplicate topic")
+
+    def test_deadline_time_requires_explicit_timezone(self):
+        self.event["deadlines"] = [{"kind": "Registration", "date": "2026-10-10",
+            "time": "23:59", "timezone": None, "note": "", "source_url": "https://example.org/event"}]
+        self.assert_invalid("must be paired")
+        self.event["deadlines"][0]["timezone"] = "AoE"
+        build.validate(self.data)
+        self.event["deadlines"][0]["timezone"] = "Unspecified"
+        self.assert_invalid("IANA timezone or AoE")
+
+    def test_unresolved_related_event_rejected(self):
+        self.event["related_event_ids"] = ["missing-edition"]
+        self.assert_invalid("unresolved")
+
+    def test_generated_page_is_complete_and_subpath_portable(self):
+        with TemporaryDirectory() as temp:
+            output = Path(temp) / "conferences"
+            count = build.build(self.data, output, "2026-10-23")
+            page = Page((output / "index.html").read_text())
+            exported = json.loads((output / "events.json").read_text())
+            self.assertEqual(count, len(page.articles))
+            self.assertEqual(len(page.ids), len(set(page.ids)), "DOM IDs must be unique")
+            self.assertTrue(all("hidden" not in attrs for attrs in page.articles))
+            self.assertEqual(json.loads(page.script_data), exported["events"])
+            self.assertEqual({a["id"] for a in page.articles}, {e["id"] for e in exported["events"]})
+            for asset in page.assets:
+                self.assertTrue(asset.startswith("./"), asset)
+                self.assertTrue((output / asset).is_file(), asset)
+            for link in page.links:
+                self.assertFalse(link.startswith("/"), link)
+                if link.startswith("#"):
+                    self.assertIn(link[1:], page.ids)
+            self.assertTrue((output / ".nojekyll").is_file())
+
+    def test_unpublished_records_and_references_not_exported(self):
+        self.event["id"] = "unpublished-example"
+        self.event["title"] = "Unpublished title sentinel"
+        self.event["published"] = False
+        self.data["events"][1]["related_event_ids"] = [self.event["id"]]
+        with TemporaryDirectory() as temp:
+            build.build(self.data, Path(temp), "2026-10-23")
+            for name in ["index.html", "events.json"]:
+                result = (Path(temp) / name).read_text()
+                self.assertNotIn("Unpublished title sentinel", result)
+                self.assertNotIn("unpublished-example", result)
+
+    def test_event_text_cannot_break_out_of_html_or_embedded_json(self):
+        self.event["title"] = '</script><script>alert("example")</script> & a title'
+        with TemporaryDirectory() as temp:
+            build.build(self.data, Path(temp), "2026-10-23")
+            html = (Path(temp) / "index.html").read_text()
+            page = Page(html)
+            self.assertEqual(len(page.scripts), 2)
+            self.assertNotIn(self.event["title"], html)
+            self.assertIn("&lt;/script&gt;", html)
+            self.assertEqual(json.loads(page.script_data)[0]["title"], self.event["title"])
+
+    def test_cross_month_and_year_dates_are_visible(self):
+        self.event.update(start_date="2026-12-29", end_date="2027-01-05")
+        html = build.render_event(self.event, "2026-10-23", {})
+        self.assertIn('class="date-end">to 5 Jan 2027', html)
+        self.assertIn("29 Dec 2026 – 5 Jan 2027", html)
+
+    def test_deadline_summary_never_infers_registration_status(self):
+        self.assertEqual(build.deadline_summary(self.event, "2026-10-23"), "Deadlines not recorded")
+        self.event["deadlines"] = [{"date": "2026-09-01", "kind": "Registration"}]
+        self.assertEqual(build.deadline_summary(self.event, "2026-10-23"), "Recorded deadline dates have passed")
+
+
+if __name__ == "__main__":
+    unittest.main()

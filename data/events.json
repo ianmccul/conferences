@@ -1,0 +1,926 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-23",
+  "events": [
+    {
+      "id": "ini-tn-school-2026",
+      "title": "European tensor networks school",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-30",
+      "location": {
+        "city": "Cambridge",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "venue": "Isaac Newton Institute"
+      },
+      "format": "School",
+      "topics": [
+        "Tensor networks",
+        "Entanglement"
+      ],
+      "summary": "An introductory school on tensor-network methods for early-stage researchers.",
+      "official_url": "https://www.newton.ac.uk/event/mmbw02/",
+      "deadlines": [],
+      "notes": "Part of the Mathematics of Many-Body Entanglement programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed from the indexed official event listing. Direct page access returned 403; participation details and deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "asian27-2026",
+      "title": "27th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-27)",
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-04",
+      "location": {
+        "city": "Kaohsiung",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "National Sun Yat-sen University"
+      },
+      "format": "Conference",
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Electronic-structure methods and applications in computational condensed matter physics and materials science.",
+      "official_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/The-27th-Asian-Workshop-on-First-Principles-Electronic-Structure-Calculations-ASIAN-27-42576106/home/introduction",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-10-12",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/The-27th-Asian-Workshop-on-First-Principles-Electronic-Structure-Calculations-ASIAN-27-42576106/home/introduction"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ini-structure-2026",
+      "title": "Structure of entanglement",
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-06",
+      "location": {
+        "city": "Cambridge",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "venue": "Isaac Newton Institute"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Entanglement",
+        "Quantum matter"
+      ],
+      "summary": "A workshop on the structure of entanglement in quantum many-body systems.",
+      "official_url": "https://www.newton.ac.uk/event/mmbw03/",
+      "deadlines": [],
+      "notes": "Part of the Mathematics of Many-Body Entanglement programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed from the indexed official event listing. Direct page access returned 403; participation details and deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ncts-ab-initio-htc-2026",
+      "title": "NCTS Physics One-day Workshop on Ab Initio Approaches to High Temperature Superconductors",
+      "start_date": "2026-11-05",
+      "end_date": "2026-11-05",
+      "location": {
+        "city": "Taipei",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "Room 307, Cosmology Hall, National Taiwan University"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "A one-day meeting on computational approaches to high-temperature superconductors.",
+      "official_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/NCTS-Physics-One-day-Workshop-on-Ab-Initio-Approaches-to-High-Temperature-Superconductors-12437209/home/introduction",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-10-19",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/NCTS-Physics-One-day-Workshop-on-Ab-Initio-Approaches-to-High-Temperature-Superconductors-12437209/home/introduction"
+        }
+      ],
+      "notes": "Venue: Room 307, Cosmology Hall, National Taiwan University.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "yitp-gauge-2026",
+      "title": "Frontiers of Quantum Computing and Classical Tensor Networks for Gauge Theories",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-20",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Yukawa Institute for Theoretical Physics"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Tensor networks",
+        "Gauge theories",
+        "Quantum information"
+      ],
+      "summary": "Tensor networks and quantum computing for Hamiltonian lattice gauge theories, including regimes limited by Monte Carlo sign problems.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/",
+      "deadlines": [
+        {
+          "kind": "Registration without support",
+          "date": "2026-10-15",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/"
+        },
+        {
+          "kind": "Abstract",
+          "date": "2026-09-01",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/"
+        },
+        {
+          "kind": "Visa and accommodation support",
+          "date": "2026-08-01",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/80/"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "hkust-rqm-2026",
+      "title": "Reticular Quantum Matter",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-04",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "Hong Kong University of Science and Technology"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
+      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
+      "deadlines": [
+        {
+          "kind": "General registration",
+          "date": "2026-11-20",
+          "time": null,
+          "timezone": null,
+          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
+        },
+        {
+          "kind": "Poster and contributed talk",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Submission is closed.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "rims-mqis-2026",
+      "title": "RIMS International Symposium: Mathematics of Quantum Information Science",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-02",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Research Institute for Mathematical Sciences, Kyoto University"
+      },
+      "format": "Conference",
+      "topics": [
+        "Quantum information",
+        "Entanglement"
+      ],
+      "summary": "Mathematical approaches to entanglement, quantum channels, statistical inference and quantum many-body systems.",
+      "official_url": "https://sites.google.com/view/kyoto-mqis",
+      "deadlines": [
+        {
+          "kind": "Oral presentation",
+          "date": "2026-10-16",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://sites.google.com/view/kyoto-mqis"
+        },
+        {
+          "kind": "Registration requiring visa support",
+          "date": "2026-10-16",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://sites.google.com/view/kyoto-mqis"
+        },
+        {
+          "kind": "Travel support",
+          "date": "2026-10-16",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://sites.google.com/view/kyoto-mqis"
+        }
+      ],
+      "notes": "Registration is free. The organizer permits on-site registration; the banquet deadline is not yet specified.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "icts-gapless-2026",
+      "title": "Second ICTS-ICTP Advanced School and Conference on Quantum Matter – Correlated gapless phases",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-18",
+      "location": {
+        "city": "Bengaluru",
+        "country": "India",
+        "region": "Asia",
+        "venue": "International Centre for Theoretical Sciences"
+      },
+      "format": "School & conference",
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Advanced lectures and research talks on correlated gapless matter, including quantum spin liquids, strange metals, criticality and superconductivity.",
+      "official_url": "https://www.icts.res.in/program/qmcgp",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-09-01",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.icts.res.in/program/qmcgp"
+        }
+      ],
+      "notes": "School and conference for researchers from advanced graduate level onward.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ini-complexity-2026",
+      "title": "Complexity of entanglement",
+      "start_date": "2026-12-14",
+      "end_date": "2026-12-18",
+      "location": {
+        "city": "Cambridge",
+        "country": "United Kingdom",
+        "region": "Europe",
+        "venue": "Isaac Newton Institute"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Entanglement",
+        "Quantum information"
+      ],
+      "summary": "Computational complexity and entanglement in quantum many-body systems.",
+      "official_url": "https://www.newton.ac.uk/event/mmbw04/",
+      "deadlines": [],
+      "notes": "Part of the Mathematics of Many-Body Entanglement programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed from the indexed official event listing. Direct page access returned 403; participation details and deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "tnsaa-2026",
+      "title": "Tensor Network States: Algorithms and Applications 2026",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-18",
+      "location": {
+        "city": "Kobe",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "RIKEN Center for Computational Science"
+      },
+      "format": "Conference",
+      "topics": [
+        "Tensor networks",
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Tensor-network states, algorithms and applications across many-body physics, quantum information, numerical methods and machine learning.",
+      "official_url": "https://www.tnsaa2026.qiqb.osaka-u.ac.jp/",
+      "deadlines": [
+        {
+          "kind": "Contributed talk and poster",
+          "date": "2026-10-15",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.tnsaa2026.qiqb.osaka-u.ac.jp/"
+        },
+        {
+          "kind": "Registration",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.tnsaa2026.qiqb.osaka-u.ac.jp/"
+        },
+        {
+          "kind": "Banquet payment",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.tnsaa2026.qiqb.osaka-u.ac.jp/"
+        }
+      ],
+      "notes": "Venue: RIKEN Center for Computational Science, Kobe.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "oist-fqm-2027",
+      "title": "Bridging Theoretical and Experimental Frontiers in Quantum Materials (FQM2027)",
+      "start_date": "2027-01-18",
+      "end_date": "2027-01-22",
+      "location": {
+        "city": "Okinawa",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Okinawa Institute of Science and Technology"
+      },
+      "format": "School & conference",
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "Quantum magnetism, flat bands, quantum geometry, nonequilibrium matter and unconventional superconductivity, connecting theory and experiment.",
+      "official_url": "https://www.oist.jp/conference/fqm2027",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-10-10",
+          "time": null,
+          "timezone": null,
+          "note": "Extended application deadline.",
+          "source_url": "https://www.oist.jp/conference/fqm2027"
+        }
+      ],
+      "notes": "Two-day school followed by a three-day symposium. The organizer reports that acceptance letters are being sent.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ipam-sign-2027",
+      "title": "The Quantum Monte Carlo Sign Problem: Structure, Complexity, and New Directions",
+      "start_date": "2027-01-25",
+      "end_date": "2027-01-29",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "IPAM, University of California, Los Angeles"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Sign-problem mitigation, sign-free formulations and computational complexity in quantum many-body simulation.",
+      "official_url": "https://www.ipam.ucla.edu/programs/workshops/the-quantum-monte-carlo-sign-problem-structure-complexity-and-new-directions/",
+      "deadlines": [],
+      "notes": "A poster session is planned; registered participants will receive the poster call.",
+      "last_checked": "2026-10-23",
+      "verification_note": "No application or registration deadline was verified from the inspected overview.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "yitp-novel-2027",
+      "title": "Novel Quantum States in Condensed Matter 2027",
+      "start_date": "2027-02-08",
+      "end_date": "2027-03-12",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Yukawa Institute for Theoretical Physics"
+      },
+      "format": "Programme",
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "Strong correlations, topological phases, open and non-Hermitian systems, quantum geometry and nonperturbative approaches.",
+      "official_url": "https://www.yukawa.kyoto-u.ac.jp/seminar/s53509?lang=en-GB",
+      "deadlines": [],
+      "notes": "Long-term programme. A shorter conference is planned, but its dates are not given in the inspected announcement.",
+      "last_checked": "2026-10-23",
+      "verification_note": "No application deadline was verified from the inspected announcement.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "benasque-etqm-2027",
+      "title": "Entanglement and topology in interacting quantum matter",
+      "start_date": "2027-02-14",
+      "end_date": "2027-02-27",
+      "location": {
+        "city": "Benasque",
+        "country": "Spain",
+        "region": "Europe",
+        "venue": "Centro de Ciencias de Benasque Pedro Pascual"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Tensor networks",
+        "Entanglement",
+        "Quantum matter"
+      ],
+      "summary": "Entanglement, symmetry and topology in correlated matter, with tensor networks, integrability, thermalization and numerical simulation methods.",
+      "official_url": "https://www.benasque.org/2027etqm/",
+      "deadlines": [
+        {
+          "kind": "Abstract",
+          "date": "2027-01-24",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.benasque.org/2027etqm/"
+        },
+        {
+          "kind": "Registration",
+          "date": "2027-01-30",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.benasque.org/2027etqm/"
+        }
+      ],
+      "notes": "One-week and two-week attendance options are listed.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "stqi-2027",
+      "title": "Kyoto workshop on stochastic thermodynamics and quantum information 2027",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Maskawa Hall, Yukawa Institute for Theoretical Physics"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum information"
+      ],
+      "summary": "Connections between stochastic thermodynamics, quantum information and nonequilibrium physics.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/overview",
+      "deadlines": [
+        {
+          "kind": "Short talk",
+          "date": "2026-11-16",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/"
+        },
+        {
+          "kind": "Visa support",
+          "date": "2026-12-14",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/"
+        },
+        {
+          "kind": "Poster",
+          "date": "2027-01-12",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/"
+        },
+        {
+          "kind": "Registration",
+          "date": "2027-01-12",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/"
+        }
+      ],
+      "notes": "Registration is free. Venue: Maskawa Hall, YITP.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "qip-2027",
+      "title": "Quantum Information Processing 2027 (QIP2027)",
+      "start_date": "2027-02-20",
+      "end_date": "2027-02-26",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "region": "Asia",
+        "venue": "University Cultural Centre, National University of Singapore"
+      },
+      "format": "Conference",
+      "topics": [
+        "Quantum information"
+      ],
+      "summary": "The annual Quantum Information Processing conference, covering theoretical quantum information and computation.",
+      "official_url": "https://qipconference.org/2027/",
+      "deadlines": [
+        {
+          "kind": "Talk registration",
+          "date": "2026-09-28",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://qipconference.org/2027/"
+        },
+        {
+          "kind": "Talk submission",
+          "date": "2026-10-05",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://qipconference.org/2027/"
+        },
+        {
+          "kind": "Poster",
+          "date": "2026-12-04",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://qipconference.org/2027/"
+        },
+        {
+          "kind": "Early-bird registration",
+          "date": "2026-12-20",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://qipconference.org/2027/"
+        },
+        {
+          "kind": "Registration",
+          "date": "2027-01-20",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://qipconference.org/2027/"
+        }
+      ],
+      "notes": "Venue: University Cultural Centre, National University of Singapore.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "int-chiral-2027",
+      "title": "Chiral Gauge Theories on the Lattice and Beyond",
+      "start_date": "2027-03-08",
+      "end_date": "2027-03-19",
+      "location": {
+        "city": "Seattle",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Institute for Nuclear Theory, University of Washington"
+      },
+      "format": "Programme",
+      "topics": [
+        "Tensor networks",
+        "Gauge theories"
+      ],
+      "summary": "Nonperturbative chiral gauge theories, with tensor networks, Hamiltonian methods, quantum simulation and connections to topological matter.",
+      "official_url": "https://www.int.washington.edu/programs-and-workshops/27-1b",
+      "deadlines": [
+        {
+          "kind": "Priority application",
+          "date": "2026-10-02",
+          "time": null,
+          "timezone": null,
+          "note": "Priority consideration deadline; later acceptance is not established by the remaining application link.",
+          "source_url": "https://www.int.washington.edu/programs-and-workshops/27-1b"
+        }
+      ],
+      "notes": "An in-person, two-week research programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ipam-algebra-electrons-2027",
+      "title": "Numerical Algebraic Geometry and Correlated Electrons: Generalized Grassmannians, Response Functions and Excited States",
+      "start_date": "2027-03-08",
+      "end_date": "2027-06-11",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "IPAM, University of California, Los Angeles"
+      },
+      "format": "Programme",
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Algebraic geometry and numerical methods for correlated electronic structure, excited states and response functions.",
+      "official_url": "https://www.ipam.ucla.edu/programs/long-programs/numerical-algebraic-geometry-and-correlated-electrons-generalized-grassmannians-response-functions-and-excited-states/",
+      "deadlines": [],
+      "notes": "Long research programme with individual workshops; the full date range is the programme window.",
+      "last_checked": "2026-10-23",
+      "verification_note": "No application deadline was verified from the inspected overview.",
+      "published": true,
+      "related_event_ids": [
+        "ipam-response-2027"
+      ]
+    },
+    {
+      "id": "kitp-geometry-2027",
+      "title": "Quantum Geometry Meets Correlation, Symmetry Breaking, and Topology",
+      "start_date": "2027-03-15",
+      "end_date": "2027-05-20",
+      "location": {
+        "city": "Santa Barbara",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Kavli Institute for Theoretical Physics"
+      },
+      "format": "Programme",
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Quantum geometry at the intersection of electronic correlations, symmetry breaking and topology, linking mathematical descriptions with observable properties.",
+      "official_url": "https://www.kitp.ucsb.edu/activities/qgeometry27",
+      "deadlines": [],
+      "notes": "Long research programme. A related short conference runs 19-22 April.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed on the institutional programme calendar; no application deadline was verified.",
+      "published": true,
+      "related_event_ids": [
+        "kitp-geometry-conference-2027"
+      ]
+    },
+    {
+      "id": "riken-qisqcd-2027",
+      "title": "Quantum Information Science × Quantum Chromodynamics (QISxQCD)",
+      "start_date": "2027-03-29",
+      "end_date": "2027-03-31",
+      "location": {
+        "city": "Wako",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "RIKEN Nishina Hall"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Tensor networks",
+        "Gauge theories",
+        "Quantum information"
+      ],
+      "summary": "Tensor networks, quantum computing and Hamiltonian methods for real-time and finite-density QCD, with an emphasis on shared computational benchmarks.",
+      "official_url": "https://indico2.riken.jp/event/5803/",
+      "deadlines": [],
+      "notes": "Satellite meeting of Quark Matter 2027.",
+      "last_checked": "2026-10-23",
+      "verification_note": "No participation deadline is listed on the inspected event page.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "kitp-geometry-conference-2027",
+      "title": "Geometrical Aspects of Quantum Materials and Their Responses",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-22",
+      "location": {
+        "city": "Santa Barbara",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Kavli Institute for Theoretical Physics"
+      },
+      "format": "Conference",
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Geometrical theories and experimental signatures of quantum materials, including real-space effects and many-body Hilbert-space geometry.",
+      "official_url": "https://www.kitp.ucsb.edu/activities/qgeometry-c27",
+      "deadlines": [],
+      "notes": "Short conference associated with the Quantum Geometry Meets Correlation, Symmetry Breaking, and Topology programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed on the institutional conference calendar; no registration deadline was verified.",
+      "published": true,
+      "related_event_ids": [
+        "kitp-geometry-2027"
+      ]
+    },
+    {
+      "id": "ipam-response-2027",
+      "title": "Response Functions, Time-Dependent Properties and Parameterizations",
+      "start_date": "2027-05-03",
+      "end_date": "2027-05-06",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "IPAM, University of California, Los Angeles"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Algebraic and numerical methods for excited states, electronic response functions and parameter-dependent molecular properties.",
+      "official_url": "https://www.ipam.ucla.edu/programs/workshops/workshop-iii-response-functions-time-dependent-properties-and-parameterizations/",
+      "deadlines": [
+        {
+          "kind": "Financial support (priority)",
+          "date": "2027-03-03",
+          "time": null,
+          "timezone": null,
+          "note": "Priority consideration for financial support; not a general registration deadline.",
+          "source_url": "https://www.ipam.ucla.edu/programs/workshops/workshop-iii-response-functions-time-dependent-properties-and-parameterizations/?tab=application-registration"
+        }
+      ],
+      "notes": "Workshop III of Numerical Algebraic Geometry and Correlated Electrons. Individual workshop registration is available.",
+      "last_checked": "2026-10-23",
+      "verification_note": "No separate general registration or poster deadline was verified.",
+      "published": true,
+      "related_event_ids": [
+        "ipam-algebra-electrons-2027"
+      ]
+    },
+    {
+      "id": "swissmap-open-2027",
+      "title": "Phases of open quantum systems: complexity, learnability and error correction",
+      "start_date": "2027-06-13",
+      "end_date": "2027-06-18",
+      "location": {
+        "city": "Les Diablerets",
+        "country": "Switzerland",
+        "region": "Europe",
+        "venue": "SwissMAP Research Station"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum information"
+      ],
+      "summary": "Mixed-state and measurement-induced phases of open quantum systems, viewed through complexity, learning and quantum error correction.",
+      "official_url": "https://swissmaprs.ch/events/phases-of-open-quantum-systems-complexity-learnability-and-error-correction/",
+      "deadlines": [],
+      "notes": "Venue: SwissMAP Research Station, Les Diablerets.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates and scope confirmed; the linked registration page returned 403, so deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "pks-fuzzy-2027",
+      "title": "Fuzzy Sphere Meets Quantum Criticality",
+      "start_date": "2027-08-16",
+      "end_date": "2027-08-20",
+      "location": {
+        "city": "Dresden",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "Max Planck Institute for the Physics of Complex Systems"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "A workshop on fuzzy-sphere approaches and quantum criticality.",
+      "official_url": "https://www.pks.mpg.de/events/workshops-seminars",
+      "deadlines": [],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates and title confirmed on the institutional calendar; detailed programme and participation deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ykis-2027",
+      "title": "YKIS2027: Many facets of many-body non-equilibrium systems",
+      "start_date": "2027-08-30",
+      "end_date": "2027-09-03",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Auditorium, Yukawa Hall, YITP"
+      },
+      "format": "Conference",
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum matter"
+      ],
+      "summary": "A Yukawa International Seminar on many-body nonequilibrium systems.",
+      "official_url": "https://www.yukawa.kyoto-u.ac.jp/seminar/s53511?lang=en-GB",
+      "deadlines": [],
+      "notes": "Venue: Panasonic Auditorium, Yukawa Hall, YITP.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed; no application deadline was verified from the inspected announcement.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ictp-complexity-2027",
+      "title": "Quantum Complexity Beyond Entanglement: from Theory to Applications",
+      "start_date": "2027-10-04",
+      "end_date": "2027-10-08",
+      "location": {
+        "city": "Trieste",
+        "country": "Italy",
+        "region": "Europe",
+        "venue": "International Centre for Theoretical Physics"
+      },
+      "format": "Conference",
+      "topics": [
+        "Entanglement",
+        "Quantum information",
+        "Quantum matter"
+      ],
+      "summary": "Quantum complexity beyond entanglement, from foundational theory to applications.",
+      "official_url": "https://indico.ictp.it/event/11463",
+      "deadlines": [],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed from the indexed official event listing. The event page could not be fetched during the latest check; participation deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "pks-ml-correlations-2027",
+      "title": "Machine Learning to Tailor Correlated States of Matter",
+      "start_date": "2027-10-10",
+      "end_date": "2027-10-22",
+      "location": {
+        "city": "Dresden",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "Max Planck Institute for the Physics of Complex Systems"
+      },
+      "format": "Workshop",
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "A seminar and focused workshop on machine learning approaches to correlated states of matter.",
+      "official_url": "https://www.pks.mpg.de/events/workshops-seminars",
+      "deadlines": [],
+      "notes": "Seminar and focused workshop; detailed session dates are not yet verified.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates and title confirmed on the institutional calendar; detailed programme and participation deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    }
+  ]
+}
