@@ -58,6 +58,9 @@ if (typeof document !== "undefined") {
     if (event.key === themeKey || event.key === null) applyTheme(event.newValue);
   });
 
+}
+
+if (typeof document !== "undefined" && document.getElementById("event-data")) {
   const events = JSON.parse(document.getElementById("event-data").textContent);
   const today = () => new Date().toISOString().slice(0, 10);
   const cards = new Map([...document.querySelectorAll("[data-event-id]")].map(card => [card.dataset.eventId, card]));

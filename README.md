@@ -13,7 +13,7 @@ python3 scripts/build.py
 python3 -m http.server --directory dist 8000
 ```
 
-Open http://localhost:8000. Alternatively, open `dist/index.html` directly: the event data is embedded, so filtering also works from a downloaded copy. All event entries remain readable without JavaScript. The header’s theme selector offers System, Light and Dark; an explicit choice is remembered in the browser. Without JavaScript, colours follow the system preference.
+Open http://localhost:8000. Alternatively, open `dist/index.html` directly: the event data is embedded, so filtering also works from a downloaded copy. All event entries remain readable without JavaScript. The header’s theme selector offers System, Light and Dark; an explicit choice is remembered in the browser. Without JavaScript, colours follow the system preference. The About link opens `about.html`, with the directory’s scope, contribution links and data download.
 
 ```sh
 python3 scripts/build.py --check
@@ -30,7 +30,7 @@ node --test tests/*.test.cjs
 | `data/events.json` | Authoritative event records, source links and verification dates |
 | `data/sources.json` | Discovery sources for finding future meetings |
 | `scripts/build.py` | Validation and static HTML generation |
-| `site/` | Page template, styles and browser filtering |
+| `site/` | Directory and About templates, shared layout, styles and browser filtering |
 | `tests/` | Publication, validation and filtering checks |
 | `docs/DESIGN.md` | Data schema, update workflow and design choices |
 

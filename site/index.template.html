@@ -1,34 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A curated calendar of tensor-network conferences, workshops and schools, with related meetings in quantum many-body physics.">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f7f7f2" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121c19" media="(prefers-color-scheme: dark)">
-  <script>
-    // Apply a saved theme before the stylesheet paints the page.
-    try {
-      const savedTheme = localStorage.getItem("conferences-color-theme");
-      if (savedTheme === "light" || savedTheme === "dark") {
-        document.documentElement.dataset.theme = savedTheme;
-      }
-    } catch (_) { /* System colours also work when storage is unavailable. */ }
-  </script>
-  <title>Tensor-network conferences &amp; workshops</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./app.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#directory">Skip to conferences</a>
-  <div class="page-shell">
-    <header class="masthead">
-      <a class="wordmark" href="./" aria-label="Tensor-network calendar home"><img src="./favicon.svg" alt="" width="30" height="30"><span>TN <span class="wordmark-light">/ CALENDAR</span></span></a>
-      <nav aria-label="Main navigation"><a href="#directory">Directory</a><a href="#about">About</a><a class="github-link" href="https://github.com/ianmccul/conferences">GitHub <span aria-hidden="true">↗</span></a><div class="theme-control" id="theme-control" hidden><label class="sr-only" for="theme">Color theme</label><select id="theme" title="Color theme"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></div></nav>
-    </header>
-    <main>
       <section class="hero" aria-labelledby="page-title">
         <div><p class="eyebrow"><span class="green-dot" aria-hidden="true"></span> A curated research calendar</p>
           <h1 id="page-title">Tensor-network<br><em>conferences &amp; workshops.</em></h1>
@@ -56,14 +25,3 @@
         <div id="event-list">$cards</div>
         <div class="empty-state" id="empty-state" hidden><span class="empty-symbol" aria-hidden="true">∅</span><h3>No meetings match this view</h3><p>Try another topic or region, or browse all dates.</p><button type="button" id="empty-reset">Show all meetings</button></div>
       </section>
-      <section class="about" id="about" aria-labelledby="about-title">
-        <div><p class="eyebrow">About this directory</p><h2 id="about-title">A useful starting point<br>for the community.</h2></div>
-        <div class="about-copy"><p>Maintained by Ian McCulloch. This calendar covers tensor-network methods and selected related meetings in entanglement, quantum information and many-body physics, with broader regional coverage in Asia.</p><p>Entries link to organizer or institutional sources. Open an entry’s details to see its recorded deadlines and last check. The list is selective; a missing deadline does not mean registration is open. Longer research programmes are labelled separately from short meetings.</p><p>Suggestions and corrections are welcome through the repository.</p><div class="about-links"><a href="https://github.com/ianmccul/conferences/issues">Suggest a meeting ↗</a><a href="./events.json" download>Download event data ↓</a></div></div>
-      </section>
-    </main>
-    <footer><span>Tensor-network conferences &amp; workshops</span><span>Curated by <a href="https://github.com/ianmccul">Ian McCulloch</a></span></footer>
-  </div>
-  <script type="application/json" id="event-data">$event_json</script>
-</body>
-</html>
-

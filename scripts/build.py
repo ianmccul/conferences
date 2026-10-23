@@ -208,6 +208,24 @@ def options(values):
     return "".join(f'<option value="{escape(value, quote=True)}">{escape(value)}</option>' for value in sorted(values))
 
 
+def render_page(content, *, about=False, event_json=None):
+    layout = Template((ROOT / "site/layout.template.html").read_text(encoding="utf-8"))
+    title = "About | Tensor-network conferences & workshops" if about else "Tensor-network conferences & workshops"
+    description = (
+        "About this curated calendar of tensor-network meetings, its scope and how to contribute."
+        if about else "A curated calendar of tensor-network conferences, workshops and schools, with related meetings in quantum many-body physics."
+    )
+    return layout.substitute(
+        title=escape(title), description=escape(description, quote=True), content=content,
+        skip_href="#about" if about else "#directory",
+        skip_label="Skip to about this directory" if about else "Skip to conferences",
+        directory_href="./index.html#directory" if about else "#directory",
+        directory_current="" if about else ' aria-current="page"',
+        about_current=' aria-current="page"' if about else "",
+        page_data=f'<script type="application/json" id="event-data">{event_json}</script>' if event_json is not None else "",
+    )
+
+
 def build(data, output, today):
     validate(data)
     output.mkdir(parents=True, exist_ok=True)
@@ -227,14 +245,16 @@ def build(data, output, today):
     serialized = json.dumps(public, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     template = Template((ROOT / "site/index.template.html").read_text())
     html = template.substitute(
-        cards="\n".join(cards), event_json=serialized, updated=human_date(data["updated"]),
+        cards="\n".join(cards), updated=human_date(data["updated"]),
         count=len(public), countries=len({e["location"]["country"] for e in public}),
         years=f"{public[0]['start_date'][:4]}—{max(e['end_date'] for e in public)[:4]}",
         regions=options({e["location"]["region"] for e in public}),
         formats=options({e["format"] for e in public}), topics=options({tag for e in public for tag in e["topics"]}),
         build_date=today,
     )
-    (output / "index.html").write_text(html, encoding="utf-8")
+    (output / "index.html").write_text(render_page(html, event_json=serialized), encoding="utf-8")
+    about = (ROOT / "site/about.template.html").read_text(encoding="utf-8")
+    (output / "about.html").write_text(render_page(about, about=True), encoding="utf-8")
     for name in ("styles.css", "app.js", "favicon.svg"):
         shutil.copyfile(ROOT / "site" / name, output / name)
     (output / ".nojekyll").write_text("")

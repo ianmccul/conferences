@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
 import unittest
+from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import build
@@ -112,13 +113,25 @@ class BuildTests(unittest.TestCase):
             self.assertTrue(all("hidden" not in attrs for attrs in page.articles))
             self.assertEqual(json.loads(page.script_data), exported["events"])
             self.assertEqual({a["id"] for a in page.articles}, {e["id"] for e in exported["events"]})
-            for asset in page.assets:
-                self.assertTrue(asset.startswith("./"), asset)
-                self.assertTrue((output / asset).is_file(), asset)
-            for link in page.links:
-                self.assertFalse(link.startswith("/"), link)
-                if link.startswith("#"):
-                    self.assertIn(link[1:], page.ids)
+            pages = {name: Page((output / name).read_text()) for name in ("index.html", "about.html")}
+            self.assertNotIn("about", page.ids)
+            self.assertIn("./about.html", page.links)
+            self.assertIn("about", pages["about.html"].ids)
+            self.assertIn("./index.html#directory", pages["about.html"].links)
+            self.assertEqual(pages["about.html"].articles, [])
+            for name, document in pages.items():
+                self.assertEqual(len(document.ids), len(set(document.ids)), name)
+                for asset in document.assets:
+                    self.assertTrue(asset.startswith("./"), asset)
+                    self.assertTrue((output / asset).is_file(), asset)
+                for link in document.links:
+                    self.assertFalse(link.startswith("/"), link)
+                    target = urlsplit(link)
+                    if not target.scheme:
+                        path = target.path.removeprefix("./") or name
+                        self.assertTrue((output / path).is_file(), link)
+                        if target.fragment:
+                            self.assertIn(target.fragment, pages[path].ids, link)
             self.assertTrue((output / ".nojekyll").is_file())
 
     def test_unpublished_records_and_references_not_exported(self):

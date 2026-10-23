@@ -125,8 +125,19 @@ a:hover {
 
 .page-shell {
   max-width:1220px;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
   padding:0 44px;
   margin:auto;
+}
+
+main {
+  flex:1;
+}
+
+.masthead,footer {
+  flex-shrink:0;
 }
 
 .skip-link {
@@ -177,6 +188,12 @@ a:hover {
 
 .masthead nav a {
   text-decoration:none;
+}
+
+.masthead nav a[aria-current="page"] {
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:6px;
 }
 
 .masthead .github-link {
@@ -299,6 +316,7 @@ h1 em {
 }
 
 .directory {
+  padding-bottom:64px;
   scroll-margin-top:24px;
 }
 
@@ -812,17 +830,17 @@ h1 em {
   margin-bottom:15px;
 }
 
-.about h2 {
+.about h1 {
   font-family:var(--serif);
   font-weight:400;
-  font-size:29px;
+  font-size:40px;
   letter-spacing:-.025em;
   line-height:1.2;
   margin:0;
 }
 
 .about-copy {
-  font-size:12px;
+  font-size:14px;
   color:var(--muted);
   line-height:1.85;
 }
@@ -930,7 +948,7 @@ footer a {
     font-size:11px;
     margin-left:auto;
   }
-  .masthead nav a:first-child {
+  .masthead nav .directory-link[aria-current="page"] {
     display:none;
   }
   .hero {
@@ -973,6 +991,9 @@ footer a {
   .edition-update {
     font-size:10px;
     width:100%;
+  }
+  .directory {
+    padding-bottom:40px;
   }
   .directory-heading {
     padding:23px 0 17px;
@@ -1106,11 +1127,11 @@ footer a {
     margin-top:43px;
     padding-top:26px;
   }
-  .about h2 {
-    font-size:28px;
+  .about h1 {
+    font-size:32px;
   }
   .about-copy {
-    font-size:12px;
+    font-size:13px;
   }
   footer {
     flex-direction:column;
@@ -1132,8 +1153,10 @@ footer a {
   .page-shell {
     padding:0;
     max-width:none;
+    min-height:0;
+    display:block;
   }
-  .masthead nav,.js-controls,.edition,.calendar-note,.about,footer,.event summary,.skip-link {
+  .masthead nav,.js-controls,.edition,.calendar-note,footer,.event summary,.skip-link {
     display:none!important;
   }
   .hero {

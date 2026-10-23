@@ -10,7 +10,7 @@ This repository is a standalone GitHub Pages project. It needs neither a root `i
 
 ## Implementation
 
-`data/events.json` is the source of truth. A Python standard-library script validates it, escapes all rendered text, then emits HTML, CSS, a small JavaScript file, a favicon and a public JSON export into `dist/`. No source pages are fetched during the build.
+`data/events.json` is the source of truth. A Python standard-library script validates it, escapes all rendered text, then emits HTML, CSS, a small JavaScript file, a favicon and a public JSON export into `dist/`. No source pages are fetched during the build. The directory (`index.html`) and standalone About page (`about.html`) share `site/layout.template.html` for navigation, theme controls and the footer. Relative HTML links work under `/conferences/` and in an extracted download; filtering initializes only on the directory page.
 
 The complete public list is rendered at build time. JavaScript adds combined search, region, topic and meeting-type filters; upcoming/ongoing, past and all-date views; counts; URL state; and permalink handling. It reads embedded JSON rather than making network requests. Every event remains readable when JavaScript is unavailable, and the downloaded site can be opened locally.
 
