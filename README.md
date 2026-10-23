@@ -2,7 +2,7 @@
 
 A curated directory of tensor-network meetings and selected related events in entanglement, quantum information and many-body physics. The initial list covers October 2026–October 2027, with broader regional coverage in Asia.
 
-The intended address is **https://ianmccul.github.io/conferences/**. Publishing is disabled by default. The site is independent of the `teaching` repository and can later be linked from a personal homepage.
+Site address: **https://ianmccul.github.io/conferences/**. Automatic publishing is enabled: each push or merge to `main` runs the checks, builds the site and deploys it to GitHub Pages. The site is independent of the `teaching` repository and can later be linked from a personal homepage.
 
 ## Develop and preview
 
@@ -51,15 +51,15 @@ Meeting types can overlap: use `"formats": ["School", "Conference"]` for a combi
 
 The JSON schema is enforced by the build script. Unknown fields, invalid dates, unsafe URL schemes, malformed ports, duplicate or reserved IDs and unresolved related-event links fail the build. `published: false` excludes an event and its references from both the HTML and the downloadable JSON. It does **not** hide it from repository readers or Git history. Store only public-facing information in this repository.
 
-## Review without publishing
+## Review changes
 
-GitHub Actions runs the checks and builds on pull requests and pushes to `main`. Separate Linux and Windows jobs install the timezone fallback, disable the system timezone lookup and exercise locale-based text encoding. A successful run provides a `conference-site` artifact: download it, extract the ZIP and open `index.html`. Access to this artifact follows repository access; it is not a deployed website.
+GitHub Actions runs the checks and builds on pull requests and pushes to `main`. Pull requests do not deploy; merge a reviewed change into `main` to publish it after all checks pass. Separate Linux and Windows jobs install the timezone fallback, disable the system timezone lookup and exercise locale-based text encoding. A successful run provides a `conference-site` artifact: download it, extract the ZIP and open `index.html`. Access to this artifact follows repository access; it is not a deployed website.
 
-## Publish when ready
+## Publishing configuration
 
-A private repository does not automatically mean a private GitHub Pages site. Review the generated content before enabling Pages. GitHub Pages availability for private repositories depends on the account plan.
+A private repository does not automatically mean a private GitHub Pages site. This directory is publicly accessible while its source repository is private. GitHub Pages availability for private repositories depends on the account plan.
 
-When publication is intended:
+The initial setup below is already complete for this repository. Use it when configuring another deployment:
 
 1. Merge the reviewed change into `main`.
 2. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
