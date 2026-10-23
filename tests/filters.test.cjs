@@ -8,7 +8,7 @@ const event = {
   id: "tnsaa-2026", title: "Tensor Network States: Algorithms and Applications",
   summary: "A meeting on tensor-network algorithms", start_date: "2026-12-29", end_date: "2027-01-05",
   location: {city: "Zürich", country: "Switzerland", region: "Europe", venue: "Example Institute"},
-  format: "Workshop", topics: ["Tensor networks", "Numerical methods"], notes: "", published: true,
+  formats: ["Workshop"], topics: ["Tensor networks", "Numerical methods"], notes: "", published: true,
   deadlines: []
 };
 const defaults = {q: "", region: "", topic: "", format: "", view: "upcoming"};
@@ -34,6 +34,20 @@ test("region, topic and meeting-type filters combine with search", () => {
   for (const mismatch of [{region: "Asia"}, {topic: "Gauge theories"}, {format: "School"}]) {
     assert.ok(!matchesEvent(event, {...filter, ...mismatch}, "2026-10-23"));
   }
+});
+
+test("combined schools and conferences match either type and both types are searchable", () => {
+  const combined = {...event, formats: ["School", "Conference"]};
+  for (const format of ["School", "Conference"]) {
+    assert.ok(matchesEvent(combined, {...defaults, format}, "2026-10-23"), format);
+    assert.ok(matchesEvent(combined, {...defaults, q: format.toLowerCase()}, "2026-10-23"), format);
+    assert.ok(matchesEvent(combined, {...defaults, format, region: "Europe", topic: "Tensor networks", q: "Zurich"}, "2026-10-23"));
+    assert.ok(!matchesEvent(combined, {...defaults, format, region: "Asia"}, "2026-10-23"));
+  }
+  assert.ok(matchesEvent(combined, defaults, "2026-10-23"));
+  assert.ok(!matchesEvent(combined, {...defaults, format: "Workshop"}, "2026-10-23"));
+  assert.ok(!matchesEvent(combined, {...defaults, format: "Programme"}, "2026-10-23"));
+  assert.ok(!matchesEvent({...event, formats: ["School"]}, {...defaults, format: "Conference"}, "2026-10-23"));
 });
 
 test("unpublished records are excluded from every view", () => {

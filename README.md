@@ -41,6 +41,8 @@ The build uses the current instant for deadline summaries. `python3 scripts/buil
 
 Keep past meetings: the default view shows upcoming and ongoing events, while the date controls expose the archive. Filters can be shared through URL query parameters, and each entry has a permalink.
 
+Meeting types can overlap: use `"formats": ["School", "Conference"]` for a combined event so either filter finds it. The available types are `School`, `Conference`, `Workshop` and `Programme`. Each event is counted once, regardless of how many types it has. The data uses schema version 2.
+
 The JSON schema is enforced by the build script. Unknown fields, invalid dates, unsafe URL schemes, malformed ports, duplicate or reserved IDs and unresolved related-event links fail the build. `published: false` excludes an event and its references from both the HTML and the downloadable JSON. It does **not** hide it from repository readers or Git history. Store only public-facing information in this repository.
 
 ## Review without publishing

@@ -102,12 +102,31 @@ class BuildTests(unittest.TestCase):
             build.validate(self.data)
             record[field] = original
 
-    def test_unknown_format_and_topics_rejected(self):
-        self.event["format"] = []
-        self.assert_invalid("unknown format")
-        self.event["format"] = "School"
+    def test_invalid_formats_and_topics_rejected(self):
+        for value in [[], "School", [None], ["School & conference"], ["School", "School"], ["Unrecognized"]]:
+            with self.subTest(formats=value):
+                self.event["formats"] = value
+                self.assert_invalid("format")
+        self.event["formats"] = ["School", "Conference"]
+        build.validate(self.data)
         self.event["topics"] = ["unrecognized subject"]
         self.assert_invalid("invalid or duplicate topic")
+
+    def test_multiple_formats_share_one_entry_and_have_individual_filter_options(self):
+        self.event["formats"] = ["School", "Conference"]
+        self.data["events"] = [self.event]
+        with TemporaryDirectory() as temp:
+            output = Path(temp)
+            self.assertEqual(build.build(self.data, output, "2026-10-23"), 1)
+            html = (output / "index.html").read_text()
+            self.assertEqual(len(Page(html).articles), 1)
+            self.assertIn('<span>School / Conference</span>', html)
+            self.assertEqual(html.count('<option value="School">School</option>'), 1)
+            self.assertEqual(html.count('<option value="Conference">Conference</option>'), 1)
+            self.assertNotIn('School &amp; conference', html)
+            exported = json.loads((output / "events.json").read_text())
+            self.assertEqual(exported["schema_version"], 2)
+            self.assertEqual(exported["events"][0]["formats"], ["School", "Conference"])
 
     def test_deadline_time_requires_explicit_timezone(self):
         self.event["deadlines"] = [{"kind": "Registration", "date": "2026-10-10",

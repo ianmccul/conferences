@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated": "2026-10-23",
   "events": [
     {
@@ -13,7 +13,9 @@
         "region": "Europe",
         "venue": "Isaac Newton Institute"
       },
-      "format": "School",
+      "formats": [
+        "School"
+      ],
       "topics": [
         "Tensor networks",
         "Entanglement"
@@ -38,7 +40,9 @@
         "region": "Asia",
         "venue": "National Sun Yat-sen University"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Numerical methods",
         "Quantum matter"
@@ -72,7 +76,9 @@
         "region": "Europe",
         "venue": "Isaac Newton Institute"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Entanglement",
         "Quantum matter"
@@ -97,7 +103,9 @@
         "region": "Asia",
         "venue": "Room 307, Cosmology Hall, National Taiwan University"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Numerical methods",
         "Quantum matter"
@@ -131,7 +139,9 @@
         "region": "Asia",
         "venue": "Yukawa Institute for Theoretical Physics"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Tensor networks",
         "Gauge theories",
@@ -182,7 +192,9 @@
         "region": "Asia",
         "venue": "Research Institute for Mathematical Sciences, Kyoto University"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Quantum information",
         "Entanglement"
@@ -232,7 +244,9 @@
         "region": "Asia",
         "venue": "Hong Kong University of Science and Technology"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Quantum matter"
       ],
@@ -273,7 +287,10 @@
         "region": "Asia",
         "venue": "International Centre for Theoretical Sciences"
       },
-      "format": "School & conference",
+      "formats": [
+        "School",
+        "Conference"
+      ],
       "topics": [
         "Quantum matter"
       ],
@@ -306,7 +323,9 @@
         "region": "Europe",
         "venue": "Isaac Newton Institute"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Entanglement",
         "Quantum information"
@@ -331,7 +350,9 @@
         "region": "Asia",
         "venue": "RIKEN Center for Computational Science"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Tensor networks",
         "Numerical methods",
@@ -382,7 +403,10 @@
         "region": "Asia",
         "venue": "Okinawa Institute of Science and Technology"
       },
-      "format": "School & conference",
+      "formats": [
+        "School",
+        "Conference"
+      ],
       "topics": [
         "Quantum matter",
         "Dynamics & open systems"
@@ -416,7 +440,9 @@
         "region": "North America",
         "venue": "IPAM, University of California, Los Angeles"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Numerical methods",
         "Quantum matter"
@@ -450,7 +476,9 @@
         "region": "Asia",
         "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
       },
-      "format": "Programme",
+      "formats": [
+        "Programme"
+      ],
       "topics": [
         "Quantum matter",
         "Dynamics & open systems"
@@ -495,7 +523,9 @@
         "region": "Asia",
         "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
       },
-      "format": "School",
+      "formats": [
+        "School"
+      ],
       "topics": [
         "Quantum matter",
         "Dynamics & open systems"
@@ -531,7 +561,9 @@
         "region": "Europe",
         "venue": "Centro de Ciencias de Benasque Pedro Pascual"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Tensor networks",
         "Entanglement",
@@ -574,7 +606,9 @@
         "region": "Asia",
         "venue": "Maskawa Hall, Yukawa Institute for Theoretical Physics"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Dynamics & open systems",
         "Quantum information"
@@ -632,7 +666,9 @@
         "region": "Asia",
         "venue": "University Cultural Centre, National University of Singapore"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Quantum information"
       ],
@@ -697,7 +733,9 @@
         "region": "Asia",
         "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Quantum matter",
         "Dynamics & open systems"
@@ -741,7 +779,9 @@
         "region": "North America",
         "venue": "Institute for Nuclear Theory, University of Washington"
       },
-      "format": "Programme",
+      "formats": [
+        "Programme"
+      ],
       "topics": [
         "Tensor networks",
         "Gauge theories"
@@ -775,7 +815,9 @@
         "region": "North America",
         "venue": "IPAM, University of California, Los Angeles"
       },
-      "format": "Programme",
+      "formats": [
+        "Programme"
+      ],
       "topics": [
         "Numerical methods",
         "Quantum matter"
@@ -811,7 +853,9 @@
         "region": "North America",
         "venue": "Kavli Institute for Theoretical Physics"
       },
-      "format": "Programme",
+      "formats": [
+        "Programme"
+      ],
       "topics": [
         "Quantum matter"
       ],
@@ -837,7 +881,9 @@
         "region": "Asia",
         "venue": "RIKEN Nishina Hall"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Tensor networks",
         "Gauge theories",
@@ -863,7 +909,9 @@
         "region": "North America",
         "venue": "Kavli Institute for Theoretical Physics"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Quantum matter"
       ],
@@ -889,7 +937,9 @@
         "region": "North America",
         "venue": "IPAM, University of California, Los Angeles"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Numerical methods",
         "Quantum matter"
@@ -925,7 +975,9 @@
         "region": "Europe",
         "venue": "SwissMAP Research Station"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Dynamics & open systems",
         "Quantum information"
@@ -950,7 +1002,9 @@
         "region": "Europe",
         "venue": "Max Planck Institute for the Physics of Complex Systems"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Quantum matter",
         "Numerical methods"
@@ -975,7 +1029,9 @@
         "region": "Asia",
         "venue": "Panasonic Auditorium, Yukawa Hall, YITP"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Dynamics & open systems",
         "Quantum matter"
@@ -1000,7 +1056,9 @@
         "region": "Europe",
         "venue": "International Centre for Theoretical Physics"
       },
-      "format": "Conference",
+      "formats": [
+        "Conference"
+      ],
       "topics": [
         "Entanglement",
         "Quantum information",
@@ -1026,7 +1084,9 @@
         "region": "Europe",
         "venue": "Max Planck Institute for the Physics of Complex Systems"
       },
-      "format": "Workshop",
+      "formats": [
+        "Workshop"
+      ],
       "topics": [
         "Numerical methods",
         "Quantum matter"

@@ -14,11 +14,11 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 ROOT = Path(__file__).resolve().parents[1]
-FORMATS = {"Conference", "Workshop", "School", "Programme", "School & conference"}
+FORMATS = {"Conference", "Workshop", "School", "Programme"}
 REGIONS = {"Asia", "Europe", "North America", "South America", "Oceania", "Africa", "Online"}
 TOPICS = {"Tensor networks", "Entanglement", "Quantum information", "Quantum matter",
           "Dynamics & open systems", "Numerical methods", "Gauge theories"}
-EVENT_KEYS = {"id", "title", "start_date", "end_date", "location", "format", "topics",
+EVENT_KEYS = {"id", "title", "start_date", "end_date", "location", "formats", "topics",
               "summary", "official_url", "deadlines", "notes", "last_checked",
               "verification_note", "published", "related_event_ids"}
 DEADLINE_KEYS = {"kind", "date", "time", "timezone", "note", "source_url"}
@@ -108,8 +108,8 @@ def browser_event(event):
 
 def validate(data):
     exact_keys(data, {"schema_version", "updated", "events"}, "dataset")
-    require(type(data["schema_version"]) is int and data["schema_version"] == 1,
-            "schema_version must be 1")
+    require(type(data["schema_version"]) is int and data["schema_version"] == 2,
+            "schema_version must be 2")
     updated = iso_date(data["updated"], "updated")
     require(isinstance(data["events"], list) and data["events"], "events must be a nonempty list")
     reserved_ids = {"event-data"}
@@ -142,8 +142,11 @@ def validate(data):
         for field, value in location.items():
             text(value, f"{context}.location.{field}")
         require(location["region"] in REGIONS, f"{context}: unknown region")
-        require(isinstance(event["format"], str) and event["format"] in FORMATS,
-                f"{context}: unknown format")
+        formats = event["formats"]
+        require(isinstance(formats, list) and formats and all(isinstance(value, str) for value in formats),
+                f"{context}: formats must be a nonempty string list")
+        require(set(formats) <= FORMATS and len(formats) == len(set(formats)),
+                f"{context}: invalid or duplicate format")
         topics = event["topics"]
         require(isinstance(topics, list) and topics and all(isinstance(t, str) for t in topics),
                 f"{context}: topics must be a nonempty string list")
@@ -243,7 +246,7 @@ def render_event(event, now, by_id):
     return f'''<article class="event" id="{event['id']}" data-event-id="{event['id']}" aria-labelledby="title-{event['id']}">
   <div class="event-date" aria-label="{range_text}"><span class="date-month">{month}</span><strong>{days}</strong><span class="date-year">{start.year}</span>{end_label}</div>
   <div class="event-body">
-    <div class="event-kicker"><span>{esc(event['format'])}</span><span class="place">{esc(place)}</span></div>
+    <div class="event-kicker"><span>{esc(' / '.join(event['formats']))}</span><span class="place">{esc(place)}</span></div>
     <h3 id="title-{event['id']}"><a href="{esc(event['official_url'], quote=True)}">{esc(event['title'])}<span class="external-arrow" aria-hidden="true">↗</span></a></h3>
     <p class="event-summary">{esc(event['summary'])}</p>
     <div class="tags">{labels}</div>
@@ -304,7 +307,7 @@ def build(data, output, now):
         count=len(public), countries=len({e["location"]["country"] for e in public}),
         years=f"{public[0]['start_date'][:4]}—{max(e['end_date'] for e in public)[:4]}",
         regions=options({e["location"]["region"] for e in public}),
-        formats=options({e["format"] for e in public}), topics=options({tag for e in public for tag in e["topics"]}),
+        formats=options({value for e in public for value in e["formats"]}), topics=options({tag for e in public for tag in e["topics"]}),
     )
     (output / "index.html").write_text(render_page(html, event_json=serialized), encoding="utf-8")
     about = (ROOT / "site/about.template.html").read_text(encoding="utf-8")

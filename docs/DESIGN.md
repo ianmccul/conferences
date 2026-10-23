@@ -22,7 +22,7 @@ The page uses system fonts, native form controls and native `<details>` disclosu
 
 ## Event schema
 
-The top-level object has exactly `schema_version: 1`, `updated` (ISO date) and `events` (a nonempty array). Each event has the following required fields:
+The top-level object has exactly `schema_version: 2`, `updated` (ISO date) and `events` (a nonempty array). Version 2 replaces the single `format` string with a `formats` array. Each event has the following required fields:
 
 | Field | Meaning |
 | --- | --- |
@@ -30,7 +30,7 @@ The top-level object has exactly `schema_version: 1`, `updated` (ISO date) and `
 | `title` | Public event title |
 | `start_date`, `end_date` | Inclusive ISO date range |
 | `location` | Object with `city`, `country`, `region`, `venue` |
-| `format` | `Conference`, `Workshop`, `School`, `Programme` or `School & conference` |
+| `formats` | Nonempty list of distinct meeting types: `Conference`, `Workshop`, `School`, `Programme` |
 | `topics` | Nonempty list of allowed subject tags |
 | `summary` | Short factual description of the meeting's scope |
 | `official_url` | Organizer or institutional event page |
@@ -40,6 +40,8 @@ The top-level object has exactly `schema_version: 1`, `updated` (ISO date) and `
 | `verification_note` | Scope/limitations of that check, or an empty string |
 | `published` | Boolean controlling inclusion in generated output |
 | `related_event_ids` | IDs connecting a programme and its short meetings, or an empty array |
+
+Meeting types can overlap. A combined school and conference uses `"formats": ["School", "Conference"]` and appears when either type is selected. The filter offers individual types only, while the entry displays all its types. Each event is listed and counted once. The `format` URL parameter still represents the single type selected in the filter. A long programme and a separately dated school or conference continue to have distinct records connected through `related_event_ids`.
 
 Allowed regions are `Asia`, `Europe`, `North America`, `South America`, `Oceania`, `Africa`, `Online`. For the initial physical meetings, `country` is a geographic display label that may include a territory.
 

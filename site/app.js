@@ -13,9 +13,9 @@ function matchesEvent(event, filters, today) {
   if (filters.view === "past" && event.end_date >= today) return false;
   if (filters.region && event.location.region !== filters.region) return false;
   if (filters.topic && !event.topics.includes(filters.topic)) return false;
-  if (filters.format && event.format !== filters.format) return false;
+  if (filters.format && !event.formats.includes(filters.format)) return false;
   const haystack = normalize([event.id, event.title, event.summary, ...Object.values(event.location),
-    ...event.topics, event.format, event.notes].join(" "));
+    ...event.topics, ...event.formats, event.notes].join(" "));
   return normalize(filters.q || "").trim().split(/\s+/).every(word => haystack.includes(word));
 }
 
