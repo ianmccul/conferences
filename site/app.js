@@ -28,6 +28,36 @@ function summaryFor(event, today) {
 if (typeof module !== "undefined" && module.exports) module.exports = {normalize, matchesEvent, summaryFor};
 
 if (typeof document !== "undefined") {
+  const root = document.documentElement;
+  const themeField = document.getElementById("theme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
+  const themeKey = "conferences-color-theme";
+
+  function applyTheme(value) {
+    const theme = ["light", "dark"].includes(value) ? value : "system";
+    if (theme === "system") delete root.dataset.theme;
+    else root.dataset.theme = theme;
+    themeField.value = theme;
+    const dark = theme === "dark" || (theme === "system" && systemTheme.matches);
+    for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
+      meta.content = dark ? "#121c19" : "#f7f7f2";
+    }
+  }
+
+  applyTheme(root.dataset.theme);
+  document.getElementById("theme-control").hidden = false;
+  themeField.addEventListener("change", () => {
+    applyTheme(themeField.value);
+    try {
+      if (themeField.value === "system") localStorage.removeItem(themeKey);
+      else localStorage.setItem(themeKey, themeField.value);
+    } catch (_) { /* The selected theme still works for this visit. */ }
+  });
+  systemTheme.addEventListener("change", () => applyTheme(themeField.value));
+  window.addEventListener("storage", event => {
+    if (event.key === themeKey || event.key === null) applyTheme(event.newValue);
+  });
+
   const events = JSON.parse(document.getElementById("event-data").textContent);
   const today = () => new Date().toISOString().slice(0, 10);
   const cards = new Map([...document.querySelectorAll("[data-event-id]")].map(card => [card.dataset.eventId, card]));

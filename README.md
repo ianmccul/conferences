@@ -13,7 +13,7 @@ python3 scripts/build.py
 python3 -m http.server --directory dist 8000
 ```
 
-Open http://localhost:8000. Alternatively, open `dist/index.html` directly: the event data is embedded, so filtering also works from a downloaded copy. All event entries remain readable without JavaScript.
+Open http://localhost:8000. Alternatively, open `dist/index.html` directly: the event data is embedded, so filtering also works from a downloaded copy. All event entries remain readable without JavaScript. The header’s theme selector offers System, Light and Dark; an explicit choice is remembered in the browser. Without JavaScript, colours follow the system preference.
 
 ```sh
 python3 scripts/build.py --check

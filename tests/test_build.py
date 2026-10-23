@@ -139,7 +139,7 @@ class BuildTests(unittest.TestCase):
             build.build(self.data, Path(temp), "2026-10-23")
             html = (Path(temp) / "index.html").read_text()
             page = Page(html)
-            self.assertEqual(len(page.scripts), 2)
+            self.assertEqual(len(page.scripts), 3)
             self.assertNotIn(self.event["title"], html)
             self.assertIn("&lt;/script&gt;", html)
             self.assertEqual(json.loads(page.script_data)[0]["title"], self.event["title"])

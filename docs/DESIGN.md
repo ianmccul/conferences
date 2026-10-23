@@ -16,7 +16,7 @@ The complete public list is rendered at build time. JavaScript adds combined sea
 
 Dates use ISO `YYYY-MM-DD` strings. Meeting date ranges are inclusive and local to their venue. The browser uses the current UTC calendar date when deciding which date view contains an entry, so classification can differ from venue time near midnight. No current availability, precise cutoff or registration-open status is inferred. Deadline times are displayed only when a source supplies both the time and its timezone. `AoE` means Anywhere on Earth.
 
-The page uses system fonts, native form controls and native `<details>` disclosures, with keyboard focus styles, a skip link, live result counts and a narrow-screen layout. It has no analytics or external asset dependencies.
+The page uses system fonts, native form controls and native `<details>` disclosures, with keyboard focus styles, a skip link, live result counts and a narrow-screen layout. It has no analytics or external asset dependencies. Light and dark colour palettes follow the system by default; the header selector can override that preference and stores the choice locally in the browser. A small script applies saved choices before the stylesheet loads to avoid a flash of the wrong theme. Without JavaScript, CSS still follows the system preference. Print output always uses the light palette.
 
 ## Event schema
 
