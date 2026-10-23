@@ -1023,9 +1023,6 @@ footer span span {
     flex-direction:column;
     padding-bottom:12px;
   }
-  .calendar-note span+span {
-    display:none;
-  }
   .month-group {
     margin-top:25px;
   }
