@@ -68,9 +68,9 @@ Unknown fields are rejected. Personal travel preferences, attendance plans, rank
 
 ## Update workflow
 
-Start with manual or agent-assisted pull requests. A scan produces proposed event additions or changes, with official source links and an explicit verification date. Review those changes as a diff in the canonical JSON; run the tests and build; merge when the content is ready. Once Pages is enabled, a merge to `main` publishes the approved data.
+GitHub issues are the main entry point for manual suggestions: an event link and optional notes are enough. The external conference monitor reads open suggestions during its regular daily scan, combines them with web discoveries, verifies official sources and creates or updates a pull request. The maintainer receives the PR link with a short summary, reviews the canonical JSON diff and merges when ready. A successful workflow on `main` publishes the approved data. Direct contribution PRs are also welcome.
 
-Use these rules for any later automatic updater:
+Use these rules for the monitor and direct contributions:
 
 - Preserve IDs across edits and make a new ID for a new edition.
 - Keep old meetings for the archive; do not silently remove them after they finish.
@@ -78,16 +78,16 @@ Use these rules for any later automatic updater:
 - Recheck the official source before changing a deadline. If a check fails, do not claim fresh verification of that detail; record what was and was not confirmed.
 - Include source URLs and meaningful changes in the pull-request description.
 - Use the existing validator and tests before proposing a commit.
-- Do not automatically merge uncertain changes or claim completeness of the directory.
+- Do not automatically merge monitor changes or claim completeness of the directory.
 
-No scheduled update integration is enabled in this version. The existing conference-watch process can later be adapted to create pull requests. A Drive or Sheets workflow is also possible, but an importer should generate this same schema and pass the same review gate. Introducing a second authoritative store now would add synchronization work without improving the first version.
+The research schedule runs outside GitHub Actions. Its public operating procedure is in [MONITORING.md](MONITORING.md), including deduplication against pending and declined proposals, source verification, guarded branch updates and concise PR notifications. Private preferences and attendance planning never enter the repository. There is no separate issue webhook or second authoritative data store.
 
 ## Deployment and review
 
 Pull requests and pushes to `main` run validation, Python tests, JavaScript tests and a static build. Each successful run saves a downloadable artifact for review. Deployment additionally requires `main`, a non-PR event and `PUBLISH_PAGES=true`. Pages settings must also use GitHub Actions.
 
-Keep publishing disabled during private development. Repository visibility and website visibility are separate decisions. The workflow never changes either repository privacy or Pages settings. There is no deployment from pull-request branches.
+Publishing is enabled for this repository. Repository visibility and website visibility are separate decisions. The workflow never changes either repository privacy or Pages settings. There is no deployment from pull-request branches.
 
 ## Deliberately deferred
 
-A calendar subscription feed, deadline reminder emails, map, submission form, scheduled scraper, root personal website and custom domain can be added later. The current data model and static output leave those options open without requiring them for a useful directory. Choose a code/content license before inviting public reuse.
+A calendar subscription feed, deadline reminder emails, map, submission form outside GitHub, repository-hosted scraper, root personal website and custom domain can be added later. The current data model and static output leave those options open without requiring them for a useful directory. Choose a code/content license before inviting public reuse.
