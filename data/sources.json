@@ -150,6 +150,11 @@
       "name": "BIRS",
       "url": "https://www.birs.ca/",
       "region": "Global"
+    },
+    {
+      "name": "NTHU Physics Indico workshops and meetings",
+      "url": "https://indico.phys.nthu.edu.tw/",
+      "region": "Taiwan"
     }
   ]
 }
