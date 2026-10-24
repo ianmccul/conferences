@@ -140,11 +140,21 @@ class BuildTests(unittest.TestCase):
         self.assert_invalid("IANA timezone")
 
     def test_missing_timezone_data_reports_install_step(self):
-        result = subprocess.run(
-            [sys.executable, "-S", str(build.ROOT / "scripts/build.py"), "--check"],
-            env={**os.environ, "PYTHONTZPATH": "", "PYTHONIOENCODING": "utf-8"},
-            capture_output=True, encoding="utf-8",
-        )
+        # Keep the diagnostic independent of the live calendar's deadline order.
+        self.event["deadlines"] = [{"kind": "Registration", "date": "2026-10-10",
+            "time": "23:59", "timezone": "Asia/Tokyo", "note": "",
+            "source_url": "https://example.org/event"}]
+        self.event["related_event_ids"] = []
+        self.data["events"] = [self.event]
+        with TemporaryDirectory() as temp:
+            fixture = Path(temp) / "events.json"
+            fixture.write_text(json.dumps(self.data), encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, "-S", str(build.ROOT / "scripts/build.py"),
+                 "--data", str(fixture), "--check"],
+                env={**os.environ, "PYTHONTZPATH": "", "PYTHONIOENCODING": "utf-8"},
+                capture_output=True, encoding="utf-8",
+            )
         self.assertEqual(result.returncode, 1)
         self.assertIn("cannot load IANA timezone 'Asia/Tokyo'", result.stderr)
         self.assertIn("python -m pip install -r requirements.txt", result.stderr)
