@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -26,6 +26,34 @@
       "notes": "Part of the Mathematics of Many-Body Entanglement programme.",
       "last_checked": "2026-10-23",
       "verification_note": "Dates confirmed from the indexed official event listing. Direct page access returned 403; participation details and deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "nthu-qst-2026",
+      "title": "2026 Workshop on Quantum Science and Technology",
+      "start_date": "2026-10-29",
+      "end_date": "2026-10-31",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "Multipurpose area, Physics Library, 3F Physics Building, NTHU"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information",
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "Workshop on quantum computing, quantum information, the interface with machine learning, and emerging quantum-science methods.",
+      "official_url": "https://indico.phys.nthu.edu.tw/event/230/overview",
+      "deadlines": [],
+      "notes": "Poster abstracts are invited; the abstract call shows no submission deadline.",
+      "last_checked": "2026-10-24",
+      "verification_note": "Dates and venue verified against the event overview; the general registration page does not display a deadline.",
       "published": true,
       "related_event_ids": []
     },
@@ -93,6 +121,43 @@
       "related_event_ids": []
     },
     {
+      "id": "nycu-lattice-frontier-2026",
+      "title": "Lattice field theory at the frontier of nuclear and particle physics",
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-05",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "SC353, Kuang-Fu Campus, National Yang Ming Chiao Tung University"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Gauge theories",
+        "Tensor networks",
+        "Numerical methods"
+      ],
+      "summary": "Lattice field theory workshop with pedagogical mini-courses and research talks on lattice QCD and Hamiltonian gauge-theory tensor-network methods.",
+      "official_url": "https://indico.phys.nthu.edu.tw/event/232/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-10-27",
+          "time": "23:59",
+          "timezone": "Asia/Taipei",
+          "note": "Taiwan local time, as explicitly stated by the organizer.",
+          "source_url": "https://indico.phys.nthu.edu.tw/event/232/"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-24",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "ncts-ab-initio-htc-2026",
       "title": "NCTS Physics One-day Workshop on Ab Initio Approaches to High Temperature Superconductors",
       "start_date": "2026-11-05",
@@ -124,6 +189,34 @@
       ],
       "notes": "",
       "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "nthu-correlated-mini-2026",
+      "title": "Correlated Quantum Matter Mini-Workshop @ NTHU",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-06",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "R620, National Tsing Hua University"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Tensor networks",
+        "Numerical methods"
+      ],
+      "summary": "One-day strongly correlated matter meeting held during Gabriel Kotliar's visit, covering DMFT, tensor networks, QMC, field theory and quantum information approaches.",
+      "official_url": "https://indico.phys.nthu.edu.tw/event/236/",
+      "deadlines": [],
+      "notes": "Participation is free; registration is requested for planning. No registration deadline is listed.",
+      "last_checked": "2026-10-24",
       "verification_note": "",
       "published": true,
       "related_event_ids": []
@@ -309,6 +402,32 @@
       "notes": "School and conference for researchers from advanced graduate level onward.",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "hkust-frontiers-qm-2026",
+      "title": "Frontiers in Quantum Matter",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-15",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "HKUST Jockey Club Institute for Advanced Study, Lo Ka Chung Building, Lee Shau Kee Campus"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Asia-Pacific workshop on strongly correlated quantum matter, superconductivity, topology, quantum geometry and nonlinear response.",
+      "official_url": "https://ias.hkust.edu.hk/events/frontiers-in-quantum-matter-0",
+      "deadlines": [],
+      "notes": "",
+      "last_checked": "2026-10-24",
+      "verification_note": "Official HKUST announcement confirms dates and venue but does not state participation deadlines.",
       "published": true,
       "related_event_ids": []
     },
@@ -871,6 +990,43 @@
       ]
     },
     {
+      "id": "simqudyn-2027",
+      "title": "Simulation of far-from-equilibrium quantum many-body dynamics (SimQuDyn 2027)",
+      "start_date": "2027-03-22",
+      "end_date": "2027-03-25",
+      "location": {
+        "city": "Munich",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "H030, LMU Physics Department, Schellingstr. 4"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Conference on classical and quantum simulation and analytical approaches to far-from-equilibrium many-body dynamics, including prospects for quantum advantage.",
+      "official_url": "https://www.theorie.physik.uni-muenchen.de/activities/workshops/simqudyn2027/index.html",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2027-01-31",
+          "time": null,
+          "timezone": null,
+          "note": "Applications may be limited in the event of high demand.",
+          "source_url": "https://www.theorie.physik.uni-muenchen.de/activities/workshops/simqudyn2027/index.html"
+        }
+      ],
+      "notes": "Meeting registration is also hosted at https://indico.physik.uni-muenchen.de/event/755/.",
+      "last_checked": "2026-10-24",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "riken-qisqcd-2027",
       "title": "Quantum Information Science × Quantum Chromodynamics (QISxQCD)",
       "start_date": "2027-03-29",
@@ -1019,6 +1175,35 @@
       "related_event_ids": []
     },
     {
+      "id": "yitp-hydrodynamics-2027",
+      "title": "Hydrodynamics and fluctuations in non-equilibrium interacting systems",
+      "start_date": "2027-08-23",
+      "end_date": "2027-09-24",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
+      },
+      "formats": [
+        "Programme"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum matter"
+      ],
+      "summary": "Long YITP programme on hydrodynamic limits, KPZ universality, integrability, anomalous transport, quantum many-body dynamics and nonequilibrium fluctuations.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/105/",
+      "deadlines": [],
+      "notes": "Includes lectures, thematic workshops and the separately listed YKIS2027 conference on 30 August–3 September.",
+      "last_checked": "2026-10-24",
+      "verification_note": "The Indico heading and event metadata state 2027, matching weekday/date pairs; a body paragraph incorrectly says 2026. No application deadline was verified.",
+      "published": true,
+      "related_event_ids": [
+        "ykis-2027"
+      ]
+    },
+    {
       "id": "ykis-2027",
       "title": "YKIS2027: Many facets of many-body non-equilibrium systems",
       "start_date": "2027-08-30",
@@ -1040,10 +1225,12 @@
       "official_url": "https://www.yukawa.kyoto-u.ac.jp/seminar/s53511?lang=en-GB",
       "deadlines": [],
       "notes": "Venue: Panasonic Auditorium, Yukawa Hall, YITP.",
-      "last_checked": "2026-10-23",
+      "last_checked": "2026-10-24",
       "verification_note": "Dates confirmed; no application deadline was verified from the inspected announcement.",
       "published": true,
-      "related_event_ids": []
+      "related_event_ids": [
+        "yitp-hydrodynamics-2027"
+      ]
     },
     {
       "id": "ictp-complexity-2027",
