@@ -39,7 +39,7 @@ class Page(HTMLParser):
             self.in_data = attrs.get("id") == "event-data"
         if tag in {"script", "img"} and "src" in attrs:
             self.assets.append(attrs["src"])
-        if tag == "link":
+        if tag == "link" and attrs.get("rel") != "canonical":
             self.assets.append(attrs["href"])
         if tag == "a":
             self.links.append(attrs["href"])
@@ -159,6 +159,21 @@ class BuildTests(unittest.TestCase):
         self.assertIn("cannot load IANA timezone 'Asia/Tokyo'", result.stderr)
         self.assertIn("python -m pip install -r requirements.txt", result.stderr)
         self.assertNotIn("Traceback", result.stderr)
+
+    def test_social_preview_metadata_and_image_are_in_static_output(self):
+        with TemporaryDirectory() as temp:
+            output = Path(temp)
+            build.build(self.data, output, "2026-10-24")
+            for name, suffix in [("index.html", ""), ("about.html", "about.html")]:
+                html = (output / name).read_text(encoding="utf-8")
+                self.assertIn(f'<meta property="og:url" content="https://ianmccul.github.io/conferences/{suffix}">', html)
+                self.assertIn('<meta property="og:title" content="', html)
+                self.assertIn('<meta property="og:description" content="', html)
+                self.assertIn('<meta property="og:image" content="https://ianmccul.github.io/conferences/social-preview.png">', html)
+            image = (output / "social-preview.png").read_bytes()
+            self.assertEqual(image[:8], b"\x89PNG\r\n\x1a\n")
+            self.assertEqual(int.from_bytes(image[16:20], "big"), 1200)
+            self.assertEqual(int.from_bytes(image[20:24], "big"), 630)
 
     def test_build_preserves_utf8_with_locale_encoding(self):
         with TemporaryDirectory() as temp:
