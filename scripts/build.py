@@ -279,6 +279,7 @@ def render_page(content, *, about=False, event_json=None):
     )
     return layout.substitute(
         title=escape(title), description=escape(description, quote=True), content=content,
+        canonical_url="https://ianmccul.github.io/conferences/" + ("about.html" if about else ""),
         skip_href="#about" if about else "#directory",
         skip_label="Skip to about this directory" if about else "Skip to conferences",
         directory_href="./index.html#directory" if about else "#directory",
@@ -317,7 +318,7 @@ def build(data, output, now):
     (output / "index.html").write_text(render_page(html, event_json=serialized), encoding="utf-8")
     about = (ROOT / "site/about.template.html").read_text(encoding="utf-8")
     (output / "about.html").write_text(render_page(about, about=True), encoding="utf-8")
-    for name in ("styles.css", "app.js", "favicon.svg"):
+    for name in ("styles.css", "app.js", "favicon.svg", "social-preview.png"):
         shutil.copyfile(ROOT / "site" / name, output / name)
     (output / ".nojekyll").write_text("", encoding="utf-8")
     (output / "events.json").write_text(json.dumps({**data, "events": public}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
