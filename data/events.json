@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -275,6 +275,49 @@
       "related_event_ids": []
     },
     {
+      "id": "hkust-rqm-2026",
+      "title": "Reticular Quantum Matter",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-04",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "Hong Kong University of Science and Technology"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
+      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
+      "deadlines": [
+        {
+          "kind": "General registration",
+          "date": "2026-11-20",
+          "time": null,
+          "timezone": null,
+          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
+        },
+        {
+          "kind": "Poster and contributed talk",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Submission is closed.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "rims-mqis-2026",
       "title": "RIMS International Symposium: Mathematics of Quantum Information Science",
       "start_date": "2026-11-30",
@@ -321,49 +364,6 @@
         }
       ],
       "notes": "Registration is free. The organizer permits on-site registration; the banquet deadline is not yet specified.",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
-      "published": true,
-      "related_event_ids": []
-    },
-    {
-      "id": "hkust-rqm-2026",
-      "title": "Reticular Quantum Matter",
-      "start_date": "2026-11-30",
-      "end_date": "2026-12-04",
-      "location": {
-        "city": "Hong Kong",
-        "country": "Hong Kong",
-        "region": "Asia",
-        "venue": "Hong Kong University of Science and Technology"
-      },
-      "formats": [
-        "Workshop"
-      ],
-      "topics": [
-        "Quantum matter"
-      ],
-      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
-      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
-      "deadlines": [
-        {
-          "kind": "General registration",
-          "date": "2026-11-20",
-          "time": null,
-          "timezone": null,
-          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
-        },
-        {
-          "kind": "Poster and contributed talk",
-          "date": "2026-09-30",
-          "time": null,
-          "timezone": null,
-          "note": "Submission is closed.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
-        }
-      ],
-      "notes": "",
       "last_checked": "2026-10-23",
       "verification_note": "",
       "published": true,
@@ -545,6 +545,32 @@
       "notes": "Two-day school followed by a three-day symposium. The organizer reports that acceptance letters are being sent.",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "benasque-ultracold-school-2027",
+      "title": "Winter School on Ultracold Quantum Many-Body Systems",
+      "start_date": "2027-01-24",
+      "end_date": "2027-01-30",
+      "location": {
+        "city": "Benasque",
+        "country": "Spain",
+        "region": "Europe",
+        "venue": "Centro de Ciencias de Benasque Pedro Pascual"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Winter school on ultracold quantum many-body systems, organized by A. Celi, P. Massignan, Q. Redon and L. Tarruell.",
+      "official_url": "https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027",
+      "deadlines": [],
+      "notes": "",
+      "last_checked": "2026-10-25",
+      "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
       "published": true,
       "related_event_ids": []
     },
@@ -1148,6 +1174,32 @@
       "related_event_ids": []
     },
     {
+      "id": "benasque-qi-2027",
+      "title": "Quantum Information",
+      "start_date": "2027-06-20",
+      "end_date": "2027-07-09",
+      "location": {
+        "city": "Benasque",
+        "country": "Spain",
+        "region": "Europe",
+        "venue": "Centro de Ciencias de Benasque Pedro Pascual"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information"
+      ],
+      "summary": "Three-week quantum information meeting organized by I. Cirac and A. Ekert.",
+      "official_url": "https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027",
+      "deadlines": [],
+      "notes": "",
+      "last_checked": "2026-10-25",
+      "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "pks-fuzzy-2027",
       "title": "Fuzzy Sphere Meets Quantum Criticality",
       "start_date": "2027-08-16",
@@ -1231,6 +1283,33 @@
       "related_event_ids": [
         "yitp-hydrodynamics-2027"
       ]
+    },
+    {
+      "id": "benasque-blinh-2027",
+      "title": "Beyond Linearity: Frontiers in Non-Hermitian Many-Body Physics",
+      "start_date": "2027-09-12",
+      "end_date": "2027-09-18",
+      "location": {
+        "city": "Benasque",
+        "country": "Spain",
+        "region": "Europe",
+        "venue": "Centro de Ciencias de Benasque Pedro Pascual"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "Workshop on the intersection of non-Hermitian physics and quantum many-body systems.",
+      "official_url": "https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027",
+      "deadlines": [],
+      "notes": "",
+      "last_checked": "2026-10-25",
+      "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "ictp-complexity-2027",
