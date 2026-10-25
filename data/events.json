@@ -275,49 +275,6 @@
       "related_event_ids": []
     },
     {
-      "id": "hkust-rqm-2026",
-      "title": "Reticular Quantum Matter",
-      "start_date": "2026-11-30",
-      "end_date": "2026-12-04",
-      "location": {
-        "city": "Hong Kong",
-        "country": "Hong Kong",
-        "region": "Asia",
-        "venue": "Hong Kong University of Science and Technology"
-      },
-      "formats": [
-        "Workshop"
-      ],
-      "topics": [
-        "Quantum matter"
-      ],
-      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
-      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
-      "deadlines": [
-        {
-          "kind": "General registration",
-          "date": "2026-11-20",
-          "time": null,
-          "timezone": null,
-          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
-        },
-        {
-          "kind": "Poster and contributed talk",
-          "date": "2026-09-30",
-          "time": null,
-          "timezone": null,
-          "note": "Submission is closed.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
-        }
-      ],
-      "notes": "",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
-      "published": true,
-      "related_event_ids": []
-    },
-    {
       "id": "rims-mqis-2026",
       "title": "RIMS International Symposium: Mathematics of Quantum Information Science",
       "start_date": "2026-11-30",
@@ -364,6 +321,49 @@
         }
       ],
       "notes": "Registration is free. The organizer permits on-site registration; the banquet deadline is not yet specified.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "hkust-rqm-2026",
+      "title": "Reticular Quantum Matter",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-04",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "Hong Kong University of Science and Technology"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
+      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
+      "deadlines": [
+        {
+          "kind": "General registration",
+          "date": "2026-11-20",
+          "time": null,
+          "timezone": null,
+          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
+        },
+        {
+          "kind": "Poster and contributed talk",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Submission is closed.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
+        }
+      ],
+      "notes": "",
       "last_checked": "2026-10-23",
       "verification_note": "",
       "published": true,
