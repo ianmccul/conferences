@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -271,6 +271,32 @@
       "notes": "",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "rims-quantum-walks-2026",
+      "title": "Mathematics of Quantum Walks and Quantum Information Science",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-19",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Room 420, Research Institute for Mathematical Sciences, Kyoto University"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information"
+      ],
+      "summary": "RIMS workshop on the mathematics of quantum walks and quantum information science, organized by Sho Kubota and Kiyoto Yoshino.",
+      "official_url": "https://www.kurims.kyoto-u.ac.jp/kyoten/en/workshop.html",
+      "deadlines": [],
+      "notes": "RIMS lists this as a Type A workshop.",
+      "last_checked": "2026-10-26",
+      "verification_note": "Title, dates, room and organizers verified on the RIMS workshop calendar. No individual workshop programme or participation deadline was confirmed.",
       "published": true,
       "related_event_ids": []
     },
@@ -611,6 +637,43 @@
       "related_event_ids": []
     },
     {
+      "id": "aspen-emergent-matter-2027",
+      "title": "Emergent Quantum Matter Across Scales: From Moiré Platforms and Quantum Simulation to AI-Driven Theory",
+      "start_date": "2027-02-07",
+      "end_date": "2027-02-12",
+      "location": {
+        "city": "Aspen",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Flug Forum, Aspen Center for Physics"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "Winter conference connecting moiré systems, quantum simulators and correlated materials with tensor-network and neural-network quantum-state simulations.",
+      "official_url": "https://aspenphys.org/event/emergent-quantum-matter-across-scales-from-moire-platforms-and-quantum-simulation-to-ai-driven-theory/",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Event-specific deadline listed by the organizer; now past.",
+          "source_url": "https://aspenphys.org/event/emergent-quantum-matter-across-scales-from-moire-platforms-and-quantum-simulation-to-ai-driven-theory/"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-26",
+      "verification_note": "Dates, venue, scope and event-specific application date verified. The general Aspen winter listing gives 15 September for February events, while this event's own page says 30 September; the event-specific date is recorded. No other deadline verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "yitp-novel-2027",
       "title": "Novel Quantum States in Condensed Matter 2027",
       "start_date": "2027-02-08",
@@ -914,6 +977,33 @@
       ]
     },
     {
+      "id": "tsimf-anomalies-qft-2027",
+      "title": "Anomalies, Topology, and Quantum Field Theories",
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-05",
+      "location": {
+        "city": "Sanya",
+        "country": "China",
+        "region": "Asia",
+        "venue": "Tsinghua Sanya International Mathematics Forum (TSIMF)"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Gauge theories"
+      ],
+      "summary": "Conference on anomalies, generalized symmetries, topological quantum field theories, symmetry-protected and enriched phases, and categorical approaches to QFT.",
+      "official_url": "https://tsimf.tsinghua.edu.cn/info/1633/1943.htm",
+      "deadlines": [],
+      "notes": "Conference ID M270301; organizers include Zheyan Wan, Hank Chen, Wei Cui and Juven Wang.",
+      "last_checked": "2026-10-26",
+      "verification_note": "Title, dates and scope verified from TSIMF's individual conference page and its 2027 programme calendar; participation deadlines and detailed room assignment were not stated.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "int-chiral-2027",
       "title": "Chiral Gauge Theories on the Lattice and Beyond",
       "start_date": "2027-03-08",
@@ -1016,6 +1106,43 @@
       ]
     },
     {
+      "id": "aspen-adaptive-circuits-2027",
+      "title": "Adaptive Quantum Circuits: From Nonequilibrium Many-Body Physics to Quantum Information Processing",
+      "start_date": "2027-03-21",
+      "end_date": "2027-03-26",
+      "location": {
+        "city": "Aspen",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Flug Forum, Aspen Center for Physics"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum information",
+        "Entanglement",
+        "Dynamics & open systems"
+      ],
+      "summary": "Winter conference covering measurement-induced criticality, mixed-state and topological phases, adaptive quantum algorithms and quantum error correction.",
+      "official_url": "https://aspenphys.org/event/adaptive-quantum-circuits-from-nonequilibrium-many-body-physics-to-quantum-information-processing/",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Event-specific application deadline; now past.",
+          "source_url": "https://aspenphys.org/event/adaptive-quantum-circuits-from-nonequilibrium-many-body-physics-to-quantum-information-processing/"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-26",
+      "verification_note": "Dates, venue, topics and event-specific application deadline verified on the official Aspen page; no later general-registration or poster deadlines confirmed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "simqudyn-2027",
       "title": "Simulation of far-from-equilibrium quantum many-body dynamics (SimQuDyn 2027)",
       "start_date": "2027-03-22",
@@ -1107,6 +1234,66 @@
       "related_event_ids": [
         "kitp-geometry-2027"
       ]
+    },
+    {
+      "id": "iwcn-2027",
+      "title": "2027 International Workshop on Computational Nanotechnology (IWCN 2027)",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-22",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "Ambassador Hotel Hsinchu"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Workshop on simulation of electronic, thermal and spin transport, quantum and first-principles modelling, and computational approaches to nanoscale devices.",
+      "official_url": "https://iwcn2027.nycu.site/",
+      "deadlines": [
+        {
+          "kind": "Abstract",
+          "date": "2026-11-22",
+          "time": "23:59",
+          "timezone": "Asia/Taipei",
+          "note": "Two-page PDF abstract; organizer specifies Taipei time (UTC+8).",
+          "source_url": "https://iwcn2027.nycu.site/submission"
+        },
+        {
+          "kind": "Early registration",
+          "date": "2027-02-26",
+          "time": "23:59",
+          "timezone": "Asia/Taipei",
+          "note": "Early registration fee cutoff; organizer specifies Taipei time (UTC+8).",
+          "source_url": "https://iwcn2027.nycu.site/registration"
+        },
+        {
+          "kind": "Final paper",
+          "date": "2027-03-08",
+          "time": null,
+          "timezone": null,
+          "note": "For accepted abstracts; includes IEEE copyright form.",
+          "source_url": "https://iwcn2027.nycu.site/submission"
+        },
+        {
+          "kind": "Presenting author registration",
+          "date": "2027-03-08",
+          "time": null,
+          "timezone": null,
+          "note": "Accepted papers must have a presenting author registered by this date.",
+          "source_url": "https://iwcn2027.nycu.site/submission"
+        }
+      ],
+      "notes": "A separate co-located International Wigner Workshop is scheduled for 19 April. General online registration is not yet open.",
+      "last_checked": "2026-10-26",
+      "verification_note": "Dates and venue checked against organizer event site and linked official IWCN series homepage; submission and rate deadlines checked on organizer's respective pages. A general registration cutoff and IWW scientific programme were not verified.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "ipam-response-2027",

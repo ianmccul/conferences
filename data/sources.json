@@ -155,6 +155,16 @@
       "name": "NTHU Physics Indico workshops and meetings",
       "url": "https://indico.phys.nthu.edu.tw/",
       "region": "Taiwan"
+    },
+    {
+      "name": "Aspen Center for Physics winter conferences",
+      "url": "https://aspenphys.org/winter-conferences/",
+      "region": "North America"
+    },
+    {
+      "name": "Tsinghua Sanya International Mathematics Forum annual workshops",
+      "url": "https://tsimf.tsinghua.edu.cn/programs/workshops/W2027.htm",
+      "region": "China"
     }
   ]
 }
