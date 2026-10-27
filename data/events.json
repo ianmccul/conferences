@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -534,6 +534,43 @@
       "notes": "Venue: RIKEN Center for Computational Science, Kobe.",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "maglab-theory-school-2027",
+      "title": "2027 Theory Winter School",
+      "start_date": "2027-01-11",
+      "end_date": "2027-01-15",
+      "location": {
+        "city": "Tallahassee, FL",
+        "country": "United States",
+        "region": "North America",
+        "venue": "National High Magnetic Field Laboratory"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems",
+        "Quantum information"
+      ],
+      "summary": "School on disorder, localization, glassy dynamics, strange metals and nonequilibrium quantum matter, connecting many-body localization, prethermalization, quantum chaos and quantum circuits.",
+      "official_url": "https://nationalmaglab.org/theory-winter-school",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-11-09",
+          "time": "17:00",
+          "timezone": "America/New_York",
+          "note": "5 p.m. Eastern Standard Time (EST), as specified by the organizer.",
+          "source_url": "https://nationalmaglab.org/theory-winter-school"
+        }
+      ],
+      "notes": "Attendance requires an accepted application. The USD 650 participation fee includes lodging, meals and scheduled activities, but not travel; limited travel reimbursement may be available.",
+      "last_checked": "2026-10-27",
+      "verification_note": "Dates, location, topics, admission procedure and the timed application deadline verified against the 2027 organizer page. No separate visa or travel-funding deadline is stated.",
       "published": true,
       "related_event_ids": []
     },
