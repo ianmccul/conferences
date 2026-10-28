@@ -170,6 +170,11 @@
       "name": "National MagLab Theory Winter School",
       "url": "https://nationalmaglab.org/theory-winter-school",
       "region": "North America"
+    },
+    {
+      "name": "Bernoulli Center programmes",
+      "url": "https://bernoulli.epfl.ch/programs/",
+      "region": "Europe"
     }
   ]
 }
