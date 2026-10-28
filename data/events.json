@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -396,6 +396,41 @@
       "related_event_ids": []
     },
     {
+      "id": "ncts-universe-matrices-2026",
+      "title": "Universe from Matrices",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-08",
+      "location": {
+        "city": "Taipei",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "National Taiwan University (room to be announced)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Gauge theories"
+      ],
+      "summary": "NCTS workshop on nonperturbative matrix models, particularly the IKKT model, and the emergence of spacetime and gravity from matrix degrees of freedom.",
+      "official_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/Universe-from-Matrices-8592533/home/introduction",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-30",
+          "time": null,
+          "timezone": null,
+          "note": "Last date of the published sign-up period; no cutoff time given.",
+          "source_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/Universe-from-Matrices-8592533/home/introduction"
+        }
+      ],
+      "notes": "Confirmed speakers include Robert Brandenberger, Chong-Sun Chu, Hikaru Kawai, Reishi Maeta and Harold Steinacker. The specific NTU room is to be announced.",
+      "last_checked": "2026-10-28",
+      "verification_note": "NCTS public event page confirms dates, NTU location, scope, speakers and the sign-up window (1 October–30 November 2026). The room assignment and exact deadline time remain unspecified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "icts-gapless-2026",
       "title": "Second ICTS-ICTP Advanced School and Conference on Quantum Matter – Correlated gapless phases",
       "start_date": "2026-12-07",
@@ -575,6 +610,33 @@
       "related_event_ids": []
     },
     {
+      "id": "tsimf-math-quantum-2027",
+      "title": "Mathematical Aspects of Quantum Theory",
+      "start_date": "2027-01-11",
+      "end_date": "2027-01-15",
+      "location": {
+        "city": "Sanya",
+        "country": "China",
+        "region": "Asia",
+        "venue": "Tsinghua Sanya International Mathematics Forum (TSIMF)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information",
+        "Quantum matter"
+      ],
+      "summary": "Workshop on mathematical structures in quantum theory, including operator and C*-algebras, vertex operator algebras, conformal field theory, algebraic quantum field theory, entanglement and open-system stochastic processes.",
+      "official_url": "https://tsimf.tsinghua.edu.cn/info/1606/1899.htm",
+      "deadlines": [],
+      "notes": "Conference ID M270105; organizers Bin Gui, Zhengwei Liu and Jinsong Wu.",
+      "last_checked": "2026-10-28",
+      "verification_note": "TSIMF's individual 2027 workshop page confirms 11–15 January dates, organizers and subject scope. An invitation link is provided, but participation deadlines and a specific meeting room were not confirmed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "oist-fqm-2027",
       "title": "Bridging Theoretical and Experimental Frontiers in Quantum Materials (FQM2027)",
       "start_date": "2027-01-18",
@@ -634,6 +696,33 @@
       "notes": "",
       "last_checked": "2026-10-25",
       "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "bernoulli-ising-2027",
+      "title": "Ising Field Theory: CFT, Integrability, and Simulation",
+      "start_date": "2027-01-25",
+      "end_date": "2027-01-29",
+      "location": {
+        "city": "Lausanne",
+        "country": "Switzerland",
+        "region": "Europe",
+        "venue": "Bernoulli Center for Fundamental Studies, EPFL"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "Workshop connecting Ising field theory with conformal field theory, integrability and simulation, organized by Barak Gabai and Joseph Dominicus Lap.",
+      "official_url": "https://bernoulli.epfl.ch/programs/ising-field-theory-cft-integrability-and-simulation/",
+      "deadlines": [],
+      "notes": "Part of the Bernoulli Center's 2027 internal programme.",
+      "last_checked": "2026-10-28",
+      "verification_note": "Organizer programme confirms the title, 25–29 January 2027 dates, Bernoulli Center venue and organizing team. Detailed agenda, participation arrangements and deadlines were not confirmed.",
       "published": true,
       "related_event_ids": []
     },
@@ -711,6 +800,44 @@
       "related_event_ids": []
     },
     {
+      "id": "yitp-novel-school-2027",
+      "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): School",
+      "start_date": "2027-02-08",
+      "end_date": "2027-02-13",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "The first-week school of NQS2027, introducing topics in novel quantum states and condensed-matter theory for young researchers.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "Shared NQS2027 registration deadline.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
+        }
+      ],
+      "notes": "School week of the longer NQS2027 programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": [
+        "yitp-novel-2027"
+      ]
+    },
+    {
       "id": "yitp-novel-2027",
       "title": "Novel Quantum States in Condensed Matter 2027",
       "start_date": "2027-02-08",
@@ -755,44 +882,6 @@
       "related_event_ids": [
         "yitp-novel-school-2027",
         "yitp-novel-conference-2027"
-      ]
-    },
-    {
-      "id": "yitp-novel-school-2027",
-      "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): School",
-      "start_date": "2027-02-08",
-      "end_date": "2027-02-13",
-      "location": {
-        "city": "Kyoto",
-        "country": "Japan",
-        "region": "Asia",
-        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
-      },
-      "formats": [
-        "School"
-      ],
-      "topics": [
-        "Quantum matter",
-        "Dynamics & open systems"
-      ],
-      "summary": "The first-week school of NQS2027, introducing topics in novel quantum states and condensed-matter theory for young researchers.",
-      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
-      "deadlines": [
-        {
-          "kind": "Registration",
-          "date": "2026-11-15",
-          "time": null,
-          "timezone": null,
-          "note": "Shared NQS2027 registration deadline.",
-          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
-        }
-      ],
-      "notes": "School week of the longer NQS2027 programme.",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
-      "published": true,
-      "related_event_ids": [
-        "yitp-novel-2027"
       ]
     },
     {
@@ -968,6 +1057,33 @@
       "related_event_ids": []
     },
     {
+      "id": "tsimf-anomalies-qft-2027",
+      "title": "Anomalies, Topology, and Quantum Field Theories",
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-05",
+      "location": {
+        "city": "Sanya",
+        "country": "China",
+        "region": "Asia",
+        "venue": "Tsinghua Sanya International Mathematics Forum (TSIMF)"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Gauge theories"
+      ],
+      "summary": "Conference on anomalies, generalized symmetries, topological quantum field theories, symmetry-protected and enriched phases, and categorical approaches to QFT.",
+      "official_url": "https://tsimf.tsinghua.edu.cn/info/1633/1943.htm",
+      "deadlines": [],
+      "notes": "Conference ID M270301; organizers include Zheyan Wan, Hank Chen, Wei Cui and Juven Wang.",
+      "last_checked": "2026-10-26",
+      "verification_note": "Title, dates and scope verified from TSIMF's individual conference page and its 2027 programme calendar; participation deadlines and detailed room assignment were not stated.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "yitp-novel-conference-2027",
       "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): Conference",
       "start_date": "2027-03-01",
@@ -1012,33 +1128,6 @@
       "related_event_ids": [
         "yitp-novel-2027"
       ]
-    },
-    {
-      "id": "tsimf-anomalies-qft-2027",
-      "title": "Anomalies, Topology, and Quantum Field Theories",
-      "start_date": "2027-03-01",
-      "end_date": "2027-03-05",
-      "location": {
-        "city": "Sanya",
-        "country": "China",
-        "region": "Asia",
-        "venue": "Tsinghua Sanya International Mathematics Forum (TSIMF)"
-      },
-      "formats": [
-        "Conference"
-      ],
-      "topics": [
-        "Quantum matter",
-        "Gauge theories"
-      ],
-      "summary": "Conference on anomalies, generalized symmetries, topological quantum field theories, symmetry-protected and enriched phases, and categorical approaches to QFT.",
-      "official_url": "https://tsimf.tsinghua.edu.cn/info/1633/1943.htm",
-      "deadlines": [],
-      "notes": "Conference ID M270301; organizers include Zheyan Wan, Hank Chen, Wei Cui and Juven Wang.",
-      "last_checked": "2026-10-26",
-      "verification_note": "Title, dates and scope verified from TSIMF's individual conference page and its 2027 programme calendar; participation deadlines and detailed room assignment were not stated.",
-      "published": true,
-      "related_event_ids": []
     },
     {
       "id": "int-chiral-2027",
@@ -1245,34 +1334,6 @@
       "related_event_ids": []
     },
     {
-      "id": "kitp-geometry-conference-2027",
-      "title": "Geometrical Aspects of Quantum Materials and Their Responses",
-      "start_date": "2027-04-19",
-      "end_date": "2027-04-22",
-      "location": {
-        "city": "Santa Barbara",
-        "country": "United States",
-        "region": "North America",
-        "venue": "Kavli Institute for Theoretical Physics"
-      },
-      "formats": [
-        "Conference"
-      ],
-      "topics": [
-        "Quantum matter"
-      ],
-      "summary": "Geometrical theories and experimental signatures of quantum materials, including real-space effects and many-body Hilbert-space geometry.",
-      "official_url": "https://www.kitp.ucsb.edu/activities/qgeometry-c27",
-      "deadlines": [],
-      "notes": "Short conference associated with the Quantum Geometry Meets Correlation, Symmetry Breaking, and Topology programme.",
-      "last_checked": "2026-10-23",
-      "verification_note": "Dates confirmed on the institutional conference calendar; no registration deadline was verified.",
-      "published": true,
-      "related_event_ids": [
-        "kitp-geometry-2027"
-      ]
-    },
-    {
       "id": "iwcn-2027",
       "title": "2027 International Workshop on Computational Nanotechnology (IWCN 2027)",
       "start_date": "2027-04-19",
@@ -1331,6 +1392,34 @@
       "verification_note": "Dates and venue checked against organizer event site and linked official IWCN series homepage; submission and rate deadlines checked on organizer's respective pages. A general registration cutoff and IWW scientific programme were not verified.",
       "published": true,
       "related_event_ids": []
+    },
+    {
+      "id": "kitp-geometry-conference-2027",
+      "title": "Geometrical Aspects of Quantum Materials and Their Responses",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-22",
+      "location": {
+        "city": "Santa Barbara",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Kavli Institute for Theoretical Physics"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Geometrical theories and experimental signatures of quantum materials, including real-space effects and many-body Hilbert-space geometry.",
+      "official_url": "https://www.kitp.ucsb.edu/activities/qgeometry-c27",
+      "deadlines": [],
+      "notes": "Short conference associated with the Quantum Geometry Meets Correlation, Symmetry Breaking, and Topology programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "Dates confirmed on the institutional conference calendar; no registration deadline was verified.",
+      "published": true,
+      "related_event_ids": [
+        "kitp-geometry-2027"
+      ]
     },
     {
       "id": "ipam-response-2027",
