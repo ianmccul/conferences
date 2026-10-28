@@ -165,6 +165,16 @@
       "name": "Tsinghua Sanya International Mathematics Forum annual workshops",
       "url": "https://tsimf.tsinghua.edu.cn/programs/workshops/W2027.htm",
       "region": "China"
+    },
+    {
+      "name": "National MagLab Theory Winter School",
+      "url": "https://nationalmaglab.org/theory-winter-school",
+      "region": "North America"
+    },
+    {
+      "name": "Bernoulli Center programmes",
+      "url": "https://bernoulli.epfl.ch/programs/",
+      "region": "Europe"
     }
   ]
 }
