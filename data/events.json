@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -885,6 +885,34 @@
       ]
     },
     {
+      "id": "ipam-random-hamiltonians-2027",
+      "title": "Random Quantum Hamiltonians: Physics, Computation, and Complexity",
+      "start_date": "2027-02-08",
+      "end_date": "2027-02-12",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Institute for Pure and Applied Mathematics (IPAM), UCLA"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Entanglement",
+        "Numerical methods"
+      ],
+      "summary": "Disordered quantum Hamiltonians, chaos, entanglement growth, thermalization and the computational complexity of classical and quantum simulation.",
+      "official_url": "https://www.ipam.ucla.edu/programs/workshops/random-quantum-hamiltonians-physics-computation-and-complexity/",
+      "deadlines": [],
+      "notes": "A poster session is planned; a call for posters will be sent to registered participants.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Dates and scope confirmed on the IPAM workshop page; participation and poster deadlines were not posted.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "benasque-etqm-2027",
       "title": "Entanglement and topology in interacting quantum matter",
       "start_date": "2027-02-14",
@@ -952,11 +980,11 @@
       "deadlines": [
         {
           "kind": "Short talk",
-          "date": "2026-11-16",
+          "date": "2026-11-20",
           "time": null,
           "timezone": null,
           "note": "",
-          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/"
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/91/overview"
         },
         {
           "kind": "Visa support",
@@ -984,7 +1012,7 @@
         }
       ],
       "notes": "Registration is free. Venue: Maskawa Hall, YITP.",
-      "last_checked": "2026-10-23",
+      "last_checked": "2026-10-29",
       "verification_note": "",
       "published": true,
       "related_event_ids": []
@@ -1334,6 +1362,34 @@
       "related_event_ids": []
     },
     {
+      "id": "rtrt-2027",
+      "title": "Random Tensors and Related Topics 2027 (RTRT27)",
+      "start_date": "2027-04-11",
+      "end_date": "2027-04-17",
+      "location": {
+        "city": "Cargèse",
+        "country": "France",
+        "region": "Europe",
+        "venue": "Institut d'Études Scientifiques de Cargèse (IESC), Corsica"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Random tensor methods across mathematics, physics and computing, with lectures on random quantum circuits, tensor-network approaches to quantum dynamics and equilibrium, and random-tensor norms.",
+      "official_url": "https://tensors-2027.sciencesconf.org/",
+      "deadlines": [],
+      "notes": "Mini-lectures include theory of tensor networks for quantum dynamics and equilibrium.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Dates, venue and mini-lecture topics confirmed on the organizer site; registration and abstract deadlines were not listed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "iwcn-2027",
       "title": "2027 International Workshop on Computational Nanotechnology (IWCN 2027)",
       "start_date": "2027-04-19",
@@ -1513,6 +1569,34 @@
       "related_event_ids": []
     },
     {
+      "id": "yitp-rims-mpes-2027",
+      "title": "Mathematical Physics of Extensive Systems: Classical and Quantum",
+      "start_date": "2027-07-26",
+      "end_date": "2027-07-30",
+      "location": {
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Hall, Yukawa Institute for Theoretical Physics, Kyoto University"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems",
+        "Gauge theories"
+      ],
+      "summary": "Joint YITP–RIMS workshop on classical and quantum spin systems, quantum many-body theory, scaling limits, transport, localization, statistical mechanics and mathematical physics.",
+      "official_url": "https://web.math.princeton.edu/~js129/mpes.html",
+      "deadlines": [],
+      "notes": "Planned as a satellite meeting of the 2027 International Congress on Mathematical Physics.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Dates, venue and scope verified on the organizer's university-hosted page and the IAMP forthcoming-meetings listing; participation deadlines were not announced.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "pks-fuzzy-2027",
       "title": "Fuzzy Sphere Meets Quantum Criticality",
       "start_date": "2027-08-16",
@@ -1678,6 +1762,65 @@
       "verification_note": "Dates and title confirmed on the institutional calendar; detailed programme and participation deadlines remain unverified.",
       "published": true,
       "related_event_ids": []
+    },
+    {
+      "id": "ipam-quantum-advantage-2028",
+      "title": "Frontiers of Quantum Advantage",
+      "start_date": "2028-03-06",
+      "end_date": "2028-06-09",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Institute for Pure and Applied Mathematics (IPAM), UCLA"
+      },
+      "formats": [
+        "Programme"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Long programme on quantum simulation, early fault-tolerant algorithms, quantum error correction and quantum learning, emphasizing the scientific foundations of quantum advantage.",
+      "official_url": "https://www.ipam.ucla.edu/programs/long-programs/frontiers-of-quantum-advantage/",
+      "deadlines": [],
+      "notes": "Includes a separately listed quantum-simulation workshop on 27–31 March 2028; further thematic workshops are announced.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Programme dates and thematic scope verified on IPAM's official site; detailed participation arrangements and application deadlines are not yet posted.",
+      "published": true,
+      "related_event_ids": [
+        "ipam-quantum-simulation-2028"
+      ]
+    },
+    {
+      "id": "ipam-quantum-simulation-2028",
+      "title": "Towards Quantum Advantage in Quantum Simulation",
+      "start_date": "2028-03-27",
+      "end_date": "2028-03-31",
+      "location": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Institute for Pure and Applied Mathematics (IPAM), UCLA"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "First thematic workshop of IPAM's Frontiers of Quantum Advantage long programme, focusing on quantum simulation.",
+      "official_url": "https://www.ipam.ucla.edu/programs/workshops/workshop-i-towards-quantum-advantage-in-quantum-simulation/",
+      "deadlines": [],
+      "notes": "Detailed scientific programme and participation arrangements are forthcoming.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Title, dates and relationship to the long programme confirmed on the official IPAM workshop page; detailed programme and deadlines are unannounced.",
+      "published": true,
+      "related_event_ids": [
+        "ipam-quantum-advantage-2028"
+      ]
     }
   ]
 }
