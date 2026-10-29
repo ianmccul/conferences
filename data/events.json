@@ -222,6 +222,33 @@
       "related_event_ids": []
     },
     {
+      "id": "quantum-taiwan-2026",
+      "title": "Quantum Taiwan 2026",
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-11",
+      "location": {
+        "city": "Taipei",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "Taipei International Convention Center (TICC)"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Two-day international symposium on quantum computing, hybrid computing, photonic quantum technologies, and quantum-safe networks, accompanied by a separate quantum supply-chain exhibition.",
+      "official_url": "https://2026.quantumtaiwan.org/",
+      "deadlines": [],
+      "notes": "Paid international symposium on the second floor; separate free quantum supply-chain exhibition on the first floor. Registration procedures differ.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Dates, venue, symposium themes, and separate symposium/exhibition participation arrangements verified on the official 2026 event website and organizer's registration announcement. No general symposium registration cutoff verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "yitp-gauge-2026",
       "title": "Frontiers of Quantum Computing and Classical Tensor Networks for Gauge Theories",
       "start_date": "2026-11-16",
@@ -301,6 +328,49 @@
       "related_event_ids": []
     },
     {
+      "id": "hkust-rqm-2026",
+      "title": "Reticular Quantum Matter",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-04",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "Hong Kong University of Science and Technology"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
+      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
+      "deadlines": [
+        {
+          "kind": "General registration",
+          "date": "2026-11-20",
+          "time": null,
+          "timezone": null,
+          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
+        },
+        {
+          "kind": "Poster and contributed talk",
+          "date": "2026-09-30",
+          "time": null,
+          "timezone": null,
+          "note": "Submission is closed.",
+          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
+        }
+      ],
+      "notes": "",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "rims-mqis-2026",
       "title": "RIMS International Symposium: Mathematics of Quantum Information Science",
       "start_date": "2026-11-30",
@@ -353,43 +423,36 @@
       "related_event_ids": []
     },
     {
-      "id": "hkust-rqm-2026",
-      "title": "Reticular Quantum Matter",
-      "start_date": "2026-11-30",
-      "end_date": "2026-12-04",
+      "id": "icts-gapless-2026",
+      "title": "Second ICTS-ICTP Advanced School and Conference on Quantum Matter – Correlated gapless phases",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-18",
       "location": {
-        "city": "Hong Kong",
-        "country": "Hong Kong",
+        "city": "Bengaluru",
+        "country": "India",
         "region": "Asia",
-        "venue": "Hong Kong University of Science and Technology"
+        "venue": "International Centre for Theoretical Sciences"
       },
       "formats": [
-        "Workshop"
+        "School",
+        "Conference"
       ],
       "topics": [
         "Quantum matter"
       ],
-      "summary": "Quantum properties of reticular materials, including magnetism, spin correlations, Kondo physics and correlated-electron phases.",
-      "official_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php",
+      "summary": "Advanced lectures and research talks on correlated gapless matter, including quantum spin liquids, strange metals, criticality and superconductivity.",
+      "official_url": "https://www.icts.res.in/program/qmcgp",
       "deadlines": [
         {
-          "kind": "General registration",
-          "date": "2026-11-20",
+          "kind": "Application",
+          "date": "2026-09-01",
           "time": null,
           "timezone": null,
-          "note": "Registrations are reviewed; acceptance notifications are scheduled by 25 November.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/registration.php"
-        },
-        {
-          "kind": "Poster and contributed talk",
-          "date": "2026-09-30",
-          "time": null,
-          "timezone": null,
-          "note": "Submission is closed.",
-          "source_url": "https://iasprogram.hkust.edu.hk/2026rqm/home.php"
+          "note": "",
+          "source_url": "https://www.icts.res.in/program/qmcgp"
         }
       ],
-      "notes": "",
+      "notes": "School and conference for researchers from advanced graduate level onward.",
       "last_checked": "2026-10-23",
       "verification_note": "",
       "published": true,
@@ -427,42 +490,6 @@
       "notes": "Confirmed speakers include Robert Brandenberger, Chong-Sun Chu, Hikaru Kawai, Reishi Maeta and Harold Steinacker. The specific NTU room is to be announced.",
       "last_checked": "2026-10-28",
       "verification_note": "NCTS public event page confirms dates, NTU location, scope, speakers and the sign-up window (1 October–30 November 2026). The room assignment and exact deadline time remain unspecified.",
-      "published": true,
-      "related_event_ids": []
-    },
-    {
-      "id": "icts-gapless-2026",
-      "title": "Second ICTS-ICTP Advanced School and Conference on Quantum Matter – Correlated gapless phases",
-      "start_date": "2026-12-07",
-      "end_date": "2026-12-18",
-      "location": {
-        "city": "Bengaluru",
-        "country": "India",
-        "region": "Asia",
-        "venue": "International Centre for Theoretical Sciences"
-      },
-      "formats": [
-        "School",
-        "Conference"
-      ],
-      "topics": [
-        "Quantum matter"
-      ],
-      "summary": "Advanced lectures and research talks on correlated gapless matter, including quantum spin liquids, strange metals, criticality and superconductivity.",
-      "official_url": "https://www.icts.res.in/program/qmcgp",
-      "deadlines": [
-        {
-          "kind": "Application",
-          "date": "2026-09-01",
-          "time": null,
-          "timezone": null,
-          "note": "",
-          "source_url": "https://www.icts.res.in/program/qmcgp"
-        }
-      ],
-      "notes": "School and conference for researchers from advanced graduate level onward.",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
       "published": true,
       "related_event_ids": []
     },
@@ -800,42 +827,32 @@
       "related_event_ids": []
     },
     {
-      "id": "yitp-novel-school-2027",
-      "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): School",
+      "id": "ipam-random-hamiltonians-2027",
+      "title": "Random Quantum Hamiltonians: Physics, Computation, and Complexity",
       "start_date": "2027-02-08",
-      "end_date": "2027-02-13",
+      "end_date": "2027-02-12",
       "location": {
-        "city": "Kyoto",
-        "country": "Japan",
-        "region": "Asia",
-        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
+        "city": "Los Angeles",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Institute for Pure and Applied Mathematics (IPAM), UCLA"
       },
       "formats": [
-        "School"
+        "Workshop"
       ],
       "topics": [
         "Quantum matter",
-        "Dynamics & open systems"
+        "Entanglement",
+        "Numerical methods"
       ],
-      "summary": "The first-week school of NQS2027, introducing topics in novel quantum states and condensed-matter theory for young researchers.",
-      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
-      "deadlines": [
-        {
-          "kind": "Registration",
-          "date": "2026-11-15",
-          "time": null,
-          "timezone": null,
-          "note": "Shared NQS2027 registration deadline.",
-          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
-        }
-      ],
-      "notes": "School week of the longer NQS2027 programme.",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
+      "summary": "Disordered quantum Hamiltonians, chaos, entanglement growth, thermalization and the computational complexity of classical and quantum simulation.",
+      "official_url": "https://www.ipam.ucla.edu/programs/workshops/random-quantum-hamiltonians-physics-computation-and-complexity/",
+      "deadlines": [],
+      "notes": "A poster session is planned; a call for posters will be sent to registered participants.",
+      "last_checked": "2026-10-29",
+      "verification_note": "Dates and scope confirmed on the IPAM workshop page; participation and poster deadlines were not posted.",
       "published": true,
-      "related_event_ids": [
-        "yitp-novel-2027"
-      ]
+      "related_event_ids": []
     },
     {
       "id": "yitp-novel-2027",
@@ -885,32 +902,42 @@
       ]
     },
     {
-      "id": "ipam-random-hamiltonians-2027",
-      "title": "Random Quantum Hamiltonians: Physics, Computation, and Complexity",
+      "id": "yitp-novel-school-2027",
+      "title": "Novel Quantum States in Condensed Matter 2027 (NQS2027): School",
       "start_date": "2027-02-08",
-      "end_date": "2027-02-12",
+      "end_date": "2027-02-13",
       "location": {
-        "city": "Los Angeles",
-        "country": "United States",
-        "region": "North America",
-        "venue": "Institute for Pure and Applied Mathematics (IPAM), UCLA"
+        "city": "Kyoto",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Panasonic Auditorium, Yukawa Hall, Yukawa Institute for Theoretical Physics"
       },
       "formats": [
-        "Workshop"
+        "School"
       ],
       "topics": [
         "Quantum matter",
-        "Entanglement",
-        "Numerical methods"
+        "Dynamics & open systems"
       ],
-      "summary": "Disordered quantum Hamiltonians, chaos, entanglement growth, thermalization and the computational complexity of classical and quantum simulation.",
-      "official_url": "https://www.ipam.ucla.edu/programs/workshops/random-quantum-hamiltonians-physics-computation-and-complexity/",
-      "deadlines": [],
-      "notes": "A poster session is planned; a call for posters will be sent to registered participants.",
-      "last_checked": "2026-10-29",
-      "verification_note": "Dates and scope confirmed on the IPAM workshop page; participation and poster deadlines were not posted.",
+      "summary": "The first-week school of NQS2027, introducing topics in novel quantum states and condensed-matter theory for young researchers.",
+      "official_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "Shared NQS2027 registration deadline.",
+          "source_url": "https://indico.yukawa.kyoto-u.ac.jp/event/104/registrations/76/"
+        }
+      ],
+      "notes": "School week of the longer NQS2027 programme.",
+      "last_checked": "2026-10-23",
+      "verification_note": "",
       "published": true,
-      "related_event_ids": []
+      "related_event_ids": [
+        "yitp-novel-2027"
+      ]
     },
     {
       "id": "benasque-etqm-2027",
