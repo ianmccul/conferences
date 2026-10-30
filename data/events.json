@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1505,6 +1505,33 @@
       ]
     },
     {
+      "id": "ictp-ccq-correlated-school-2027",
+      "title": "ICTP-CCQ School on Computational Approaches and Strongly Correlated Systems",
+      "start_date": "2027-05-03",
+      "end_date": "2027-05-14",
+      "location": {
+        "city": "Trieste",
+        "country": "Italy",
+        "region": "Europe",
+        "venue": "Budinich Lecture Hall, ICTP"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "School on computational approaches to strongly correlated systems, organized by Juan Carrasquilla and Miles Stoudenmire with Marcello Dalmonte as local organizer.",
+      "official_url": "https://indico.ictp.it/event/11424/",
+      "deadlines": [],
+      "notes": "Detailed scientific programme and participation arrangements are not yet listed on the event page.",
+      "last_checked": "2026-10-30",
+      "verification_note": "ICTP organizer listing confirms title, 3–14 May 2027 dates, venue and organizers. The event listing does not supply a dated application deadline; the ICTP calendar labels applications closed without a cutoff date. Detailed lecture topics were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "ipam-response-2027",
       "title": "Response Functions, Time-Dependent Properties and Parameterizations",
       "start_date": "2027-05-03",
@@ -1541,6 +1568,34 @@
       "related_event_ids": [
         "ipam-algebra-electrons-2027"
       ]
+    },
+    {
+      "id": "ictp-quantum-materials-dialogues-2027",
+      "title": "Joint ICTP–WE Heraeus Perspectives and Dialogues on Quantum Materials: School and Workshop on Experimental, Computational and Theoretical Approaches",
+      "start_date": "2027-05-17",
+      "end_date": "2027-05-28",
+      "location": {
+        "city": "Trieste",
+        "country": "Italy",
+        "region": "Europe",
+        "venue": "Budinich Lecture Hall, ICTP"
+      },
+      "formats": [
+        "School",
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "Combined school and workshop addressing experimental, computational and theoretical quantum-matter approaches; the organizing team includes Elio König, Laura Classen, Olivier Parcollet, Rafael Fernandes, Thomas Schäfer and Mikhail Kiselev.",
+      "official_url": "https://indico.ictp.it/event/11428/overview",
+      "deadlines": [],
+      "notes": "The published event page gives a combined two-week window; an internal school/workshop split and detailed programme are not yet specified.",
+      "last_checked": "2026-10-30",
+      "verification_note": "Official ICTP Indico page confirms dates, ICTP venue, combined school/workshop format and organizers. No verifiable dated participation deadline or detailed schedule; the ICTP calendar lists applications closed without a cutoff date.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "swissmap-open-2027",
@@ -1592,6 +1647,44 @@
       "notes": "",
       "last_checked": "2026-10-25",
       "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "boulder-ml-condensed-2027",
+      "title": "Boulder School 2027: Machine Learning and Condensed Matter",
+      "start_date": "2027-07-05",
+      "end_date": "2027-07-30",
+      "location": {
+        "city": "Boulder",
+        "country": "United States",
+        "region": "North America",
+        "venue": "University of Colorado Boulder, Department of Physics"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Quantum matter",
+        "Entanglement",
+        "Numerical methods"
+      ],
+      "summary": "Four-week graduate summer school linking machine learning with condensed-matter and quantum many-body physics, including neural quantum states, Monte Carlo, correlated electrons, and tensor networks and tensor cross interpolation.",
+      "official_url": "https://www.colorado.edu/conference/bss/2027/boulder-school-2027",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2027-01-15",
+          "time": null,
+          "timezone": null,
+          "note": "Electronic application deadline; the organizer does not specify a cutoff time.",
+          "source_url": "https://www.colorado.edu/conference/bss/2027/boulder-school-2027"
+        }
+      ],
+      "notes": "Graduate-student focused; full attendance is strongly preferred and attendance shorter than three weeks is not permitted. Participants from universities outside the US must cover their own airfare.",
+      "last_checked": "2026-10-30",
+      "verification_note": "University of Colorado official school page confirms 5–30 July 2027 dates, named weekly course topics including Miles Stoudenmire on tensor networks, and 15 January 2027 application deadline (date only). Attendance and airfare terms verified on the school's main page.",
       "published": true,
       "related_event_ids": []
     },
