@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -222,6 +222,44 @@
       "related_event_ids": []
     },
     {
+      "id": "ncts-quantum-gpu-2026",
+      "title": "International Symposium on Quantum-GPU and Hybrid Computing",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-09",
+      "location": {
+        "city": "Taipei",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "Room 201, Barry Lam Hall, NTU Department of Electrical Engineering"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "One-day symposium on hybrid quantum–classical algorithms, simulation, GPU integration and practical computing, organized by NTU CQSE, NTU CACIB, NCTS Physics and NVIDIA with NCHC and international quantum-computing speakers.",
+      "official_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/International-Symposium-on-Quantum-GPU-and-Hybrid-Computing-75951481/home/introduction",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2026-11-02",
+          "time": null,
+          "timezone": null,
+          "note": "Last date of the published sign-up window; limited to 70 seats. No cutoff time stated.",
+          "source_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/International-Symposium-on-Quantum-GPU-and-Hybrid-Computing-75951481/home/introduction"
+        }
+      ],
+      "notes": "Free admission. Separately dated side event to Quantum Taiwan 2026. Official event website lists a 09:30–16:30 programme.",
+      "last_checked": "2026-10-31",
+      "verification_note": "NCTS organizer page confirms date, room, co-organizers, scope and 8 October–2 November sign-up window; the Quantum Taiwan official side-event page confirms the programme window and 70-seat limit. Registration availability and an exact cutoff time are not independently established.",
+      "published": true,
+      "related_event_ids": [
+        "quantum-taiwan-2026"
+      ]
+    },
+    {
       "id": "quantum-taiwan-2026",
       "title": "Quantum Taiwan 2026",
       "start_date": "2026-11-10",
@@ -243,10 +281,12 @@
       "official_url": "https://2026.quantumtaiwan.org/",
       "deadlines": [],
       "notes": "Paid international symposium on the second floor; separate free quantum supply-chain exhibition on the first floor. Registration procedures differ.",
-      "last_checked": "2026-10-29",
-      "verification_note": "Dates, venue, symposium themes, and separate symposium/exhibition participation arrangements verified on the official 2026 event website and organizer's registration announcement. No general symposium registration cutoff verified.",
+      "last_checked": "2026-10-31",
+      "verification_note": "Dates, venue, symposium themes and separate participation arrangements reconfirmed from the official event website; the separately dated Quantum-GPU side event was checked on 31 October 2026. No general symposium registration cutoff verified.",
       "published": true,
-      "related_event_ids": []
+      "related_event_ids": [
+        "ncts-quantum-gpu-2026"
+      ]
     },
     {
       "id": "yitp-gauge-2026",
@@ -981,6 +1021,35 @@
       "notes": "One-week and two-week attendance options are listed.",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "cern-th-quantum-simulation-2027",
+      "title": "TH Institute on Quantum Sensing, Simulation and Computation",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-26",
+      "location": {
+        "city": "Geneva",
+        "country": "Switzerland",
+        "region": "Europe",
+        "venue": "CERN, TH Conference Room (4/3-006)"
+      },
+      "formats": [
+        "Programme"
+      ],
+      "topics": [
+        "Gauge theories",
+        "Tensor networks",
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Two-week CERN theory institute connecting quantum sensing and computational methods to fundamental physics, including quantum simulation and tensor networks for lattice gauge theories, real-time gauge dynamics and classical benchmarks for quantum algorithms.",
+      "official_url": "https://indico.cern.ch/event/1739438/",
+      "deadlines": [],
+      "notes": "Two thematic focus weeks with a low-density programme of talks, roundtables and working groups; also covers quantum sensors and metrology.",
+      "last_checked": "2026-10-31",
+      "verification_note": "Dates, venue, scope and two-week format confirmed from the indexed official CERN Indico event page. Direct page retrieval returned 403; registration and participation deadlines were not verified.",
       "published": true,
       "related_event_ids": []
     },
