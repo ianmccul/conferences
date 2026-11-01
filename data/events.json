@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1054,6 +1054,42 @@
       "related_event_ids": []
     },
     {
+      "id": "pks-dash-2027",
+      "title": "Detours and Shortcuts Outside Equilibrium (DaSh27)",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
+      "location": {
+        "city": "Dresden",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "Max Planck Institute for the Physics of Complex Systems (MPI-PKS)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum matter"
+      ],
+      "summary": "International workshop on anomalous relaxation, Mpemba and Kovacs effects, memory, thermalization, reservoir engineering and nonequilibrium state preparation and control in classical and quantum systems.",
+      "official_url": "https://www.pks.mpg.de/dash27",
+      "deadlines": [
+        {
+          "kind": "Priority application",
+          "date": "2026-10-15",
+          "time": null,
+          "timezone": null,
+          "note": "Applications received before this date receive preferential consideration; this is not stated as a final closing date.",
+          "source_url": "https://www.pks.mpg.de/dash27"
+        }
+      ],
+      "notes": "Invited speakers include Pasquale Calabrese, Igor Lesanovsky and Zlatko Papić. €200 registration fee; accommodation and meals covered by the institute. Availability after the preferential date is unconfirmed.",
+      "last_checked": "2026-11-01",
+      "verification_note": "Dates, scope, invited speakers and preferential-application wording verified on the official event page on 1 November 2026. Detailed programme and any absolute application closing date remain unannounced.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "stqi-2027",
       "title": "Kyoto workshop on stochastic thermodynamics and quantum information 2027",
       "start_date": "2027-02-15",
@@ -1252,6 +1288,42 @@
       "related_event_ids": [
         "yitp-novel-2027"
       ]
+    },
+    {
+      "id": "icts-generalized-symmetries-2027",
+      "title": "Generalized Symmetries, Anomalies and Topological Families in Quantum Matter",
+      "start_date": "2027-03-08",
+      "end_date": "2027-03-12",
+      "location": {
+        "city": "Bengaluru",
+        "country": "India",
+        "region": "Asia",
+        "venue": "Madhava Lecture Hall, International Centre for Theoretical Sciences (ICTS)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Gauge theories"
+      ],
+      "summary": "Discussion meeting on higher-form, higher-group and non-invertible symmetries, anomalies, Lieb–Schultz–Mattis constraints and topological families of quantum states, connecting condensed matter, field theory and mathematical physics.",
+      "official_url": "https://icts.res.in/discussion-meeting/gsaqpm",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2027-01-10",
+          "time": null,
+          "timezone": null,
+          "note": "ICTS application deadline; no cutoff time published.",
+          "source_url": "https://icts.res.in/discussion-meeting/gsaqpm"
+        }
+      ],
+      "notes": "For advanced graduate students, postdoctoral researchers and scientists working on relevant subjects. On-campus accommodation offered for outstation participants.",
+      "last_checked": "2026-11-01",
+      "verification_note": "Dates, venue, scientific scope, eligibility and application deadline checked against the official ICTS event listing and discussion-meetings calendar on 1 November 2026. No deadline time was provided.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "int-chiral-2027",
@@ -1871,6 +1943,33 @@
       ]
     },
     {
+      "id": "pks-quantum-matter-computers-school-2027",
+      "title": "From Quantum Matter to Quantum Computers",
+      "start_date": "2027-09-06",
+      "end_date": "2027-09-10",
+      "location": {
+        "city": "Dresden",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "Max Planck Institute for the Physics of Complex Systems (MPI-PKS)"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Quantum information"
+      ],
+      "summary": "Master's-level school connecting quantum-matter physics and quantum computing, coordinated by Marín Bukov, Pieter Claeys and Roderich Moessner.",
+      "official_url": "https://www.pks.mpg.de/events/workshops-seminars",
+      "deadlines": [],
+      "notes": "Listed as a school for master's students in the official 2027 institute calendar. The linked detail page currently describes the 2026 school, not this edition.",
+      "last_checked": "2026-11-01",
+      "verification_note": "2027 title, dates, school type and scientific coordinators confirmed on the MPI-PKS calendar on 1 November 2026. A dedicated 2027 programme, participation terms and deadlines have not been verified; details from 2026 are not carried forward.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "benasque-blinh-2027",
       "title": "Beyond Linearity: Frontiers in Non-Hermitian Many-Body Physics",
       "start_date": "2027-09-12",
@@ -1894,6 +1993,32 @@
       "notes": "",
       "last_checked": "2026-10-25",
       "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "pks-korrelationstage-2027",
+      "title": "Korrelationstage 2027",
+      "start_date": "2027-09-13",
+      "end_date": "2027-09-17",
+      "location": {
+        "city": "Dresden",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "Max Planck Institute for the Physics of Complex Systems (MPI-PKS)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Korrelationstage workshop in the strongly correlated quantum-matter research series, with scientific coordinators Achim Rosch, Urban F. P. Seifert and Matthias Vojta.",
+      "official_url": "https://www.pks.mpg.de/events/workshops-seminars",
+      "deadlines": [],
+      "notes": "Scientific programme, invited speakers and participation deadlines for the 2027 edition have not yet been confirmed.",
+      "last_checked": "2026-11-01",
+      "verification_note": "Title, 13–17 September 2027 date range and scientific coordinators verified on the official MPI-PKS event calendar on 1 November 2026; the calendar's detail link still points to a 2025 edition. No 2027-specific application details were verified.",
       "published": true,
       "related_event_ids": []
     },
