@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -287,6 +287,53 @@
       "related_event_ids": [
         "ncts-quantum-gpu-2026"
       ]
+    },
+    {
+      "id": "ictp-cqt-open-quantum-systems-2026",
+      "title": "Open Quantum Systems – from Quantum Information to Condensed Matter",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-20",
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "region": "Asia",
+        "venue": "Frontier C4-02-01, National University of Singapore"
+      },
+      "formats": [
+        "School",
+        "Workshop"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Entanglement",
+        "Quantum information",
+        "Quantum matter"
+      ],
+      "summary": "ICTP–CQT lecture-focused school/workshop on quantum phase transitions in open systems, entanglement dynamics with noise, monitored quantum circuits, and noisy quantum devices.",
+      "official_url": "https://indico.ictp.it/event/11130/",
+      "deadlines": [
+        {
+          "kind": "Financial support",
+          "date": "2026-08-10",
+          "time": null,
+          "timezone": null,
+          "note": "Financial-support application deadline, separately stated by ICTP.",
+          "source_url": "https://indico.ictp.it/event/11130/"
+        },
+        {
+          "kind": "Applications",
+          "date": "2026-08-31",
+          "time": null,
+          "timezone": null,
+          "note": "Participation application deadline; ICTP marks applications closed.",
+          "source_url": "https://indico.ictp.it/event/11130/"
+        }
+      ],
+      "notes": "Primarily aimed at graduate students in theoretical quantum physics. No registration fee. CQT identifies room Frontier C4-02-01.",
+      "last_checked": "2026-11-02",
+      "verification_note": "ICTP organizer page confirms dates, NUS location, scientific scope, and separate funding/participation deadlines. CQT's public event calendar confirms the room. ICTP states applications are closed; late admission was not verified.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "yitp-gauge-2026",
@@ -1739,6 +1786,34 @@
       "related_event_ids": []
     },
     {
+      "id": "swissmap-alps-iv-2027",
+      "title": "ALPS IV: Modern perspectives on quantum dynamics: open systems, black holes and measurements",
+      "start_date": "2027-05-23",
+      "end_date": "2027-05-28",
+      "location": {
+        "city": "Les Diablerets",
+        "country": "Switzerland",
+        "region": "Europe",
+        "venue": "SwissMAP Research Station"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Entanglement",
+        "Quantum information"
+      ],
+      "summary": "Junior theoretical-physics school with mini-courses on open and monitored many-body systems, quantum circuits and black-hole information, and driven dynamics.",
+      "official_url": "https://swissmaprs.ch/events/alps-iv-modern-perspectives-on-quantum-dynamics-open-systems-black-holes-and-measurements/",
+      "deadlines": [],
+      "notes": "Primarily for PhD students, with motivated master's students and some early postdocs also eligible. Financial support may be requested.",
+      "last_checked": "2026-11-02",
+      "verification_note": "SwissMAP organizer page verifies dates, location, scope and intended participants. Its linked Indico registration page returned HTTP 403; application deadlines and availability could not be verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "swissmap-open-2027",
       "title": "Phases of open quantum systems: complexity, learnability and error correction",
       "start_date": "2027-06-13",
@@ -1762,6 +1837,43 @@
       "notes": "Venue: SwissMAP Research Station, Les Diablerets.",
       "last_checked": "2026-10-23",
       "verification_note": "Dates and scope confirmed; the linked registration page returned 403, so deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "aspen-lattice-symmetry-2027",
+      "title": "Structure and Symmetry in Quantum Lattice Matter",
+      "start_date": "2027-06-20",
+      "end_date": "2027-07-11",
+      "location": {
+        "city": "Aspen",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Aspen Center for Physics"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Entanglement",
+        "Quantum information"
+      ],
+      "summary": "Three-week research workshop on generalized lattice symmetries and anomalies, quantum cellular automata, fracton phases, entanglement bootstrap, and the classification of lattice quantum phases and dynamics.",
+      "official_url": "https://aspenphys.org/summer-workshops/",
+      "deadlines": [
+        {
+          "kind": "Applications",
+          "date": "2027-01-15",
+          "time": null,
+          "timezone": null,
+          "note": "General Aspen 2027 summer-program application deadline; all participants must apply.",
+          "source_url": "https://aspenphys.org/summer-workshops/"
+        }
+      ],
+      "notes": "Organizers: Lukasz Fidkowski, Jeongwan Haah and Daniel Ranard. The calendar does not specify whether full-period attendance is required. Application opening date is not confirmed.",
+      "last_checked": "2026-11-02",
+      "verification_note": "Official Aspen 2027 summer-program listing confirms the workshop's dates, organizers and theme, and the 15 January application deadline. Participation-duration requirements and application opening date were not confirmed.",
       "published": true,
       "related_event_ids": []
     },
