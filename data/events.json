@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -577,6 +577,68 @@
       "notes": "Confirmed speakers include Robert Brandenberger, Chong-Sun Chu, Hikaru Kawai, Reishi Maeta and Harold Steinacker. The specific NTU room is to be announced.",
       "last_checked": "2026-10-28",
       "verification_note": "NCTS public event page confirms dates, NTU location, scope, speakers and the sign-up window (1 October–30 November 2026). The room assignment and exact deadline time remain unspecified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "tn-kanazawa-2026",
+      "title": "Tensor Network 2026",
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-09",
+      "location": {
+        "city": "Kanazawa",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Garden Room, Shiinoki Cultural Complex, Ishikawa Prefecture"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Quantum matter",
+        "Gauge theories",
+        "Numerical methods"
+      ],
+      "summary": "Tensor-network methods spanning particle and nuclear physics, quantum many-body systems, tensor renormalization, quantum algorithms, and tensor-train numerical methods.",
+      "official_url": "https://akiyama-es.github.io/tn26.html",
+      "deadlines": [
+        {
+          "kind": "Travel assistance",
+          "date": "2026-09-23",
+          "time": null,
+          "timezone": null,
+          "note": "Registration cutoff for travel expense support (passed).",
+          "source_url": "https://akiyama-es.github.io/tn26.html"
+        },
+        {
+          "kind": "Oral presentation",
+          "date": "2026-09-23",
+          "time": null,
+          "timezone": null,
+          "note": "Registration cutoff for requests to give an oral talk (passed).",
+          "source_url": "https://akiyama-es.github.io/tn26.html"
+        },
+        {
+          "kind": "In-person registration",
+          "date": "2026-11-07",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://akiyama-es.github.io/tn26.html"
+        },
+        {
+          "kind": "Online registration",
+          "date": "2026-12-01",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://akiyama-es.github.io/tn26.html"
+        }
+      ],
+      "notes": "Online participation is available. In-person registration and remote registration have different deadlines. Programme includes talks on MPS, PEPS, tensor-train methods and lattice gauge theories.",
+      "last_checked": "2026-11-03",
+      "verification_note": "Organizer's programme confirms 7–9 December 2026, venue, online participation and all four participation routes/cutoffs. Venue's location in Kanazawa independently confirmed by the Kanazawa city tourism office. Deadline times are not stated.",
       "published": true,
       "related_event_ids": []
     },
@@ -1623,15 +1685,15 @@
         "Quantum matter"
       ],
       "summary": "Workshop on simulation of electronic, thermal and spin transport, quantum and first-principles modelling, and computational approaches to nanoscale devices.",
-      "official_url": "https://iwcn2027.nycu.site/",
+      "official_url": "https://www.iwcn2027.com/",
       "deadlines": [
         {
           "kind": "Abstract",
-          "date": "2026-11-22",
+          "date": "2026-12-22",
           "time": "23:59",
           "timezone": "Asia/Taipei",
           "note": "Two-page PDF abstract; organizer specifies Taipei time (UTC+8).",
-          "source_url": "https://iwcn2027.nycu.site/submission"
+          "source_url": "https://www.iwcn2027.com/submission"
         },
         {
           "kind": "Early registration",
@@ -1639,28 +1701,28 @@
           "time": "23:59",
           "timezone": "Asia/Taipei",
           "note": "Early registration fee cutoff; organizer specifies Taipei time (UTC+8).",
-          "source_url": "https://iwcn2027.nycu.site/registration"
+          "source_url": "https://www.iwcn2027.com/registration"
         },
         {
           "kind": "Final paper",
-          "date": "2027-03-08",
+          "date": "2027-03-22",
           "time": null,
           "timezone": null,
           "note": "For accepted abstracts; includes IEEE copyright form.",
-          "source_url": "https://iwcn2027.nycu.site/submission"
+          "source_url": "https://www.iwcn2027.com/submission"
         },
         {
           "kind": "Presenting author registration",
-          "date": "2027-03-08",
+          "date": "2027-03-22",
           "time": null,
           "timezone": null,
           "note": "Accepted papers must have a presenting author registered by this date.",
-          "source_url": "https://iwcn2027.nycu.site/submission"
+          "source_url": "https://www.iwcn2027.com/submission"
         }
       ],
       "notes": "A separate co-located International Wigner Workshop is scheduled for 19 April. General online registration is not yet open.",
-      "last_checked": "2026-10-26",
-      "verification_note": "Dates and venue checked against organizer event site and linked official IWCN series homepage; submission and rate deadlines checked on organizer's respective pages. A general registration cutoff and IWW scientific programme were not verified.",
+      "last_checked": "2026-11-03",
+      "verification_note": "Rechecked the organizer's redirected canonical website and submission and registration pages on 3 November 2026. Abstract cutoff moved from 22 November to 22 December 2026 at 23:59 Taipei time; final-paper and presenting-author deadlines moved from 8 March to 22 March 2027. Early registration remains 26 February at 23:59 Taipei time. The registration system is not yet open.",
       "published": true,
       "related_event_ids": []
     },
@@ -2186,6 +2248,59 @@
       "notes": "Seminar and focused workshop; detailed session dates are not yet verified.",
       "last_checked": "2026-10-23",
       "verification_note": "Dates and title confirmed on the institutional calendar; detailed programme and participation deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "osp-open-systems-2028",
+      "title": "Okinawa School in Physics 2028: The Science of Open Quantum Systems",
+      "start_date": "2028-01-31",
+      "end_date": "2028-02-11",
+      "location": {
+        "city": "Onna, Okinawa",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "OIST Main Campus (Seminar Room B250) and Seaside House"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum information",
+        "Quantum matter"
+      ],
+      "summary": "Advanced school on open quantum systems, decoherence, dissipation, quantum thermodynamics, control and many-body open dynamics, with lectures and contributed presentations.",
+      "official_url": "https://www.oist.jp/conference/osp2028",
+      "deadlines": [
+        {
+          "kind": "Applications",
+          "date": "2027-09-01",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.oist.jp/conference/osp2028"
+        },
+        {
+          "kind": "Recommendation letter",
+          "date": "2027-09-07",
+          "time": null,
+          "timezone": null,
+          "note": "Tentative organizer deadline, subject to confirmation.",
+          "source_url": "https://www.oist.jp/conference/osp2028"
+        },
+        {
+          "kind": "Registration payment",
+          "date": "2027-10-31",
+          "time": null,
+          "timezone": null,
+          "note": "Tentative organizer deadline for accepted participants, subject to confirmation.",
+          "source_url": "https://www.oist.jp/conference/osp2028"
+        }
+      ],
+      "notes": "Designed mainly for MSc/PhD students and postdocs; approximately 35 participants. Application opening is scheduled for 1 June 2027. Registration fee includes shared accommodation and meals but not travel support.",
+      "last_checked": "2026-11-03",
+      "verification_note": "Main organizer page and OIST workshop calendar confirm the 2028 school dates, topics and 1 September 2027 application deadline. Some later timeline dates are explicitly labelled proposed and subject to confirmation; invited lecturers and detailed timetable are not yet announced.",
       "published": true,
       "related_event_ids": []
     },
