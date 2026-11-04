@@ -190,6 +190,16 @@
       "name": "Boulder School for Condensed Matter and Materials Physics",
       "url": "https://www.colorado.edu/conference/bss/",
       "region": "North America"
+    },
+    {
+      "name": "ICTP-SAIFR annual research activities",
+      "url": "https://www.ictp-saifr.org/2027-activities/",
+      "region": "South America"
+    },
+    {
+      "name": "Institute of Physics CAS conference Indico",
+      "url": "https://indico.iphy.ac.cn/",
+      "region": "China"
     }
   ]
 }

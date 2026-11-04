@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -2004,6 +2004,34 @@
       "related_event_ids": []
     },
     {
+      "id": "icqi-2027",
+      "title": "International Conference on Quantum Intelligence (ICQI 2027)",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-09",
+      "location": {
+        "city": "Beijing",
+        "country": "China",
+        "region": "Asia",
+        "venue": "Venue not yet announced"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum information",
+        "Quantum matter",
+        "Numerical methods"
+      ],
+      "summary": "Conference linking quantum information and artificial intelligence, including neural approaches to quantum many-body physics, quantum optimal control, learning-based error correction and quantum-inspired algorithms.",
+      "official_url": "https://indico.iphy.ac.cn/event/10/",
+      "deadlines": [],
+      "notes": "Follows the 2025 Quantum Intelligence workshop and the 2026 Quantum Computing and Quantum Many-Body Computation conference. The call for abstracts is forthcoming.",
+      "last_checked": "2026-11-04",
+      "verification_note": "The Institute of Physics, Chinese Academy of Sciences Indico page confirms the dates, Beijing city, themes and forthcoming call for abstracts. A specific venue and participation deadlines are not yet published.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "yitp-rims-mpes-2027",
       "title": "Mathematical Physics of Extensive Systems: Classical and Quantum",
       "start_date": "2027-07-26",
@@ -2059,6 +2087,34 @@
       "related_event_ids": []
     },
     {
+      "id": "saifr-quantum-chaos-2027",
+      "title": "Quantum Chaos: From Many-Body Dynamics to Black Holes",
+      "start_date": "2027-08-23",
+      "end_date": "2027-08-27",
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "region": "South America",
+        "venue": "Instituto Principia"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems",
+        "Quantum information"
+      ],
+      "summary": "ICTP-SAIFR workshop on quantum chaos spanning many-body dynamics and black-hole physics.",
+      "official_url": "https://www.ictp-saifr.org/2027-activities/",
+      "deadlines": [],
+      "notes": "Listed by ICTP-SAIFR among its 2027 programmes and workshops at Instituto Principia.",
+      "last_checked": "2026-11-04",
+      "verification_note": "The official ICTP-SAIFR 2027 calendar confirms the title, dates and Instituto Principia venue; the venue's São Paulo address is confirmed by Instituto Principia. A dedicated event programme and participation deadlines are not yet published.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "yitp-hydrodynamics-2027",
       "title": "Hydrodynamics and fluctuations in non-equilibrium interacting systems",
       "start_date": "2027-08-23",
@@ -2086,6 +2142,33 @@
       "related_event_ids": [
         "ykis-2027"
       ]
+    },
+    {
+      "id": "saifr-many-body-dynamics-2027",
+      "title": "Focus Program on Quantum Many-Body Dynamics",
+      "start_date": "2027-08-30",
+      "end_date": "2027-09-10",
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "region": "South America",
+        "venue": "Instituto Principia"
+      },
+      "formats": [
+        "Programme"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "ICTP-SAIFR two-week focus programme on quantum many-body dynamics.",
+      "official_url": "https://www.ictp-saifr.org/2027-activities/",
+      "deadlines": [],
+      "notes": "The official calendar lists a separate Quantum Chaos workshop in the preceding week; they are recorded as distinct events.",
+      "last_checked": "2026-11-04",
+      "verification_note": "The official ICTP-SAIFR 2027 calendar confirms the title, 30 August–10 September dates and Instituto Principia venue; the venue's São Paulo address is confirmed by Instituto Principia. Programme details and participation deadlines are not yet published.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "ykis-2027",
