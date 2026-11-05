@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1720,11 +1720,41 @@
           "source_url": "https://www.iwcn2027.com/submission"
         }
       ],
-      "notes": "A separate co-located International Wigner Workshop is scheduled for 19 April. General online registration is not yet open.",
+      "notes": "The separately listed International Wigner Workshop is scheduled for 19 April. General online registration is not yet open.",
       "last_checked": "2026-11-03",
       "verification_note": "Rechecked the organizer's redirected canonical website and submission and registration pages on 3 November 2026. Abstract cutoff moved from 22 November to 22 December 2026 at 23:59 Taipei time; final-paper and presenting-author deadlines moved from 8 March to 22 March 2027. Early registration remains 26 February at 23:59 Taipei time. The registration system is not yet open.",
       "published": true,
-      "related_event_ids": []
+      "related_event_ids": [
+        "iww-2027"
+      ]
+    },
+    {
+      "id": "iww-2027",
+      "title": "International Wigner Workshop 2027 (IWW 2027)",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-19",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "Ambassador Hotel Hsinchu"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Numerical methods"
+      ],
+      "summary": "A one-day satellite workshop held alongside the 2027 International Workshop on Computational Nanotechnology (IWCN). The detailed scientific programme has not yet been published.",
+      "official_url": "https://www.iwcn2027.com/iww2027",
+      "deadlines": [],
+      "notes": "Held at the same venue as IWCN 2027 on 19 April. No separate registration instructions or abstract deadlines have been confirmed.",
+      "last_checked": "2026-11-05",
+      "verification_note": "The organizer's IWW page and the parent IWCN website confirm the 19 April date, Hsinchu venue, and co-location. The IWW page's generic footer lists the parent meeting's 19–22 April range; its event-specific text confirms 19 April for IWW. Programme and participation details remain forthcoming.",
+      "published": true,
+      "related_event_ids": [
+        "iwcn-2027"
+      ]
     },
     {
       "id": "kitp-geometry-conference-2027",
@@ -1818,6 +1848,42 @@
       "related_event_ids": [
         "ipam-algebra-electrons-2027"
       ]
+    },
+    {
+      "id": "qunew-2027",
+      "title": "Quantum Networks Workshop 2027 (QuNeW 2027)",
+      "start_date": "2027-05-12",
+      "end_date": "2027-05-14",
+      "location": {
+        "city": "Onna, Okinawa",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Okinawa Institute of Science and Technology (OIST), Conference Center and Seminar Room B250"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Academic and industry quantum-networking workshop with invited and contributed talks and posters, covering quantum repeater theory, quantum computing networks, photonic platforms, and quantum-network software and simulation.",
+      "official_url": "https://www.oist.jp/conference/qunew-2027",
+      "deadlines": [
+        {
+          "kind": "Submission",
+          "date": "2026-12-12",
+          "time": null,
+          "timezone": null,
+          "note": "Applications for contributed talks/posters; organizer specifies Anywhere on Earth (AoE) but no explicit cutoff clock time.",
+          "source_url": "https://www.oist.jp/conference/qunew-2027"
+        }
+      ],
+      "notes": "Submission opened 12 October 2026; acceptance notices are scheduled for 31 January 2027, and general registration is scheduled to open 1 February 2027. Registration fees have not yet been announced.",
+      "last_checked": "2026-11-05",
+      "verification_note": "Dates, OIST venue, thematic scope and the 12 December 2026 AoE submission date confirmed on the official OIST event site and OIST workshop calendar. The page provides no exact submission cutoff time; registration is planned to open 1 February 2027.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "ictp-quantum-materials-dialogues-2027",
