@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -809,6 +809,41 @@
       "notes": "Conference ID M270105; organizers Bin Gui, Zhengwei Liu and Jinsong Wu.",
       "last_checked": "2026-10-28",
       "verification_note": "TSIMF's individual 2027 workshop page confirms 11–15 January dates, organizers and subject scope. An invitation link is provided, but participation deadlines and a specific meeting room were not confirmed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ncts-complex-systems-winter-school-2027",
+      "title": "NCTS 2027 Frontiers of Complex Systems Winter School",
+      "start_date": "2027-01-18",
+      "end_date": "2027-01-18",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "National Tsing Hua University, Physics Building Room 124"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Dynamics & open systems"
+      ],
+      "summary": "One-day NCTS interdisciplinary school on complex systems, with lectures by researchers working in statistical physics and neighbouring quantitative fields.",
+      "official_url": "https://www.phys.ncts.ntu.edu.tw/en/act/actnews/NCTS-2027-Frontiers-of-Complex-Systems-Winter-School-42454822/home/introduction",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2027-01-11",
+          "time": null,
+          "timezone": null,
+          "note": "Last day of NCTS online sign-up period (3 November 2026–11 January 2027); cutoff time not stated.",
+          "source_url": "https://www.phys.ncts.ntu.edu.tw/en/act/actnews/NCTS-2027-Frontiers-of-Complex-Systems-Winter-School-42454822/home/introduction"
+        }
+      ],
+      "notes": "Invited speakers: Patricia Bassereau (Institut Curie), John Lock (UNSW), Thiparat Chotibut (NUS), and Wei-Hsiang Lin (Academia Sinica). NCTS states that travel and accommodation support is unavailable. Detailed lecture titles have not yet been posted.",
+      "last_checked": "2026-11-06",
+      "verification_note": "NCTS official listing confirms 18 January 2027, 09:30–17:00, NTHU, invited speakers and 11 January sign-up end date. The official TPS2027 daily programme identifies Physics Room 124. Lecture titles and a precise registration cutoff time are not published.",
       "published": true,
       "related_event_ids": []
     },
