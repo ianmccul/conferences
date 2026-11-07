@@ -200,6 +200,11 @@
       "name": "Institute of Physics CAS conference Indico",
       "url": "https://indico.iphy.ac.cn/",
       "region": "China"
+    },
+    {
+      "name": "Les Houches School of Physics annual programme",
+      "url": "https://www.houches-school-physics.com/program/program-2027/",
+      "region": "Europe"
     }
   ]
 }

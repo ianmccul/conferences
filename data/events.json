@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1544,6 +1544,43 @@
       ]
     },
     {
+      "id": "leshouches-quantum-fluids-2027",
+      "title": "Out of Equilibrium Physics in Low Dimensional Quantum Fluids",
+      "start_date": "2027-03-14",
+      "end_date": "2027-03-19",
+      "location": {
+        "city": "Les Houches",
+        "country": "France",
+        "region": "Europe",
+        "venue": "École de Physique des Houches"
+      },
+      "formats": [
+        "Workshop",
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "Workshop and tutorials on nonequilibrium dynamics of one- and two-dimensional quantum fluids, nonlinear hydrodynamics, thermalisation, driven systems and quantum mixtures.",
+      "official_url": "https://www.houches-school-physics.com/program/program-2027/out-of-equilibrium-physics-in-low-dimensional-quantum-fluids-1733582.kjsp",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2027-01-03",
+          "time": null,
+          "timezone": null,
+          "note": "Limited to approximately 50 applicants; acceptance decisions expected in early February. Full attendance and a poster submission are preferred. No cutoff time stated.",
+          "source_url": "https://dyn1d-houches.sciencesconf.org/"
+        }
+      ],
+      "notes": "Organized by Mathias Albert, Nicolas Cherroret, Frédéric Chevy and Adam Rançon. Registration includes lodging and meals (EUR 630); limited fee support may be requested, but no travel funding. A separate registration application is required.",
+      "last_checked": "2026-11-07",
+      "verification_note": "Dates, topic and organizing team verified on the official Les Houches session page; 3 January 2027 registration deadline, limited capacity, fees and support checked on the linked organizer Sciencesconf site. No registration cutoff time was provided.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "kitp-geometry-2027",
       "title": "Quantum Geometry Meets Correlation, Symmetry Breaking, and Topology",
       "start_date": "2027-03-15",
@@ -1977,6 +2014,33 @@
       "related_event_ids": []
     },
     {
+      "id": "cirm-many-body-math-2027",
+      "title": "The Mathematics of Many Body Quantum Systems",
+      "start_date": "2027-05-24",
+      "end_date": "2027-05-28",
+      "location": {
+        "city": "Marseille",
+        "country": "France",
+        "region": "Europe",
+        "venue": "Centre International de Rencontres Mathématiques (CIRM)"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems"
+      ],
+      "summary": "Rigorous mathematical approaches to many-body quantum phases, charge and energy transport, equilibration and return to equilibrium.",
+      "official_url": "https://conferences.cirm-math.fr/3742.html",
+      "deadlines": [],
+      "notes": "Scientific committee includes Christian Hainzl, Bruno Nachtergaele and Chiara Saffirio; organized by Serena Cenatiempo, Mathieu Lewin, Stefan Teufel and Simone Warzel. An application/pre-registration link is provided.",
+      "last_checked": "2026-11-07",
+      "verification_note": "Official CIRM event page confirms 24–28 May 2027, scientific scope, organizing team, and pre-registration link. Speakers and application deadline are not yet announced.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "swissmap-open-2027",
       "title": "Phases of open quantum systems: complexity, learnability and error correction",
       "start_date": "2027-06-13",
@@ -2157,6 +2221,33 @@
       "notes": "Planned as a satellite meeting of the 2027 International Congress on Mathematical Physics.",
       "last_checked": "2026-10-29",
       "verification_note": "Dates, venue and scope verified on the organizer's university-hosted page and the IAMP forthcoming-meetings listing; participation deadlines were not announced.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "leshouches-adaptive-measurements-2027",
+      "title": "Adaptive Measurements and Dissipation Engineering in Quantum Systems",
+      "start_date": "2027-08-02",
+      "end_date": "2027-08-27",
+      "location": {
+        "city": "Les Houches",
+        "country": "France",
+        "region": "Europe",
+        "venue": "École de Physique des Houches"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Dynamics & open systems",
+        "Quantum information"
+      ],
+      "summary": "Four-week school on protecting quantum systems from decoherence by measurement-based feedback, autonomous feedback and dissipative engineering across quantum platforms.",
+      "official_url": "https://www.houches-school-physics.com/program/program-2027/summer-school-adaptive-measurements-and-dissipation-engineering-in-quantum-systems-1736630.kjsp?RH=1773398412117",
+      "deadlines": [],
+      "notes": "Organizers: Michel Devoret, Benjamin Huard and Ioan Pop. Intended for students; published schedule spans four weeks.",
+      "last_checked": "2026-11-07",
+      "verification_note": "Dates, educational scope and organizers verified from the official 2027 Les Houches individual session listing. Application dates, fees and detailed lecture programme were not verified.",
       "published": true,
       "related_event_ids": []
     },
@@ -2405,6 +2496,33 @@
       "notes": "",
       "last_checked": "2026-10-23",
       "verification_note": "Dates confirmed from the indexed official event listing. The event page could not be fetched during the latest check; participation deadlines remain unverified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "leshouches-low-dimensional-matter-2027",
+      "title": "School on Low-Dimensional Quantum Matter",
+      "start_date": "2027-10-04",
+      "end_date": "2027-10-15",
+      "location": {
+        "city": "Les Houches",
+        "country": "France",
+        "region": "Europe",
+        "venue": "École de Physique des Houches"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Entanglement"
+      ],
+      "summary": "Doctoral training school focused on low-dimensional quantum matter, organized by Roderich Moessner and Nicolas Regnault.",
+      "official_url": "https://www.houches-school-physics.com/program/program-2027/doctoral-training-school-on-low-dimensional-quantum-matter-1843186.kjsp?RH=1773398412117",
+      "deadlines": [],
+      "notes": "Organizers: Roderich Moessner (MPI-PKS) and Nicolas Regnault (Flatiron Institute / ENS).",
+      "last_checked": "2026-11-07",
+      "verification_note": "The official Les Houches individual session listing (published 30 October 2026) confirms dates, doctoral-training format, title and organizers. Lecture subjects and registration deadlines have not been announced.",
       "published": true,
       "related_event_ids": []
     },
