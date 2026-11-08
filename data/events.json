@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1290,6 +1290,50 @@
       "notes": "Registration is free. Venue: Maskawa Hall, YITP.",
       "last_checked": "2026-10-29",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "wuppertal-lattice-algorithms-2027",
+      "title": "Algorithmic Advancements in Lattice Field Theory at the Frontier of High-Energy Physics",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
+      "location": {
+        "city": "Wuppertal",
+        "country": "Germany",
+        "region": "Europe",
+        "venue": "University of Wuppertal, Campus Grifflenberg, HS 31"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Numerical methods",
+        "Gauge theories"
+      ],
+      "summary": "Workshop on algorithms for nonperturbative lattice field theory, including critical slowing down, noisy long-distance correlations and analytic continuation in quantum chromodynamics.",
+      "official_url": "https://indico.uni-wuppertal.de/event/552/",
+      "deadlines": [
+        {
+          "kind": "Abstract",
+          "date": "2027-01-15",
+          "time": "23:59",
+          "timezone": "Europe/Berlin",
+          "note": "Organizer's Indico abstract-submission deadline.",
+          "source_url": "https://indico.uni-wuppertal.de/event/552/abstracts/"
+        },
+        {
+          "kind": "Registration application",
+          "date": "2027-01-15",
+          "time": null,
+          "timezone": null,
+          "note": "Registration is moderated and requires organizer approval; no cutoff time is specified.",
+          "source_url": "https://indico.uni-wuppertal.de/event/552/registrations/100/"
+        }
+      ],
+      "notes": "Invited speakers include Gert Aarts, Peter Boyle, Phiala Shanahan and others; Kate Clark (NVIDIA) is listed tentatively.",
+      "last_checked": "2026-11-08",
+      "verification_note": "Organizer's Indico pages checked on 8 November 2026 for dates, venue, workshop scope, separate abstract and moderated-registration cutoffs. The detailed timetable is not yet confirmed.",
       "published": true,
       "related_event_ids": []
     },
