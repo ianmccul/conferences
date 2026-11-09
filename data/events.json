@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1256,7 +1256,7 @@
       "deadlines": [
         {
           "kind": "Short talk",
-          "date": "2026-11-20",
+          "date": "2026-11-26",
           "time": null,
           "timezone": null,
           "note": "",
@@ -1288,8 +1288,8 @@
         }
       ],
       "notes": "Registration is free. Venue: Maskawa Hall, YITP.",
-      "last_checked": "2026-10-29",
-      "verification_note": "",
+      "last_checked": "2026-11-09",
+      "verification_note": "Organizer overview and participant guidance checked 9 November 2026: short-talk application deadline is 26 November (previously listed as 20 November); no closing hour is specified. Visa-support, poster and general-registration deadlines remain as previously recorded.",
       "published": true,
       "related_event_ids": []
     },
