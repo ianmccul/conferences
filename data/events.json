@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1478,6 +1478,49 @@
       ]
     },
     {
+      "id": "acat-2027",
+      "title": "24th International Workshop on Advanced Computing and Analysis Techniques in Physics Research (ACAT2027)",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-10",
+      "location": {
+        "city": "Tokyo",
+        "country": "Japan",
+        "region": "Asia",
+        "venue": "Tokyo City University, Setagaya Campus, Building 7"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Numerical methods"
+      ],
+      "summary": "Scientific computing and data analysis for fundamental physics, including heterogeneous GPU/HPC architectures, scalable numerical solvers, simulation software and AI-driven methods.",
+      "official_url": "https://indico.cern.ch/event/1632258/",
+      "deadlines": [
+        {
+          "kind": "Abstract",
+          "date": "2026-11-15",
+          "time": null,
+          "timezone": null,
+          "note": "Organizer's updated headline extends submissions to 15 November; the abstracts form and older page text still display the earlier 1–2 November deadline. No updated cutoff time is confirmed.",
+          "source_url": "https://indico.cern.ch/event/1632258/"
+        },
+        {
+          "kind": "Mini-symposium proposal",
+          "date": "2026-12-01",
+          "time": null,
+          "timezone": null,
+          "note": "Separate deadline for proposals for the community-organized 90-minute mini-symposia; no cutoff time stated.",
+          "source_url": "https://indico.cern.ch/event/1632258/page/43807-mini-symposia"
+        }
+      ],
+      "notes": "Mainly in person; remote talks/posters are not accepted, but remote listening to sessions is planned on a best-effort basis. Conference pre-registration is for future registration notifications; formal registration dates and fees are pending.",
+      "last_checked": "2026-11-10",
+      "verification_note": "Event dates, venue, computational-science scope and stated deadlines checked from the official CERN Indico pages on 10 November 2026. The 15 November extension appears prominently in the updated event banner, but the Indico abstract form and old text still show the original cutoff. The new form closing time and ability to submit through 15 November are not independently verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "icts-generalized-symmetries-2027",
       "title": "Generalized Symmetries, Anomalies and Topological Families in Quantum Matter",
       "start_date": "2027-03-08",
@@ -1964,6 +2007,32 @@
       "related_event_ids": [
         "ipam-algebra-electrons-2027"
       ]
+    },
+    {
+      "id": "ictp-correlated-topological-2027",
+      "title": "Workshop on Non-crystalline and Correlated Topological Materials",
+      "start_date": "2027-05-10",
+      "end_date": "2027-05-14",
+      "location": {
+        "city": "Trieste",
+        "country": "Italy",
+        "region": "Europe",
+        "venue": "ICTP, Giambiagi Lecture Hall, Adriatico Guest House"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "ICTP workshop on non-crystalline and correlated topological materials, bringing together research at the intersection of topology and condensed matter.",
+      "official_url": "https://indico.ictp.it/event/11427/",
+      "deadlines": [],
+      "notes": "Organizers include Adhip Agarwala, Adolfo G. Grushin and Antimo Marrazzo. The scientific programme and participation details have not yet been published.",
+      "last_checked": "2026-11-10",
+      "verification_note": "Official ICTP event page checked on 10 November 2026 confirms the meeting title, dates, room and organizers. No programme, concrete participation deadline or registration-opening date is published; no claim of current application availability is made.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "qunew-2027",
