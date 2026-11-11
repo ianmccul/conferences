@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -2240,6 +2240,74 @@
       "notes": "",
       "last_checked": "2026-10-25",
       "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ieee-qccl-2027",
+      "title": "2027 IEEE International Conference on Quantum Control, Computing and Learning (IEEE qCCL 2027)",
+      "start_date": "2027-06-25",
+      "end_date": "2027-06-28",
+      "location": {
+        "city": "Shanghai",
+        "country": "China",
+        "region": "Asia",
+        "venue": "Specific venue to be announced"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Academic conference on quantum control and estimation, quantum machine learning, quantum algorithms, error correction, quantum sensing and hybrid quantum-classical methods.",
+      "official_url": "https://www.ieeeqccl2027.cn/",
+      "deadlines": [
+        {
+          "kind": "Invited session proposal",
+          "date": "2026-12-15",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://www.ieeeqccl2027.cn/important-dates"
+        },
+        {
+          "kind": "Full paper",
+          "date": "2027-01-15",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://www.ieeeqccl2027.cn/important-dates"
+        },
+        {
+          "kind": "Abstract",
+          "date": "2027-02-15",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "",
+          "source_url": "https://www.ieeeqccl2027.cn/important-dates"
+        },
+        {
+          "kind": "Final paper",
+          "date": "2027-04-15",
+          "time": "23:59",
+          "timezone": "AoE",
+          "note": "Camera-ready submission.",
+          "source_url": "https://www.ieeeqccl2027.cn/important-dates"
+        },
+        {
+          "kind": "Early registration",
+          "date": "2027-06-01",
+          "time": null,
+          "timezone": null,
+          "note": "No cutoff time specified by organizers.",
+          "source_url": "https://www.ieeeqccl2027.cn/important-dates"
+        }
+      ],
+      "notes": "Organizers list quantum control, estimation, learning, computing and sensing tracks. The precise Shanghai venue and general-registration details have not been published.",
+      "last_checked": "2026-11-11",
+      "verification_note": "Dates, Shanghai city, scope and deadlines checked on organizer event and Important Dates pages on 11 November 2026. Specific venue and general registration remain unannounced; IEEE endorsement was not independently verified from an IEEE site.",
       "published": true,
       "related_event_ids": []
     },
