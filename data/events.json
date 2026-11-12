@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -745,6 +745,52 @@
       "notes": "Venue: RIKEN Center for Computational Science, Kobe.",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "texas-quantum-winter-school-2027",
+      "title": "Texas Quantum Winter School 2027: Open Quantum Systems and Quantum Information in the Chemical Sciences",
+      "start_date": "2027-01-03",
+      "end_date": "2027-01-09",
+      "location": {
+        "city": "Wimberley, Texas",
+        "country": "United States",
+        "region": "North America",
+        "venue": "CYJ Retreat Center"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Dynamics & open systems",
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Graduate and postdoctoral school on open-system quantum dynamics and quantum information in chemical physics, with dedicated lectures on tensor-network methods for quantum dynamics, polaritons, quantum optics, and scientific AI.",
+      "official_url": "https://www.texquantum.com/",
+      "deadlines": [
+        {
+          "kind": "Scholarship application",
+          "date": "2026-11-01",
+          "time": null,
+          "timezone": null,
+          "note": "Scholarship applications for student funding; advisor letters were due 4 November.",
+          "source_url": "https://www.texquantum.com/registration.html"
+        },
+        {
+          "kind": "Registration",
+          "date": "2026-11-20",
+          "time": null,
+          "timezone": null,
+          "note": "Registration deadline; the organizer had not yet posted registration rates or a direct registration link when checked.",
+          "source_url": "https://www.texquantum.com/registration.html"
+        }
+      ],
+      "notes": "Intended for PhD students and postdocs. Henrik Larsson (UC Merced) teaches three tensor-network sessions on 8 January; accommodation, meals and optional Austin-airport transfers are included for registered participants.",
+      "last_checked": "2026-11-12",
+      "verification_note": "Organizer's home, programme, lecturer, venue and registration pages checked 12 November 2026. Dates, Wimberley venue, scientific scope and the 20 November registration date are explicit. The registration page still says the rates and registration link will be posted in early November; current registration availability is not confirmed. Deadline times are not given.",
       "published": true,
       "related_event_ids": []
     },
