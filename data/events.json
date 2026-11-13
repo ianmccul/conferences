@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1170,6 +1170,42 @@
       ]
     },
     {
+      "id": "aqsn-conference-2027",
+      "title": "Australian Quantum Software Network Conference 2027",
+      "start_date": "2027-02-09",
+      "end_date": "2027-02-11",
+      "location": {
+        "city": "Sydney",
+        "country": "Australia",
+        "region": "Oceania",
+        "venue": "Sydney Central Business District (specific venue not yet announced)"
+      },
+      "formats": [
+        "Conference"
+      ],
+      "topics": [
+        "Quantum information",
+        "Numerical methods"
+      ],
+      "summary": "Australian Quantum Software Network conference on quantum algorithms, sensing and simulation, with research/technical talks, tutorials, and exchanges between quantum-software researchers and developers.",
+      "official_url": "https://quantumsoftware.org.au/projects/the-australian-quantum-software-network-conference/",
+      "deadlines": [
+        {
+          "kind": "Abstract",
+          "date": "2026-10-02",
+          "time": null,
+          "timezone": null,
+          "note": "Research/technical presentation submissions; organizer states Anywhere on Earth, without a specific clock time.",
+          "source_url": "https://quantumsoftware.org.au/projects/the-australian-quantum-software-network-conference/"
+        }
+      ],
+      "notes": "Organizers list a AUD 250 registration fee but have not yet published full registration details. Invited speakers include Andrew Doherty, Kavan Modi, and Nana Liu.",
+      "last_checked": "2026-11-13",
+      "verification_note": "Organizer and Sydney Quantum Academy pages confirm dates, central Sydney location, scope, speakers, and past abstract deadline. Exact venue, a registration-opening date, registration link, and registration closing date were not provided.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "benasque-etqm-2027",
       "title": "Entanglement and topology in interacting quantum matter",
       "start_date": "2027-02-14",
@@ -1380,6 +1416,32 @@
       "notes": "Invited speakers include Gert Aarts, Peter Boyle, Phiala Shanahan and others; Kate Clark (NVIDIA) is listed tentatively.",
       "last_checked": "2026-11-08",
       "verification_note": "Organizer's Indico pages checked on 8 November 2026 for dates, venue, workshop scope, separate abstract and moderated-registration cutoffs. The detailed timetable is not yet confirmed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "coogee-quantum-information-2027",
+      "title": "Coogee Conference 2027: Sydney Quantum Information Theory Workshop",
+      "start_date": "2027-02-15",
+      "end_date": "2027-02-19",
+      "location": {
+        "city": "Sydney",
+        "country": "Australia",
+        "region": "Oceania",
+        "venue": "Coogee Bay Hotel, Coogee"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum information"
+      ],
+      "summary": "Small, discussion-focused quantum information theory workshop with a limited programme of invited talks and time for scientific exchange, welcoming PhD students and postdoctoral researchers.",
+      "official_url": "https://quantum.sydney.edu.au/coogee-conference-2027/",
+      "deadlines": [],
+      "notes": "Confirmed speakers include Aditi Mitra, Linnea Grans-Samuelsson, Yugo Takada and others.",
+      "last_checked": "2026-11-13",
+      "verification_note": "University of Sydney's official workshop page confirms title, inclusive dates, Coogee venue, format, and listed speakers. Registration arrangements, detailed schedule, and participation deadlines are not yet published.",
       "published": true,
       "related_event_ids": []
     },
