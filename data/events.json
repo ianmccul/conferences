@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1016,6 +1016,32 @@
       "notes": "A poster session is planned; registered participants will receive the poster call.",
       "last_checked": "2026-10-23",
       "verification_note": "No separate general registration or poster deadline was verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "hkust-unconventional-charge-order-2027",
+      "title": "The Physics of Unconventional Charge Order",
+      "start_date": "2027-01-25",
+      "end_date": "2027-01-28",
+      "location": {
+        "city": "Hong Kong",
+        "country": "Hong Kong",
+        "region": "Asia",
+        "venue": "HKUST Jockey Club Institute for Advanced Study, Lo Ka Chung Building, Lee Shau Kee Campus"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Focused workshop on unconventional charge order, competing superconductivity and magnetism, and strongly correlated phases in kagome, moiré and other quantum materials, combining experimental results with theoretical models.",
+      "official_url": "https://ias.hkust.edu.hk/events/the-physics-of-unconventional-charge-order",
+      "deadlines": [],
+      "notes": "Organized by Berthold Jaeck, Shiming Lei, Junwei Liu and Jia-Xin Yin. Detailed programme and participation arrangements have not been confirmed.",
+      "last_checked": "2026-11-14",
+      "verification_note": "HKUST IAS official event page confirms 25–28 January 2027, the Lo Ka Chung Building venue, scientific scope and organizing committee. The separate programme website was inaccessible on this check; invited-speaker programme, registration and submission deadlines are unverified.",
       "published": true,
       "related_event_ids": []
     },
