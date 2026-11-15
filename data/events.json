@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1633,11 +1633,11 @@
       "deadlines": [
         {
           "kind": "Abstract",
-          "date": "2026-11-15",
-          "time": null,
-          "timezone": null,
-          "note": "Organizer's updated headline extends submissions to 15 November; the abstracts form and older page text still display the earlier 1–2 November deadline. No updated cutoff time is confirmed.",
-          "source_url": "https://indico.cern.ch/event/1632258/"
+          "date": "2026-11-16",
+          "time": "01:00",
+          "timezone": "Asia/Tokyo",
+          "note": "The organizer's headline states 15 November, while the official Indico submission form specifies 16 November at 01:00 Asia/Tokyo (15 November at 16:00 UTC). The exact form closing time is recorded here; verify the live form before a last-minute submission.",
+          "source_url": "https://indico.cern.ch/event/1632258/abstracts/"
         },
         {
           "kind": "Mini-symposium proposal",
@@ -1649,8 +1649,8 @@
         }
       ],
       "notes": "Mainly in person; remote talks/posters are not accepted, but remote listening to sessions is planned on a best-effort basis. Conference pre-registration is for future registration notifications; formal registration dates and fees are pending.",
-      "last_checked": "2026-11-10",
-      "verification_note": "Event dates, venue, computational-science scope and stated deadlines checked from the official CERN Indico pages on 10 November 2026. The 15 November extension appears prominently in the updated event banner, but the Indico abstract form and old text still show the original cutoff. The new form closing time and ability to submit through 15 November are not independently verified.",
+      "last_checked": "2026-11-15",
+      "verification_note": "Official Indico Call for Abstracts search-indexed content, crawled around 13 November and checked 15 November 2026, gives a submission cutoff of 16 November at 01:00 Asia/Tokyo; the event banner continues to say 15 November. Direct retrieval of the Indico form returned HTTP 403 on 15 November, so the exact live form state could not be rechecked. Other event details and deadlines were not reverified.",
       "published": true,
       "related_event_ids": []
     },
