@@ -205,6 +205,11 @@
       "name": "Les Houches School of Physics annual programme",
       "url": "https://www.houches-school-physics.com/program/program-2027/",
       "region": "Europe"
+    },
+    {
+      "name": "Simons Center for Geometry and Physics workshop calendar",
+      "url": "https://scgp.stonybrook.edu/science/workshops",
+      "region": "North America"
     }
   ]
 }
