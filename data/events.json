@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -2374,6 +2374,34 @@
       "notes": "",
       "last_checked": "2026-10-25",
       "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "scgp-nonperturbative-qft-2027",
+      "title": "Nonperturbative Methods in Quantum Field Theory",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-25",
+      "location": {
+        "city": "Stony Brook",
+        "country": "United States",
+        "region": "North America",
+        "venue": "Simons Center for Geometry and Physics, Stony Brook University"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Numerical methods",
+        "Quantum matter"
+      ],
+      "summary": "Workshop connecting theoretical condensed matter and particle physics through nonperturbative methods for strongly coupled systems, including tensor networks, Hamiltonian truncation, bootstrap methods and lattice field theory.",
+      "official_url": "https://scgp.stonybrook.edu/archives/48080",
+      "deadlines": [],
+      "notes": "The SCGP workshops calendar states that workshop talks are open to the public, and applications are for financial assistance.",
+      "last_checked": "2026-11-16",
+      "verification_note": "Dates, organizers and scientific scope confirmed on the SCGP event page and 2026-2027 workshop calendar. Detailed programme and financial-support application deadline have not been posted.",
       "published": true,
       "related_event_ids": []
     },
