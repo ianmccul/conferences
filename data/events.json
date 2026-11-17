@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -2536,6 +2536,43 @@
       "notes": "Follows the 2025 Quantum Intelligence workshop and the 2026 Quantum Computing and Quantum Many-Body Computation conference. The call for abstracts is forthcoming.",
       "last_checked": "2026-11-04",
       "verification_note": "The Institute of Physics, Chinese Academy of Sciences Indico page confirms the dates, Beijing city, themes and forthcoming call for abstracts. A specific venue and participation deadlines are not yet published.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "ectstar-tabletop-universes-2027",
+      "title": "Tabletop universes: quantum simulation of false vacuum decay and confinement dynamics in condensed matter systems",
+      "start_date": "2027-07-19",
+      "end_date": "2027-07-23",
+      "location": {
+        "city": "Villazzano (Trento)",
+        "country": "Italy",
+        "region": "Europe",
+        "venue": "Aula Renzo Leonardi, Villa Tambosi, ECT*"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Dynamics & open systems",
+        "Gauge theories"
+      ],
+      "summary": "Interdisciplinary workshop on quantum simulation of false-vacuum decay and confinement dynamics in condensed-matter systems, linking nonperturbative quantum field theory with theoretical and experimental quantum many-body physics.",
+      "official_url": "https://www.ectstar.eu/workshops/tabletop-universes-quantum-simulation-of-false-vacuum-decay-and-confinement-dynamics-in-condensed-matter-systems/",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2027-06-18",
+          "time": null,
+          "timezone": null,
+          "note": "Organizer lists registration from 15 March through 18 June 2027; opening is prospective.",
+          "source_url": "https://www.ectstar.eu/workshops/tabletop-universes-quantum-simulation-of-false-vacuum-decay-and-confinement-dynamics-in-condensed-matter-systems/"
+        }
+      ],
+      "notes": "Organizers include Karel Van Acoleyen, Federica Surace, Gabriele Ferrari, Alessandro Zenesini and Iacopo Carusotto.",
+      "last_checked": "2026-11-17",
+      "verification_note": "Event dates, Villa Tambosi venue and scheduled registration window verified from the ECT* institutional event page on 17 November 2026. Its linked Indico page was not directly accessible; detailed programme, participation eligibility and funding were not verified.",
       "published": true,
       "related_event_ids": []
     },
