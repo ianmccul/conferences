@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1228,51 +1228,6 @@
       "notes": "Organizers list a AUD 250 registration fee but have not yet published full registration details. Invited speakers include Andrew Doherty, Kavan Modi, and Nana Liu.",
       "last_checked": "2026-11-13",
       "verification_note": "Organizer and Sydney Quantum Academy pages confirm dates, central Sydney location, scope, speakers, and past abstract deadline. Exact venue, a registration-opening date, registration link, and registration closing date were not provided.",
-      "published": true,
-      "related_event_ids": []
-    },
-    {
-      "id": "benasque-etqm-2027",
-      "title": "Entanglement and topology in interacting quantum matter",
-      "start_date": "2027-02-14",
-      "end_date": "2027-02-27",
-      "location": {
-        "city": "Benasque",
-        "country": "Spain",
-        "region": "Europe",
-        "venue": "Centro de Ciencias de Benasque Pedro Pascual"
-      },
-      "formats": [
-        "Workshop"
-      ],
-      "topics": [
-        "Tensor networks",
-        "Entanglement",
-        "Quantum matter"
-      ],
-      "summary": "Entanglement, symmetry and topology in correlated matter, with tensor networks, integrability, thermalization and numerical simulation methods.",
-      "official_url": "https://www.benasque.org/2027etqm/",
-      "deadlines": [
-        {
-          "kind": "Abstract",
-          "date": "2027-01-24",
-          "time": null,
-          "timezone": null,
-          "note": "",
-          "source_url": "https://www.benasque.org/2027etqm/"
-        },
-        {
-          "kind": "Application",
-          "date": "2027-01-30",
-          "time": null,
-          "timezone": null,
-          "note": "",
-          "source_url": "https://www.benasque.org/2027etqm/"
-        }
-      ],
-      "notes": "One-week and two-week attendance options are listed.",
-      "last_checked": "2026-10-23",
-      "verification_note": "",
       "published": true,
       "related_event_ids": []
     },
@@ -2628,6 +2583,51 @@
       "notes": "Organizers: Michel Devoret, Benjamin Huard and Ioan Pop. Intended for students; published schedule spans four weeks.",
       "last_checked": "2026-11-07",
       "verification_note": "Dates, educational scope and organizers verified from the official 2027 Les Houches individual session listing. Application dates, fees and detailed lecture programme were not verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "benasque-etqm-2027",
+      "title": "Entanglement and topology in interacting quantum matter",
+      "start_date": "2027-08-15",
+      "end_date": "2027-08-28",
+      "location": {
+        "city": "Benasque",
+        "country": "Spain",
+        "region": "Europe",
+        "venue": "Centro de Ciencias de Benasque Pedro Pascual"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Entanglement",
+        "Quantum matter"
+      ],
+      "summary": "Entanglement, symmetry and topology in correlated matter, with tensor networks, integrability, thermalization and numerical simulation methods.",
+      "official_url": "https://www.benasque.org/2027etqm/",
+      "deadlines": [
+        {
+          "kind": "Abstract",
+          "date": "2027-07-24",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.benasque.org/2027etqm/"
+        },
+        {
+          "kind": "Application",
+          "date": "2027-07-30",
+          "time": null,
+          "timezone": null,
+          "note": "",
+          "source_url": "https://www.benasque.org/2027etqm/"
+        }
+      ],
+      "notes": "One-week and two-week attendance options are listed.",
+      "last_checked": "2026-11-18",
+      "verification_note": "Organizer's 2027 calendar, individual meeting page and application form checked 18 November 2026: event moved from 14–27 February to 15–28 August; abstract and application deadlines consequently changed from 24/30 January to 24/30 July. Source gives dates only, without cutoff times. Detailed programme is not yet posted.",
       "published": true,
       "related_event_ids": []
     },
