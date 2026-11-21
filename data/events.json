@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -2116,10 +2116,19 @@
       ],
       "summary": "ICTP workshop on non-crystalline and correlated topological materials, bringing together research at the intersection of topology and condensed matter.",
       "official_url": "https://indico.ictp.it/event/11427/",
-      "deadlines": [],
-      "notes": "Organizers include Adhip Agarwala, Adolfo G. Grushin and Antimo Marrazzo. The scientific programme and participation details have not yet been published.",
-      "last_checked": "2026-11-10",
-      "verification_note": "Official ICTP event page checked on 10 November 2026 confirms the meeting title, dates, room and organizers. No programme, concrete participation deadline or registration-opening date is published; no claim of current application availability is made.",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2027-01-15",
+          "time": null,
+          "timezone": null,
+          "note": "Official page gives one application deadline. No separate cutoff is specified for poster abstracts or financial assistance.",
+          "source_url": "https://indico.ictp.it/event/11427/"
+        }
+      ],
+      "notes": "Organizers include Adhip Agarwala, Adolfo Grushin and Antimo Marrazzo. A confirmed speaker list and poster-abstract invitation are published; the application page still says the call will open soon.",
+      "last_checked": "2026-11-21",
+      "verification_note": "Official ICTP event page checked 21 November 2026 confirms the meeting dates, Giambiagi Lecture Hall venue, speakers and application deadline of 15 January 2027. The call is described as opening soon. No specific opening date, deadline time or separate poster/funding cutoff is stated.",
       "published": true,
       "related_event_ids": []
     },
