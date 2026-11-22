@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -510,6 +510,32 @@
       "related_event_ids": []
     },
     {
+      "id": "nthu-many-body-mini-2026",
+      "title": "Miniworkshop on Many-body Quantum Matters",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-02",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "NTHU Physics (room not announced)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter"
+      ],
+      "summary": "Two-day miniworkshop on symmetry, topology and strong correlations in quantum many-body and statistical physics, with invited talks and discussions. Speakers include Haruki Watanabe (HKUST), Chien-Te Wu (NYCU), Tay-Rong Chang (NCKU), Yung-Yeh Chang (Academia Sinica) and Chen-Chi Wang (NTHU).",
+      "official_url": "https://indico.phys.nthu.edu.tw/event/241/",
+      "deadlines": [],
+      "notes": "The overall event window starts 1 December at 09:00 and ends 2 December at 17:00 (Asia/Taipei). Individual talks, the meeting room and participation instructions have not been published.",
+      "last_checked": "2026-11-22",
+      "verification_note": "The NTHU Physics Indico event and institutional category confirm dates, speakers and scope. NTHU is identified as host by its category; the dedicated event page does not explicitly specify a venue or room.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
       "id": "icts-gapless-2026",
       "title": "Second ICTS-ICTP Advanced School and Conference on Quantum Matter – Correlated gapless phases",
       "start_date": "2026-12-07",
@@ -745,6 +771,33 @@
       "notes": "Venue: RIKEN Center for Computational Science, Kobe.",
       "last_checked": "2026-10-23",
       "verification_note": "",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "nthu-generalized-symmetries-mini-2026",
+      "title": "Miniworkshop on Generalized Symmetries and Lattice Models",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-15",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "NTHU Physics (room not announced)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Quantum information"
+      ],
+      "summary": "One-day theory miniworkshop during a visit by Shu-Heng Shao (MIT), on generalized global symmetries, higher-form and subsystem symmetries, non-invertible defects, lattice models, anomalies and dualities.",
+      "official_url": "https://indico.phys.nthu.edu.tw/event/242/",
+      "deadlines": [],
+      "notes": "The dedicated public event page gives 15 December, 09:00–17:00 (Asia/Taipei). Individual talks, the meeting room and participation instructions are not yet published.",
+      "last_checked": "2026-11-22",
+      "verification_note": "The dedicated NTHU Physics Indico event gives 15 December only, whereas its category overview displays 15–16 December. The specific event page takes precedence. The venue is inferred as NTHU from the institution's event category; room not specified. The title spelling is normalized from the organizer's 'Miniworshop'.",
       "published": true,
       "related_event_ids": []
     },
