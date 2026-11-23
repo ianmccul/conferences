@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -2084,6 +2084,35 @@
       "related_event_ids": [
         "kitp-geometry-2027"
       ]
+    },
+    {
+      "id": "ectstar-qsg-2027",
+      "title": "Quantum Science Generation 2027",
+      "start_date": "2027-05-03",
+      "end_date": "2027-05-07",
+      "location": {
+        "city": "Villazzano (Trento)",
+        "country": "Italy",
+        "region": "Europe",
+        "venue": "Aula Renzo Leonardi, ECT* (Villa Tambosi)"
+      },
+      "formats": [
+        "Workshop"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Quantum matter",
+        "Dynamics & open systems",
+        "Numerical methods"
+      ],
+      "summary": "Fifth edition of a training-and-discussion workshop for early-career quantum scientists, with focused modules on tensor-network numerical methods, dissipative and open quantum many-body dynamics, and ultracold-atom quantum simulation, plus seminars on lattice gauge theories and topological matter.",
+      "official_url": "https://indico.ectstar.eu/event/295/",
+      "deadlines": [],
+      "notes": "Invites contributed presentations alongside in-depth thematic modules and discussion. The accessible organizer record does not specify abstract, registration or funding deadlines.",
+      "last_checked": "2026-11-23",
+      "verification_note": "ECT* official Indico search-indexed event record checked on 23 November 2026 confirms 3–7 May 2027 dates, Aula Renzo Leonardi venue and scientific scope. Direct page opening was blocked during this scan; registration details and deadlines could not be verified.",
+      "published": true,
+      "related_event_ids": []
     },
     {
       "id": "ictp-ccq-correlated-school-2027",
