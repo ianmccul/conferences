@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -1964,6 +1964,53 @@
       "notes": "Mini-lectures include theory of tensor networks for quantum dynamics and equilibrium.",
       "last_checked": "2026-10-29",
       "verification_note": "Dates, venue and mini-lecture topics confirmed on the organizer site; registration and abstract deadlines were not listed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "icts-nonequilibrium-many-body-2027",
+      "title": "Frontiers of Nonequilibrium Quantum Many-Body Physics",
+      "start_date": "2027-04-19",
+      "end_date": "2027-04-30",
+      "location": {
+        "city": "Bengaluru",
+        "country": "India",
+        "region": "Asia",
+        "venue": "Ramanujan Lecture Hall, International Centre for Theoretical Sciences (ICTS-TIFR)"
+      },
+      "formats": [
+        "Programme"
+      ],
+      "topics": [
+        "Tensor networks",
+        "Quantum matter",
+        "Dynamics & open systems",
+        "Quantum information",
+        "Entanglement"
+      ],
+      "summary": "Two-week research programme with mini-courses and seminars on nonequilibrium quantum many-body systems, including tensor networks, geometric Floquet theory, monitored dynamics, learnability of nonequilibrium states, and relaxation and entanglement transitions.",
+      "official_url": "https://www.icts.res.in/program/fnqmbp",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2027-01-31",
+          "time": null,
+          "timezone": null,
+          "note": "Application form opened 23 November 2026; selection is by the organizers.",
+          "source_url": "https://register1.icts.res.in/fnqmbp"
+        },
+        {
+          "kind": "Recommendation letter",
+          "date": "2027-02-15",
+          "time": null,
+          "timezone": null,
+          "note": "Graduate students and postdoctoral applicants must arrange a recommendation letter.",
+          "source_url": "https://register1.icts.res.in/fnqmbp"
+        }
+      ],
+      "notes": "Mini-courses include Ignacio Cirac on tensor networks, Marin Bukov on geometric Floquet theory, Sarang Gopalakrishnan on conditional correlations, Matteo Ippoliti on monitored dynamics, and Dario Poletti on relaxation and entanglement transitions. Faculty, postdoctoral fellows and graduate students may apply. The application form offers on-campus and online participation options; selection is required. ICTS provides accommodation for non-local participants and travel support is limited.",
+      "last_checked": "2026-11-24",
+      "verification_note": "Official ICTS programme page and application form checked 24 November 2026; dates, venue, scope, lecturers, application deadline, recommendation deadline and participation options confirmed. Deadline cutoff times and a detailed daily timetable are not stated.",
       "published": true,
       "related_event_ids": []
     },
