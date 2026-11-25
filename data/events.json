@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -518,7 +518,7 @@
         "city": "Hsinchu",
         "country": "Taiwan",
         "region": "Asia",
-        "venue": "NTHU Physics (room not announced)"
+        "venue": "PRPC Multipurpose Room, 3F Physics Building, NTHU"
       },
       "formats": [
         "Workshop"
@@ -526,12 +526,12 @@
       "topics": [
         "Quantum matter"
       ],
-      "summary": "Two-day miniworkshop on symmetry, topology and strong correlations in quantum many-body and statistical physics, with invited talks and discussions. Speakers include Haruki Watanabe (HKUST), Chien-Te Wu (NYCU), Tay-Rong Chang (NCKU), Yung-Yeh Chang (Academia Sinica) and Chen-Chi Wang (NTHU).",
+      "summary": "Two-day miniworkshop on symmetry, topology and strong correlations in quantum many-body and statistical physics, with invited talks and discussions. Speakers include Haruki Watanabe (HKUST), Stefan Kirchner (NYCU), Chien-Te Wu (NYCU), Tay-Rong Chang (NCKU) and Yung-Yeh Chang (Academia Sinica).",
       "official_url": "https://indico.phys.nthu.edu.tw/event/241/",
       "deadlines": [],
-      "notes": "The overall event window starts 1 December at 09:00 and ends 2 December at 17:00 (Asia/Taipei). Individual talks, the meeting room and participation instructions have not been published.",
-      "last_checked": "2026-11-22",
-      "verification_note": "The NTHU Physics Indico event and institutional category confirm dates, speakers and scope. NTHU is identified as host by its category; the dedicated event page does not explicitly specify a venue or room.",
+      "notes": "The overall event window starts 1 December at 09:00 and ends 2 December at 17:00 (Asia/Taipei). Registration is listed as open on 25 November 2026: https://indico.phys.nthu.edu.tw/event/241/registrations/61/. The individual talk timetable and registration deadline are not specified.",
+      "last_checked": "2026-11-25",
+      "verification_note": "The dedicated NTHU Physics Indico event now confirms the PRPC Multipurpose Room, an expanded invited-speaker list and open registration. The registration page was also checked; no closing date or individual talk timetable was found.",
       "published": true,
       "related_event_ids": []
     },
@@ -783,7 +783,7 @@
         "city": "Hsinchu",
         "country": "Taiwan",
         "region": "Asia",
-        "venue": "NTHU Physics (room not announced)"
+        "venue": "PRPC Multipurpose Room, 3F Physics Building, NTHU"
       },
       "formats": [
         "Workshop"
@@ -792,12 +792,12 @@
         "Quantum matter",
         "Quantum information"
       ],
-      "summary": "One-day theory miniworkshop during a visit by Shu-Heng Shao (MIT), on generalized global symmetries, higher-form and subsystem symmetries, non-invertible defects, lattice models, anomalies and dualities.",
+      "summary": "One-day theory miniworkshop during a visit by Shu-Heng Shao (MIT), on generalized global symmetries, higher-form and subsystem symmetries, non-invertible defects, lattice models, anomalies and dualities. Invited speakers include Shu-Heng Shao, Ying-Cheng Yang (NCKU) and Fabrizio Giovanni Oliviero (NCTS).",
       "official_url": "https://indico.phys.nthu.edu.tw/event/242/",
       "deadlines": [],
-      "notes": "The dedicated public event page gives 15 December, 09:00–17:00 (Asia/Taipei). Individual talks, the meeting room and participation instructions are not yet published.",
-      "last_checked": "2026-11-22",
-      "verification_note": "The dedicated NTHU Physics Indico event gives 15 December only, whereas its category overview displays 15–16 December. The specific event page takes precedence. The venue is inferred as NTHU from the institution's event category; room not specified. The title spelling is normalized from the organizer's 'Miniworshop'.",
+      "notes": "The dedicated public event page gives 15 December, 09:00–17:00 (Asia/Taipei). Individual talks and participation instructions are not yet published.",
+      "last_checked": "2026-11-25",
+      "verification_note": "The dedicated NTHU Physics Indico event confirms 15 December only, the PRPC Multipurpose Room and invited speakers. The specific event page takes precedence over the earlier category listing of 15–16 December. The title spelling is normalized from the organizer's 'Miniworshop'.",
       "published": true,
       "related_event_ids": []
     },
@@ -2154,10 +2154,19 @@
       ],
       "summary": "Fifth edition of a training-and-discussion workshop for early-career quantum scientists, with focused modules on tensor-network numerical methods, dissipative and open quantum many-body dynamics, and ultracold-atom quantum simulation, plus seminars on lattice gauge theories and topological matter.",
       "official_url": "https://indico.ectstar.eu/event/295/",
-      "deadlines": [],
-      "notes": "Invites contributed presentations alongside in-depth thematic modules and discussion. The accessible organizer record does not specify abstract, registration or funding deadlines.",
-      "last_checked": "2026-11-23",
-      "verification_note": "ECT* official Indico search-indexed event record checked on 23 November 2026 confirms 3–7 May 2027 dates, Aula Renzo Leonardi venue and scientific scope. Direct page opening was blocked during this scan; registration details and deadlines could not be verified.",
+      "deadlines": [
+        {
+          "kind": "Registration",
+          "date": "2027-04-09",
+          "time": null,
+          "timezone": null,
+          "note": "Registration opens 4 January 2027.",
+          "source_url": "https://indico.ectstar.eu/event/295/registrations/176/"
+        }
+      ],
+      "notes": "Invites contributed presentations alongside in-depth thematic modules and discussion. Registration is scheduled for 4 January to 9 April 2027. Separate abstract and funding deadlines have not been verified.",
+      "last_checked": "2026-11-25",
+      "verification_note": "Direct organizer overview and registration form confirm dates, venue, scope and the registration period. No closing hour or separate abstract or funding deadline is specified on these pages.",
       "published": true,
       "related_event_ids": []
     },
