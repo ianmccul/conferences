@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -580,7 +580,7 @@
         "city": "Taipei",
         "country": "Taiwan",
         "region": "Asia",
-        "venue": "National Taiwan University (room to be announced)"
+        "venue": "NCTS Physics Lecture Hall, 4th Floor, Cosmology Hall, National Taiwan University"
       },
       "formats": [
         "Workshop"
@@ -600,9 +600,9 @@
           "source_url": "https://phys.ncts.ntu.edu.tw/en/act/actnews/Universe-from-Matrices-8592533/home/introduction"
         }
       ],
-      "notes": "Confirmed speakers include Robert Brandenberger, Chong-Sun Chu, Hikaru Kawai, Reishi Maeta and Harold Steinacker. The specific NTU room is to be announced.",
-      "last_checked": "2026-10-28",
-      "verification_note": "NCTS public event page confirms dates, NTU location, scope, speakers and the sign-up window (1 October–30 November 2026). The room assignment and exact deadline time remain unspecified.",
+      "notes": "Confirmed speakers include Robert Brandenberger, Chong-Sun Chu, Hikaru Kawai, Henry Liao, Reishi Maeta, Wei-Hsiang Shao, Harold Steinacker, Yu-Ping Wang and Naoyuki Yamamori.",
+      "last_checked": "2026-11-26",
+      "verification_note": "NCTS event page confirms dates, lecture hall, scope, updated speaker list and sign-up window (1 October–30 November 2026). Exact deadline time remains unspecified.",
       "published": true,
       "related_event_ids": []
     },
@@ -2963,12 +2963,21 @@
         "Quantum matter",
         "Dynamics & open systems"
       ],
-      "summary": "Workshop on the intersection of non-Hermitian physics and quantum many-body systems.",
-      "official_url": "https://www.benasque.org/new_general/cgi-bin/years.pl?ano=2027",
-      "deadlines": [],
-      "notes": "",
-      "last_checked": "2026-10-25",
-      "verification_note": "Title, inclusive dates and organizers confirmed from the Science Center's 2027 calendar. A dedicated 2027 event page, programme and participation deadlines were not verified.",
+      "summary": "Workshop on interacting non-Hermitian systems, including skin effects, exceptional points, localization, topology, measurement-induced transitions and monitored quantum dynamics.",
+      "official_url": "https://www.benasque.org/2027blinh/",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2027-06-30",
+          "time": null,
+          "timezone": null,
+          "note": "Application form specifies the same deadline; no cutoff hour is stated.",
+          "source_url": "https://www.benasque.org/2027blinh/cgi-bin/appl.pl"
+        }
+      ],
+      "notes": "Registration fee is EUR 350. The application form asks participants to attend the full meeting; accommodation booking is scheduled for 5 July–1 September. Invited talks are planned for mornings, with afternoons for discussions, collaborations and posters.",
+      "last_checked": "2026-11-26",
+      "verification_note": "Dedicated organizer page and linked application form confirm dates, venue, scientific topics, participation format and application deadline. No separate poster or funding deadline was verified.",
       "published": true,
       "related_event_ids": []
     },
