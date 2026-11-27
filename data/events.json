@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -524,14 +524,16 @@
         "Workshop"
       ],
       "topics": [
-        "Quantum matter"
+        "Quantum matter",
+        "Tensor networks",
+        "Entanglement"
       ],
-      "summary": "Two-day miniworkshop on symmetry, topology and strong correlations in quantum many-body and statistical physics, with invited talks and discussions. Speakers include Haruki Watanabe (HKUST), Stefan Kirchner (NYCU), Chien-Te Wu (NYCU), Tay-Rong Chang (NCKU) and Yung-Yeh Chang (Academia Sinica).",
+      "summary": "Two-day miniworkshop on symmetry, topology and strong correlations in quantum many-body and statistical physics, with invited talks and discussions. Speakers include Haruki Watanabe (HKUST), Stefan Kirchner (NYCU), Chien-Te Wu (NYCU), Tay-Rong Chang (NCKU) and Yung-Yeh Chang (Academia Sinica). The published timetable includes DMRG studies of topological magnons, thermal phases beyond spontaneous symmetry breaking, quantum information in Kitaev spin liquids, quantum many-body scars and Hilbert-space fragmentation.",
       "official_url": "https://indico.phys.nthu.edu.tw/event/241/",
       "deadlines": [],
-      "notes": "The overall event window starts 1 December at 09:00 and ends 2 December at 17:00 (Asia/Taipei). Registration is listed as open on 25 November 2026: https://indico.phys.nthu.edu.tw/event/241/registrations/61/. The individual talk timetable and registration deadline are not specified.",
-      "last_checked": "2026-11-25",
-      "verification_note": "The dedicated NTHU Physics Indico event now confirms the PRPC Multipurpose Room, an expanded invited-speaker list and open registration. The registration page was also checked; no closing date or individual talk timetable was found.",
+      "notes": "The overall event window starts 1 December at 09:00 and ends 2 December at 17:00 (Asia/Taipei). Registration is listed as open on 27 November 2026: https://indico.phys.nthu.edu.tw/event/241/registrations/61/. A detailed timetable is now available: https://indico.phys.nthu.edu.tw/event/241/timetable/?view=indico_weeks_view. No registration deadline is specified.",
+      "last_checked": "2026-11-27",
+      "verification_note": "Dedicated NTHU Physics Indico overview and published weeks-view timetable checked on 27 November 2026; dates, venue, open registration status and scheduled topics confirmed. Registration deadline is not listed.",
       "published": true,
       "related_event_ids": []
     },
@@ -908,6 +910,42 @@
       "notes": "Conference ID M270105; organizers Bin Gui, Zhengwei Liu and Jinsong Wu.",
       "last_checked": "2026-10-28",
       "verification_note": "TSIMF's individual 2027 workshop page confirms 11–15 January dates, organizers and subject scope. An invitation link is provided, but participation deadlines and a specific meeting room were not confirmed.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "nthu-physics-winter-school-2027",
+      "title": "1st NTHU Physics Winter School: Focus on Quantum Many-Body Matter",
+      "start_date": "2027-01-11",
+      "end_date": "2027-01-15",
+      "location": {
+        "city": "Hsinchu",
+        "country": "Taiwan",
+        "region": "Asia",
+        "venue": "National Tsing Hua University (specific room not announced)"
+      },
+      "formats": [
+        "School"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Entanglement"
+      ],
+      "summary": "Pedagogical school on topological and strongly correlated quantum matter, including topological order, symmetry-protected phases, generalized symmetries, fractional Chern insulators, conformal field theory and quantum spin liquids. Lecturers include Xiao-Gang Wen, Gil Young Cho and Chang-Tse Hsieh.",
+      "official_url": "https://indico.phys.nthu.edu.tw/event/243/",
+      "deadlines": [
+        {
+          "kind": "Application",
+          "date": "2026-12-25",
+          "time": null,
+          "timezone": null,
+          "note": "Selective admission; acceptance notifications scheduled for 4 January 2027.",
+          "source_url": "https://indico.phys.nthu.edu.tw/event/243/"
+        }
+      ],
+      "notes": "For graduate students, advanced undergraduates and postdocs. No registration fee for accepted participants. Student travel support of NT$10,000 per participant excludes NTHU and NYCU students and requires attendance for the full school. Provisional timetable: https://indico.phys.nthu.edu.tw/event/243/timetable/?view=indico_weeks_view. Masaki Oshikawa is listed as to be confirmed.",
+      "last_checked": "2026-11-27",
+      "verification_note": "Official NTHU Physics overview, application page and provisional timetable checked. Dates, host institution, topics and application deadline confirmed; exact room, cutoff time and separate funding deadline not specified. Applications are subject to organizer approval.",
       "published": true,
       "related_event_ids": []
     },
