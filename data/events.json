@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "events": [
     {
       "id": "ini-tn-school-2026",
@@ -922,7 +922,7 @@
         "city": "Hsinchu",
         "country": "Taiwan",
         "region": "Asia",
-        "venue": "National Tsing Hua University (specific room not announced)"
+        "venue": "National Tsing Hua University, Physics Building, 3F, PRPC Multipurpose Room"
       },
       "formats": [
         "School"
@@ -931,7 +931,7 @@
         "Quantum matter",
         "Entanglement"
       ],
-      "summary": "Pedagogical school on topological and strongly correlated quantum matter, including topological order, symmetry-protected phases, generalized symmetries, fractional Chern insulators, conformal field theory and quantum spin liquids. Lecturers include Xiao-Gang Wen, Gil Young Cho and Chang-Tse Hsieh.",
+      "summary": "Pedagogical school on topological and strongly correlated quantum matter, including topological order, symmetry-protected phases, generalized symmetries, fractional Chern insulators, conformal field theory and experimental probes of correlated materials.",
       "official_url": "https://indico.phys.nthu.edu.tw/event/243/",
       "deadlines": [
         {
@@ -943,9 +943,9 @@
           "source_url": "https://indico.phys.nthu.edu.tw/event/243/"
         }
       ],
-      "notes": "For graduate students, advanced undergraduates and postdocs. No registration fee for accepted participants. Student travel support of NT$10,000 per participant excludes NTHU and NYCU students and requires attendance for the full school. Provisional timetable: https://indico.phys.nthu.edu.tw/event/243/timetable/?view=indico_weeks_view. Masaki Oshikawa is listed as to be confirmed.",
-      "last_checked": "2026-11-27",
-      "verification_note": "Official NTHU Physics overview, application page and provisional timetable checked. Dates, host institution, topics and application deadline confirmed; exact room, cutoff time and separate funding deadline not specified. Applications are subject to organizer approval.",
+      "notes": "For graduate students, advanced undergraduates and postdocs. No registration fee for accepted participants. Student travel support of NT$10,000 per participant excludes NTHU and NYCU students and requires attendance for the full school. Invited lecturers include Xiao-Gang Wen, Gil Young Cho, Chang-Tse Hsieh, Pin-Jui Hsu and Atsushi Fujimori; Hosho Katsura is listed as to be confirmed. The provisional timetable includes a poster session and student talks: https://indico.phys.nthu.edu.tw/event/243/timetable/?view=indico_weeks_view.",
+      "last_checked": "2026-11-28",
+      "verification_note": "Official NTHU Physics overview, application page and timetable checked. The overview and timetable identify the PRPC Multipurpose Room; the overview lists Hosho Katsura (to be confirmed) in place of Masaki Oshikawa. The application deadline is unchanged; cutoff time and separate funding deadline are not specified. The programme remains provisional.",
       "published": true,
       "related_event_ids": []
     },
@@ -3042,6 +3042,34 @@
       "notes": "Scientific programme, invited speakers and participation deadlines for the 2027 edition have not yet been confirmed.",
       "last_checked": "2026-11-01",
       "verification_note": "Title, 13–17 September 2027 date range and scientific coordinators verified on the official MPI-PKS event calendar on 1 November 2026; the calendar's detail link still points to a 2025 edition. No 2027-specific application details were verified.",
+      "published": true,
+      "related_event_ids": []
+    },
+    {
+      "id": "nordita-long-range-quantum-simulation-2027",
+      "title": "Quantum Simulation for Long-Range Interacting Matter",
+      "start_date": "2027-09-27",
+      "end_date": "2027-10-08",
+      "location": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "region": "Europe",
+        "venue": "Nordita, Albano Building 3"
+      },
+      "formats": [
+        "Programme"
+      ],
+      "topics": [
+        "Quantum matter",
+        "Numerical methods",
+        "Dynamics & open systems"
+      ],
+      "summary": "Two-week programme on continuum and lattice quantum simulation with long-range and light-mediated interactions. The first week focuses on computational methods and machine-learning-assisted analysis; the second covers dipolar gases and cavity QED, including nonequilibrium phenomena.",
+      "official_url": "https://indico.fysik.su.se/event/9861/",
+      "deadlines": [],
+      "notes": "The organizer describes a hands-on computational workshop followed by a conference. On-site and remote participation are mentioned, with confirmation subject to selection. No specific computational techniques, separate component dates, or application cutoff are yet listed.",
+      "last_checked": "2026-11-28",
+      "verification_note": "Official Nordita Indico page confirms the overall dates, Stockholm venue and programme scope. The registration cutoff is explicitly TBD; registration availability, individual workshop and conference dates, and funding details are not confirmed.",
       "published": true,
       "related_event_ids": []
     },
